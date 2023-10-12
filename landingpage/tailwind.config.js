@@ -6,13 +6,14 @@ export default {
       screens: {
         sm: "480px",
         md: "768px",
-        lg: "1206px",
+        lg: "1024px",
         xl: "1440px",
       },
       colors: {
         btn: "#1869F4",
         darktext: "#020916",
         graytext: "#768190 ",
+        offwhite: "#FAFAFA",
       },
     },
   },
