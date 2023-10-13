@@ -1,6 +1,6 @@
 function DefiStrategies() {
   return (
-    <section className="pt-28 bg-offwhite">
+    <section className="pt-28 pb-20 bg-offwhite">
       <div className="mx-auto max-w-6xl p-4 flex flex-col items-center">
         <div className="flex items-center justify-center w-[610px]">
           <h2 className="text-center font-semibold text-4xl text-darktext break-normal">

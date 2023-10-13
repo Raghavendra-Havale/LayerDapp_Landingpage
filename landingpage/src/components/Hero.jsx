@@ -18,13 +18,22 @@ function Hero() {
               security.
             </p>
             <div className="flex items-center gap-3 mt-11">
-              <RiTwitterXFill className="text-3xl" />
-              <FaDiscord className="text-3xl" />
-              <FaGithub className="text-3xl" />
+              <a href="https://twitter.com/LayerDapp" className="">
+                <RiTwitterXFill className="text-3xl" />
+              </a>
+              <a href="https://discord.gg/eDwnvCc8nB" className="">
+                <FaDiscord className="text-3xl" />
+              </a>
+              <a href="" className="">
+                {" "}
+                <FaGithub className="text-3xl" />
+              </a>
             </div>
-            <button className="bg-btn px-[150px] py-4 text-white rounded-xl mt-9">
-              Launch App
-            </button>
+            <a href="https://v1-frontend-staging.vercel.app" className="">
+              <button className="bg-btn px-[150px] py-4 text-white rounded-xl mt-9">
+                Launch App
+              </button>
+            </a>
           </div>
           <div className="flex items-start w-full h-full">
             <img src="../../LAYER DAPP 3 1.png" className="" />

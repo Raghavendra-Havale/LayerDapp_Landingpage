@@ -19,7 +19,7 @@ function Header() {
         <div className="flex-row m-0 flex h-full list-none items-center gap-4 p-0 top-0 left-0">
           <div>
             <a
-              href="#"
+              href="https://docs.layerdapp.xyz"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium text-lg lg:text-sm whitespace-nowrap rounded text-light `}
             >
               Docs
@@ -27,7 +27,7 @@ function Header() {
           </div>
           <div>
             <a
-              href="#"
+              href="https://discord.gg/qSs6U7VF"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
             >
               Community
@@ -45,7 +45,9 @@ function Header() {
       </nav>
       <div className="flex gap-4">
         <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-lg">
-          Launch App
+          <a href="https://v1-frontend-staging.vercel.app" className="">
+            Launch App
+          </a>
         </button>
       </div>
     </header>

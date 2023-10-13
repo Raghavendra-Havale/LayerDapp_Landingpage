@@ -12,7 +12,7 @@ function Community() {
   const lightButtonStyle = {
     backgroundColor: "#1869F4",
     color: "#070707",
-    opacity:"50%",
+    opacity: "50%",
     padding: "10px 20px",
     margin: "0 10px",
     border: "none",
@@ -64,10 +64,21 @@ function Community() {
           fontWeight: "600",
           lineHeight: "30px",
           letterSpacing: "0rem",
-          color:"#020916"
+          color: "#020916",
         }}
       >
-        For <span style={{ background: "linear-gradient(to right, #009ACE, #0C93FA, #2345F0, #3113E9, #3600E7)", WebkitBackgroundClip: "text", color: "transparent" }} >The Community</span> by
+        For{" "}
+        <span
+          style={{
+            background:
+              "linear-gradient(to right, #009ACE, #0C93FA, #2345F0, #3113E9, #3600E7)",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+          }}
+        >
+          The Community
+        </span>{" "}
+        by
       </div>
       <div
         style={{
@@ -77,8 +88,11 @@ function Community() {
           lineHeight: "30px",
           letterSpacing: "0rem",
           paddingTop: "20px",
-        
-        background: "linear-gradient(to right, #009ACE, #0C93FA, #2345F0, #3113E9, #3600E7)", WebkitBackgroundClip: "text", color: "transparent"
+
+          background:
+            "linear-gradient(to right, #009ACE, #0C93FA, #2345F0, #3113E9, #3600E7)",
+          WebkitBackgroundClip: "text",
+          color: "transparent",
         }}
       >
         The Community
@@ -276,15 +290,22 @@ function Community() {
             </div>
 
             <div style={containersStyle}>
-              <button style={buttonStyle}>Create Strategy</button>
-             
-              <div style={{ display: "flex", alignItems: "center" }}>
-  <button style={{ ...lightButtonStyle, display: "flex", alignItems: "center" }}>
-    <BiLogoDiscordAlt style={{ marginRight: "8px" }} />
-    Join Community
-  </button>
-</div>
+              <a href="https://app.algosage.io/" className="">
+                <button style={buttonStyle}>Create Strategy</button>
+              </a>
 
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <button
+                  style={{
+                    ...lightButtonStyle,
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <BiLogoDiscordAlt style={{ marginRight: "8px" }} />
+                  Join Community
+                </button>
+              </div>
             </div>
           </div>
         </div>
