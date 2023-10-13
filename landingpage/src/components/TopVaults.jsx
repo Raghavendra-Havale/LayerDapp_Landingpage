@@ -1,7 +1,9 @@
+import React, { useState } from "react";
 const Card = ({ children }) => (
   <div
     style={{
-      backgroundColor: "#fff",
+      backgroundColor: "#FAFAFA",
+
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -22,10 +24,14 @@ const Card = ({ children }) => (
 
 function TopVaults() {
   return (
-    <div >
-      <div className="p-4 shadow-lg  font-bold text-4xl relative">
+    <div>
+      <div className="  font-bold text-4xl relative ml-[12rem] pt-[6rem]">
         Top Performing Vaults
-        <div className="absolute bottom-0 left-4 h-2 w-[25rem] bg-blue-800"></div>
+        <img
+          src="../../underline.png"
+          alt="underline image"
+          className="absolute w-[400px] h-auto"
+        />
       </div>
       <div
         style={{
@@ -46,24 +52,44 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                01
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{
+                    marginLeft: "0.2rem",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(0deg)",
+                  }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{
+                    marginLeft: "-20px",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(120deg)",
+                  }}
                 />
               </div>
             </div>
 
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                color: "#020916",
+              }}
+            >
               <div
                 style={{
                   fontSize: "1rem",
@@ -73,7 +99,7 @@ function TopVaults() {
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -81,7 +107,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -90,7 +116,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#02850F",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -119,19 +145,27 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                01
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{ marginLeft: "0.2rem", filter: "hue-rotate(320deg)" }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{ marginLeft: "-20px", filter: "hue-rotate(120deg)" }}
                 />
               </div>
             </div>
@@ -142,11 +176,12 @@ function TopVaults() {
                   fontSize: "1rem",
                   fontWeight: "bold",
                   marginBottom: "2px",
+                  color: "#020916",
                 }}
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -154,7 +189,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -163,7 +198,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#EA2315",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -191,19 +226,33 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                01
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{
+                    marginLeft: "0.2rem",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(320deg)",
+                  }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{
+                    marginLeft: "-20px",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(120deg)",
+                  }}
                 />
               </div>
             </div>
@@ -214,11 +263,12 @@ function TopVaults() {
                   fontSize: "1rem",
                   fontWeight: "bold",
                   marginBottom: "2px",
+                  color: "#020916",
                 }}
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -226,7 +276,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -235,7 +285,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#02850F",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -263,19 +313,33 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                01
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{
+                    marginLeft: "0.2rem",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(0deg)",
+                  }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{
+                    marginLeft: "-20px",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(120deg)",
+                  }}
                 />
               </div>
             </div>
@@ -286,11 +350,12 @@ function TopVaults() {
                   fontSize: "1rem",
                   fontWeight: "bold",
                   marginBottom: "2px",
+                  color: "#020916",
                 }}
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -298,7 +363,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -307,7 +372,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#02850F",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -336,19 +401,33 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                01
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{
+                    marginLeft: "0.2rem",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(320deg)",
+                  }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{
+                    marginLeft: "-20px",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(120deg)",
+                  }}
                 />
               </div>
             </div>
@@ -359,11 +438,12 @@ function TopVaults() {
                   fontSize: "1rem",
                   fontWeight: "bold",
                   marginBottom: "2px",
+                  color: "#020916",
                 }}
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -371,7 +451,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -380,7 +460,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#EA2315",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -408,19 +488,33 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                01
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{
+                    marginLeft: "0.2rem",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(0deg)",
+                  }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{
+                    marginLeft: "-20px",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(120deg)",
+                  }}
                 />
               </div>
             </div>
@@ -431,11 +525,12 @@ function TopVaults() {
                   fontSize: "1rem",
                   fontWeight: "bold",
                   marginBottom: "2px",
+                  color: "#020916",
                 }}
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -443,7 +538,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -452,7 +547,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#EA2315",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -480,19 +575,33 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                01
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{
+                    marginLeft: "0.2rem",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(320deg)",
+                  }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{
+                    marginLeft: "-20px",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(120deg)",
+                  }}
                 />
               </div>
             </div>
@@ -502,12 +611,13 @@ function TopVaults() {
                 style={{
                   fontSize: "1rem",
                   fontWeight: "bold",
+                  color: "#020916",
                   marginBottom: "2px",
                 }}
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -515,7 +625,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -524,7 +634,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#EA2315",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -552,19 +662,33 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                02
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{
+                    marginLeft: "0.2rem",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(0deg)",
+                  }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{
+                    marginLeft: "-20px",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(120deg)",
+                  }}
                 />
               </div>
             </div>
@@ -575,11 +699,12 @@ function TopVaults() {
                   fontSize: "1rem",
                   fontWeight: "bold",
                   marginBottom: "2px",
+                  color: "#020916",
                 }}
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -587,7 +712,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -596,7 +721,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#02850F",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -624,19 +749,33 @@ function TopVaults() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginLeft: "0.2px", fontWeight: "bold" }}>01</p>
+              <p
+                style={{
+                  marginLeft: "0.2px",
+                  fontWeight: "bold",
+                  color: " #A7B5C4",
+                }}
+              >
+                01
+              </p>
               <div style={{ display: "flex" }}>
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "0.2rem" }}
+                  style={{
+                    marginLeft: "0.2rem",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(320deg)",
+                  }}
                 />
                 <img
                   src="https://cdn.instadapp.io/icons/tokens/eth.svg"
                   className="h-12"
                   alt="ETH"
-                  style={{ marginLeft: "-20px" }}
+                  style={{
+                    marginLeft: "-20px",
+                    filter: "brightness(80%) sepia(100%) hue-rotate(120deg)",
+                  }}
                 />
               </div>
             </div>
@@ -647,11 +786,12 @@ function TopVaults() {
                   fontSize: "1rem",
                   fontWeight: "bold",
                   marginBottom: "2px",
+                  color: "#020916",
                 }}
               >
                 Uniswap-MakerDao
               </div>
-              <div style={{ fontSize: "0.8rem", color: "#ca2828" }}>
+              <div style={{ fontSize: "0.8rem", color: "#020916" }}>
                 Hedging
               </div>
             </div>
@@ -659,7 +799,7 @@ function TopVaults() {
               <div
                 style={{
                   position: "absolute",
-                 
+
                   top: 0,
                   right: 0,
                   marginTop: "2.3rem",
@@ -668,7 +808,7 @@ function TopVaults() {
               >
                 <button
                   style={{
-                    backgroundColor: "#08400e",
+                    backgroundColor: "#02850F",
                     color: "#FFFFFF",
                     padding: "5px 10px",
                     borderRadius: "50%",
@@ -687,20 +827,9 @@ function TopVaults() {
             </div>
           </div>
         </Card>
-
-
-
-
-
-
-
-       
-       
-      
-     
       </div>
       <div className="flex justify-center mt-3 mb-3">
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
+      <button className="font-bold py-2 px-4 rounded-md bg-blue-500 hover:text-white" style={{ backgroundColor: "#1869F4" }}>
   Launch App
 </button>
 

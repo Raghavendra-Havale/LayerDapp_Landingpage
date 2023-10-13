@@ -3,7 +3,7 @@
 function Footer() {
   const footerStyle = {
    
-    color: '#d35555',
+    color: ' #98A2B3',
     padding: '20px',
     textAlign: 'center',
     display: 'flex',

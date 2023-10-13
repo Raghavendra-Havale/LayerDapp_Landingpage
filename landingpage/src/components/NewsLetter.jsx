@@ -27,7 +27,7 @@ function NewsLetter() {
   };
 
   const buttonStyle = {
-    backgroundColor: 'blue',
+    backgroundColor: '#1869F4',
     color: 'white',
     padding: '10px 15px',
     fontSize: '12px',
@@ -40,10 +40,10 @@ function NewsLetter() {
 
   return (
     <div >
-      <div style={{ textAlign: 'center', color: 'blue', fontSize: '18px' }}>
+      <div style={{ textAlign: 'center', fontSize: '18px' ,background: "linear-gradient(to right, #009ACE, #0C93FA, #2345F0, #3113E9, #3600E7)", WebkitBackgroundClip: "text", color: "transparent" }}>
         Join Our Newsletter
       </div>
-      <div style={{ textAlign: 'center', color: 'grey', fontSize: '15px' }}>
+      <div style={{ textAlign: 'center', color:'#667085', fontSize: '15px' }}>
         We will send you a nice letter once per week. No spam.
       </div>
       <div style={containerStyle}>
