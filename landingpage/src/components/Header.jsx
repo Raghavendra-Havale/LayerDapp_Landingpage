@@ -55,3 +55,14 @@ function Header() {
 }
 
 export default Header;
+
+{
+  /* <div>
+  <input type="checkbox" id="checkbox" />
+  <label className="toggle cursor-pointer p-1 rounded-[14px] relative w-[45px] h-[40px] flex flex-col items-center justify-center gap-[3px] bg-white duration-75">
+    <div className="bars" id="bar1"></div>
+    <div className="bars" id="bar2"></div>
+    <div className="bars" id="bar3"></div>
+  </label>
+</div>; */
+}

@@ -1,4 +1,3 @@
-
 const Card = ({ children }) => (
   <div
     style={{
@@ -7,12 +6,12 @@ const Card = ({ children }) => (
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      marginLeft: "22px",
+      // marginLeft: "22px",
       //  marginRight:'15px',
       padding: "15px",
       marginTop: "18px",
       borderRadius: "8px",
-      boxShadow: "-1px 1px 19px -2px rgba(0, 0, 0, 0.1)",
+      // boxShadow: "-1px 1px 19px -2px rgba(0, 0, 0, 0.1)",
       color: "#24a642de",
       width: "350px",
       height: "120px",
@@ -34,8 +33,6 @@ function TopVaults() {
         />
       </div>
       <div className="grid grid-cols-3 gap-15 justify-center mx-auto max-w-1200 ml-[5rem]">
-
-
         <Card>
           <div className="flex justify-around mt-6">
             <div className="flex items-center">
@@ -400,7 +397,7 @@ function TopVaults() {
         </Card>
       </div>
       <div className="flex justify-center mt-3 mb-3">
-        <button className="font-bold py-2 px-4 rounded-md bg-blue-500 hover:text-white hover:bg-blue-600">
+        <button className="font-bold py-2 px-4 rounded-md bg-btn text-white hover:bg-btn/90">
           Launch App
         </button>
       </div>

@@ -24,3 +24,65 @@
     }
   }
 }
+/************************ LOGO SLIDE */
+
+.slides-wrapper_settings {
+  animation-name: sliding-x;
+  animation-timing-function: linear;
+  display: flex;
+  animation-duration: 15s;
+  animation-direction: normal;
+  animation-play-state: running;
+  height: auto;
+  width: auto;
+  animation-iteration-count: infinite;
+}
+@keyframes sliding-x {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-130%);
+  }
+}
+
+.animation_settings {
+  animation-name: sliding-y;
+  animation-timing-function: linear;
+  display: flex;
+  animation-duration: 15s;
+  animation-direction: normal;
+  animation-play-state: running;
+  height: fit-content;
+  width: auto;
+  animation-iteration-count: infinite;
+}
+@keyframes sliding-y {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-60%);
+  }
+}
+.animation_settings2 {
+  animation-name: sliding-y-2;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-direction: normal;
+  animation-play-state: running;
+  height: fit-content;
+  width: auto;
+  animation-iteration-count: infinite;
+}
+@keyframes sliding-y-2 {
+  0% {
+    transform: translateY(-60%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

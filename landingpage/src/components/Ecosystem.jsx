@@ -1,57 +1,219 @@
 function Ecosystem() {
   return (
-    <div className="flex flex-col text-white ml-10 mt-24 mb-16 relative">
-      <div className="flex-1">
-        <div className="mb-5 font-bold text-1xl ml-4 text-blue-900">
-          ECOSYSTEM AND PARTNERS
+    <section className="pt-12 pb-20 bg-offwhite">
+      <div className="mx-auto max-w-6xl p-4 flex flex-col">
+        <div className="flex flex-row items-center gap-6">
+          <div className="flex flex-col w-1/2">
+            <h5 className="mb-3 font-bold text-1xl text-darktext">
+              ECOSYSTEM AND PARTNERS
+            </h5>
+            <h1 className="font-bold text-4xl bg-gradient-to-r from-btn/80 to-purple-800 bg-clip-text text-transparent">
+              An Ecosystem of DeFi Apps
+            </h1>
+            <h5 className="text-3xl font-bold mt-4 text-darktext">
+              Unlocking Financial Freedom
+            </h5>
+            <p className="text-lg text-gray-500 mt-4">
+              A growing number of DApps are collaborating with Layerdapp to
+              createa multi-chain DeFi ecosystem to create a multi-chain DeFi
+              ecosystem
+            </p>
+          </div>
+          <div className="w-1/2">
+            <img
+              src="../../protocols.png"
+              alt="protocol grid images"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
-        <div className="font-bold text-4xl ml-4 bg-gradient-to-r from-blue-500 via-blue-600 to-purple-800 bg-clip-text text-transparent">
-          An Ecosystem of DeFi Apps
-        </div>
-        <div className="text-3xl ml-4 font-bold mt-4 text-blue-900">
-          Unlocking Financial Freedom
-        </div>
-        <div className="text-lg ml-4 text-gray-500">
-          A growing number of DApps are collaborating with Layerdapp to create
-        </div>
-        <div className="text-lg ml-4 text-gray-500">
-          a multi-chain DeFi ecosystem to create a multi-chain DeFi ecosystem
+        {/* slidding logos */}
+        <div className="h-[70px] flex items-center justify-center">
+          <div className="w-full absolute left-0 right-0 max-w-[1690px] mx-auto">
+            <div className="overflow-hidden">
+              <div className="slides-wrapper_settings">
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../polygon-logo.png"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Polygon
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../polygonzkevm-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Polygon zKEVM
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../arbitrum-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Arbitrum
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../avalanche-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Avalanche
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../bnb-logo.png"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    BNB
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../ethereum-logo.png"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Ethereum
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../gnosis-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Gnosis
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../optimism-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Optimism
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../polygon-logo.png"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Polygon
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../polygonzkevm-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Polygon zKEVM
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../arbitrum-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Arbitrum
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../avalanche-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Avalanche
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../bnb-logo.png"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    BNB
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../ethereum-logo.png"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Ethereum
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../gnosis-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Gnosis
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../optimism-logo.webp"
+                    alt="logo"
+                    className="w-[36px]"
+                    loading="lazy"
+                  />
+                  <span className="text-xl leading-[30px] tracking-wide text-[#2E0449] ">
+                    Optimism
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="absolute right-0 top-0">
-        <img src="../../uni.png" alt="not there" className="w-120 h-78" />
-      </div>
-
-      <div className="flex items-center  ml-4 mb-[5rem]">
-        <div className="flex items-center ml-[2rem] mt-[5rem]">
-          <div className="h-6 w-6 filter brightness-80 sepia-100 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500" />
-          <p className="ml-2 text-black text-base">Gnosis</p>
-        </div>
-
-        <div className="flex items-center ml-[2rem] mt-[5rem]">
-          <div className="h-6 w-6 filter brightness-80 sepia-100 rounded-full bg-gradient-to-r from-blue-500 to-green-500" />
-          <p className="ml-2 text-black text-base">Optimism</p>
-        </div>
-
-        <div className="flex items-center ml-[2rem] mt-[5rem]">
-          <div className="h-6 w-6 filter brightness-80 sepia-100 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500" />
-          <p className="ml-2 text-black text-base">Eth</p>
-        </div>
-        <div className="flex items-center ml-[2rem] mt-[5rem]">
-          <div className="h-6 w-6 filter brightness-80 sepia-100 rounded-full bg-gradient-to-r from-blue-500 to-green-500" />
-          <p className="ml-2 text-black text-base">Optimism</p>
-        </div>
-
-        <div className="flex items-center   ml-[2rem] mt-[5rem]">
-          <div className="h-6 w-6 filter brightness-80 sepia-100 rounded-full bg-gradient-to-r from-orange-500 to-pink-500" />
-          <p className="ml-2 text-black text-base">Polygon</p>
-        </div>
-        <div className="flex items-center  ml-[2rem] mt-[5rem]">
-          <div className="h-6 w-6 filter brightness-80 sepia-100 rounded-full bg-gradient-to-r from-pink-500 to-green-500" />
-          <p className="ml-2 text-black text-base">Ethereum</p>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }
 
