@@ -1,52 +1,24 @@
-
-
 function Footer() {
-  const footerStyle = {
-   
-    color: ' #98A2B3',
-    padding: '20px',
-    textAlign: 'center',
-    display: 'flex',
-    justifyContent: 'space-between',
-  };
-
-  const linkContainerStyle = {
-    display: 'flex',
-    marginLeft: 'auto', 
-  };
-
-  const linkStyle = {
-    // color: '#fff',
-     
-    marginRight: '10px',
-  };
-
-  const hrStyle = {
-    width: '100%',
-    borderTop: '1px solid #7d7474',
-    margin: '3px 0',
-  };
-
   return (
-    <div >
-      <hr style={hrStyle}></hr>
-      <div style={footerStyle}>
+    <div>
+      <hr className="border-t border-gray-400 my-3" />
+      <div className="flex justify-between items-center text-gray-600 py-5">
         <div>
           &copy; 2023 Layerdapp. All rights reserved
         </div>
-        <div style={linkContainerStyle}>
-          <span style={linkStyle}>
-            <a href="#" style={linkStyle}>
+        <div className="flex ml-auto">
+          <span className="mr-2">
+            <a href="#" className="text-gray-400 hover:text-gray-800">
               Terms
             </a>
           </span>
-          <span style={linkStyle}>
-            <a href="#" style={linkStyle}>
+          <span className="mr-2">
+            <a href="#" className="text-gray-400 hover:text-gray-800">
               Privacy
             </a>
           </span>
-          <span style={linkStyle}>
-            <a href="#" style={linkStyle}>
+          <span>
+            <a href="#" className="text-gray-400 hover:text-gray-800">
               Cookies
             </a>
           </span>
