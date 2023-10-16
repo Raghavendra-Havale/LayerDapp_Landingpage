@@ -18,7 +18,7 @@ function Features() {
           <div className="flex gap-5 items-start">
             <span className="w-[150px] h-[150px] rounded-full bg-graytext/30"></span>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold text-4xl text-darktext">
+              <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                 Create DSA
               </h1>
               <ol>
@@ -40,7 +40,7 @@ function Features() {
           <div className="flex gap-5 items-start">
             <span className="w-[150px] h-[150px] rounded-full bg-graytext/30"></span>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold text-4xl text-darktext">
+              <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                 Interact with multiple protocols
               </h1>
               <ol>
@@ -60,7 +60,7 @@ function Features() {
           <div className="flex gap-5 items-start">
             <span className="w-[150px] h-[150px] rounded-full bg-graytext/30"></span>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold text-4xl text-darktext">
+              <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                 Creating Vault
               </h1>
               <ol>
