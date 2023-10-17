@@ -1,12 +1,12 @@
 function Features() {
   return (
-    <section className="-mt-24 pt-28 bg-offwhite">
+    <section className="-mt-24 pt-28 bg-offwhite dark:bg-secondary">
       <div className="flex flex-col mx-auto max-w-6xl p-4">
-        <h5 className="text-center text-lg font-normal text-darktext">
+        <h5 className="text-center text-lg font-normal text-darktext dark:text-white">
           FEATURES
         </h5>
         <div className="flex flex-col items-center justify-center self-center w-[558px]">
-          <h2 className="text-center flex-wrap font-semibold text-2xl text-darktext">
+          <h2 className="text-center flex-wrap font-semibold text-2xl text-darktext dark:text-white">
             What makes Layedapp the preferred choice for customers?.
           </h2>
           <p className="text-center text-graytext text-lg">
@@ -22,16 +22,16 @@ function Features() {
                 Create DSA
               </h1>
               <ol>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Create multiple accounts
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Add multiple authorities
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Easy account interaction
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Interact with multiple accounts
                 </li>
               </ol>
@@ -44,13 +44,13 @@ function Features() {
                 Interact with multiple protocols
               </h1>
               <ol>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Enable multiple accounts on protocols
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Create strategies on protocols
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Increase capital efficiency with enhanced strategies and
                   automation
                 </li>
@@ -64,20 +64,20 @@ function Features() {
                 Creating Vault
               </h1>
               <ol>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Combine multiple protocols
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Create complex and capital efficient strategies using multiple
                   protocols
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Leverage, hedge and more
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Multiple positions using DSA
                 </li>
-                <li className="font-normal text-base text-darktext">
+                <li className="font-normal text-base text-darktext dark:text-white">
                   Track position performance efficiently
                 </li>
               </ol>

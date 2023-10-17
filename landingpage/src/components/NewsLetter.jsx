@@ -4,7 +4,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 
 function NewsLetter() {
   return (
-    <section className=" bg-offwhite">
+    <section className=" bg-offwhite dark:bg-secondary">
       <div className="mx-auto max-w-6xl p-4 flex flex-col">
         <div className="text-center">
           <div className="font-poppins text-center leading-6 text-2xl font-bold bg-gradient-to-r from-btn/30 via-btn to-purple-600 bg-clip-text text-transparent pb-5px">
@@ -28,9 +28,15 @@ function NewsLetter() {
             </button>
           </div>
           <div className="flex flex-row items-center justify-center mt-4">
-            <RiTwitterXFill className="text-black text-3xl mr-2 mt-8 mb-8" />
-            <BiLogoGithub className="text-black text-3xl mr-2 mt-8 mb-8" />
-            <BiLogoDiscordAlt className="text-black text-3xl mr-2 mt-8 mb-8" />
+            <a href="https://twitter.com/LayerDapp" className="">
+              <RiTwitterXFill className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+            </a>
+            <a href="https://github.com/LayerDapp" className="">
+              <BiLogoGithub className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+            </a>
+            <a href="https://discord.gg/eDwnvCc8nB" className="">
+              <BiLogoDiscordAlt className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+            </a>
           </div>
         </div>
       </div>

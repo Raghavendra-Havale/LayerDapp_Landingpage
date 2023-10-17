@@ -1,8 +1,19 @@
 import { AiOutlineMenu } from "react-icons/ai";
+import useDarkSide from "../assets/Themes";
+import { useState } from "react";
 
 function Header() {
+  const [colorTheme, setColorTheme] = useDarkSide();
+  const [darkSide, setDarkSide] = useState();
+  colorTheme === "light" ? true : false;
+
+  const toggleDarkMode = (checked) => {
+    setColorTheme(colorTheme);
+    setDarkSide(checked);
+  };
+
   return (
-    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between bg-white text-graytext px-4 sm:sticky mx-auto rounded-lg">
+    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between dark:bg-darktext bg-white text-graytext px-4 sm:sticky mx-auto rounded-lg">
       <a href="#" className="flex items-end justify-center gap-2">
         <img src="../../logo.png" alt="logo" className="w-full h-auto" />
         <img
@@ -35,7 +46,7 @@ function Header() {
           </div>
           <div>
             <a
-              href="#"
+              href="https://docs.layerdapp.xyz/information/faqs"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
             >
               FAQs
@@ -50,8 +61,14 @@ function Header() {
           </button>
         </a>
         <div className="">
-          <label className="toggle">
-            <input id="switch" className="input" type="checkbox" />
+          <label className="toggle dark:bg-btn bg-black">
+            <input
+              id="switch"
+              className="input"
+              type="checkbox"
+              checked={colorTheme === "light" ? true : false}
+              onClick={toggleDarkMode}
+            />
             <div className="icon icon--moon">
               <svg
                 height="20"
@@ -88,8 +105,7 @@ function Header() {
 
 export default Header;
 
-{
-  /* <div>
+/* <div>
   <input type="checkbox" id="checkbox" />
   <label className="toggle cursor-pointer p-1 rounded-[14px] relative w-[45px] h-[40px] flex flex-col items-center justify-center gap-[3px] bg-white duration-75">
     <div className="bars" id="bar1"></div>
@@ -97,4 +113,29 @@ export default Header;
     <div className="bars" id="bar3"></div>
   </label>
 </div>; */
-}
+//Dark mode toggle component
+//   const Switcher = () => {
+//     const [colorTheme, setColorTheme] = useDarkSide();
+//     const [darkSide, setDarkSide] = useState(
+//       colorTheme === "light" ? true : false
+//     );
+//     const toggleDarkMode = (checked) => {
+//       setColorTheme(colorTheme);
+//       setDarkSide(checked);
+//     };
+//     return (
+//       <div
+//         onClick={toggleDarkMode}
+//         className="justify-between items-center pt-2 my-6 flex w-fit gap-1 h-fit m-auto cursor-pointer translate-all duration-300 dark:bg-dark0   border-t border-secondary px-5 bg-light"
+//       >
+//         <div className="text-2xl">
+//           {colorTheme === "light" || !darkSide ? (
+//             <BiSolidMoon />
+//           ) : (
+//             <BiSolidSun />
+//           )}
+//         </div>
+//         <p className={`text-lg capitalize`}>Switch to {colorTheme}</p>
+//       </div>
+//     );
+//   };
