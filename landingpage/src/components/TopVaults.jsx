@@ -367,7 +367,7 @@ function TopVaults() {
         <div className="flex justify-center pt-5 pb-6">
           <a href="https://v1-frontend-staging.vercel.app" className="">
             <button className="font-bold py-2 px-4 rounded-md bg-btn text-white hover:bg-btn/90">
-              Launch App
+              Create your own vault
             </button>
           </a>
         </div>

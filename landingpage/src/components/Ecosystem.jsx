@@ -1,9 +1,9 @@
 function Ecosystem() {
   return (
-    <section className="pt-12 pb-20 bg-offwhite dark:bg-secondary">
+    <section className="pt-10 pb-20 bg-offwhite dark:bg-secondary">
       <div className="mx-auto max-w-6xl p-4 flex flex-col">
         <div className="flex flex-row items-center gap-6">
-          <div className="flex flex-col w-1/2">
+          <div className="flex flex-col w-full md:w-1/2">
             <h5 className="mb-3 font-bold text-1xl text-darktext dark:text-white">
               ECOSYSTEM AND PARTNERS
             </h5>
@@ -15,21 +15,89 @@ function Ecosystem() {
             </h5>
             <p className="text-lg text-gray-500 mt-4">
               A growing number of DApps are collaborating with Layerdapp to
-              createa multi-chain DeFi ecosystem to create a multi-chain DeFi
-              ecosystem
+              create a multi-chain DeFi ecosystem
             </p>
           </div>
+
           <div className="w-1/2">
-            <img
-              src="../../protocols.png"
-              alt="protocol grid images"
-              className="w-full h-auto block dark:hidden"
-            />
-            <img
-              src="../../protocols-2.png"
-              alt="protocol grid images"
-              className="w-full h-auto hidden dark:block"
-            />
+            <div className="grid grid-cols-2 gap-4 p-12  ">
+              <div className="bg-white p-4 shadow-md rounded-md">
+                <h3 className="text-1xl font-semibold mb-2 font-bold bg-#020916 font-poppins">
+                  NETWORKS
+                </h3>
+                <ul className="list-disc ml-2">
+              
+                  <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px] mb-1">
+                  <img
+                    src="../../polygon-logo.png"
+                    alt="logo"
+                    className="w-[30px]"
+                 
+                  />
+                  <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                    Polygon
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] mr-[60px]  mb-1">
+                  <img
+                    src="../../arbitrum-logo.webp"
+                    alt="logo"
+                    className="w-[30px]"
+                  
+                  />
+                  <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                    Arbitrum
+                  </span>
+                </div>
+                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                  <img
+                    src="../../polygonzkevm-logo.webp"
+                    alt="logo"
+                    className="w-[30px]"
+                    loading="lazy"
+                  />
+                  <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                    Polygon zKEVM
+                  </span>
+                </div>
+                </ul>
+              </div>
+              <div className="bg-white p-4 shadow-md rounded-md">
+                <h3 className="text-1xl font-semibold mb-2 font-bold bg-#020916  font-poppins ">
+                  PROTOCOLS
+                </h3>
+                <ul className="list-disc ml-6">
+                  <li>Uniswap</li>
+                  <li>Compound</li>
+                  <li>Aave</li>
+                  <li>lido</li>
+                </ul>
+              </div>
+              <div className="bg-white p-4 shadow-md rounded-md">
+                <h3 className="text-1xl font-semibold mb-2 font-bold bg-#020916 font-poppins">
+                  DEXES
+                </h3>
+                <ul className="list-disc ml-6">
+                  <li>Uniswap</li>
+                  <li>Uniswap</li>
+
+                  <li>Uniswap</li>
+                  <li>Uniswap</li>
+                </ul>
+              </div>
+              <div className="bg-white p-4 shadow-md rounded-md">
+                <h3 className="text-1xl bg-#020916 font-semibold mb-2 font-bold  font-poppins">
+                  LENDING AND BORROWING
+                </h3>
+                <ul className="list-disc ml-6">
+                  <li>Uniswap</li>
+                  <li>Uniswap</li>
+
+                  <li>Uniswap</li>
+                  <li>Uniswap</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         {/* slidding logos */}
