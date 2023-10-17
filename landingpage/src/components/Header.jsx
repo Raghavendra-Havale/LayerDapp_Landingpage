@@ -13,8 +13,8 @@ function Header() {
   };
 
   return (
-    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between dark:bg-darktext bg-white text-graytext px-4 sm:sticky mx-auto rounded-lg">
-      <a href="#" className="flex items-end justify-center gap-2">
+    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between dark:bg-darktext bg-white text-graytext px-4 mx-auto  rounded-lg">
+      <a href="" className="flex items-end justify-center gap-2">
         <img src="../../logo.png" alt="logo" className="w-full h-auto" />
         <img
           src="../../LayerDapp.png"

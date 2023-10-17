@@ -1,5 +1,5 @@
 const Card = ({ children }) => (
-  <div className="bg-[#fafafa] dark:bg-white/10 flex flex-col items-center p-4 mt-4 rounded-lg w-[350px] h-[120px] text-darktext dark:text-white">
+  <div className="bg-[#fafafa] dark:bg-white/10 flex flex-col items-center p-4 rounded-lg  text-darktext dark:text-white">
     {children}
   </div>
 );
@@ -16,7 +16,7 @@ function TopVaults() {
             className="absolute w-[400px] h-auto"
           />
         </div>
-        <div className="grid grid-cols-3 gap-15 justify-center mt-4">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-center mt-12">
           <Card>
             <div className="flex justify-around mt-6">
               <div className="flex items-center">

@@ -37,7 +37,7 @@ function Community() {
                 What the community says
               </div> */}
               <div className="mb-4 min-w-60 mt-5">
-                <div className="bg-white dark:bg-secondary rounded-lg p-4 mb-4 flex flex-col gap-4 shadow-lg">
+                <div className="bg-white dark:bg-secondary rounded-lg p-4 mb-4 flex flex-col gap-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)]">
                   <div className="flex gap-4">
                     <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-[#D9D9D9] p-2 rounded-full"></div>
 
@@ -55,7 +55,7 @@ function Community() {
                     pellentesque vel. Ut suspendisse vestibulum ipsum.
                   </p>
                 </div>
-                <div className="bg-white dark:bg-secondary rounded-lg p-4 mb-4 flex flex-col gap-4 shadow-lg">
+                <div className="bg-white dark:bg-secondary rounded-lg p-4 mb-4 flex flex-col gap-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)]">
                   <div className="flex gap-4">
                     <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-[#D9D9D9] p-2 rounded-full"></div>
 
@@ -73,7 +73,7 @@ function Community() {
                     pellentesque vel. Ut suspendisse vestibulum ipsum.
                   </p>
                 </div>
-                <div className="bg-white dark:bg-secondary rounded-lg p-4 mb-4 flex flex-col gap-4 shadow-lg">
+                <div className="bg-white dark:bg-secondary rounded-lg p-4 mb-4 flex flex-col gap-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)]">
                   <div className="flex gap-4">
                     <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-[#D9D9D9] p-2 rounded-full"></div>
 
@@ -92,14 +92,18 @@ function Community() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row items-center mb-8 mt-6">
-                <button className="bg-btn text-white px-6 py-2 rounded-lg mb-2 md:mb-0 md:mr-2">
-                  Create Strategy
-                </button>
-                <button className="bg-btn/20 text-btn px-6 py-2 rounded-lg flex items-center">
-                  <BiLogoDiscordAlt className="mr-2" />
-                  Join Community
-                </button>
+              <div className="flex flex-col md:flex-row items-center gap-3 mb-8 mt-6">
+                <a href="https://v1-frontend-staging.vercel.app/" className="">
+                  <button className="bg-btn text-white px-6 py-2 rounded-lg mb-2 md:mb-0 ">
+                    Create Strategy
+                  </button>
+                </a>
+                <a href="https://discord.gg/eDwnvCc8nB" className="">
+                  <button className="bg-btn/20 text-btn px-6 py-2 rounded-lg flex items-center">
+                    <BiLogoDiscordAlt className="" />
+                    Join Community
+                  </button>
+                </a>
               </div>
             </div>
           </div>

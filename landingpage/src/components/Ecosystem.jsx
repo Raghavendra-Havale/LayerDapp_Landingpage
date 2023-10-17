@@ -21,63 +21,60 @@ function Ecosystem() {
 
           <div className="w-1/2">
             <div className="grid grid-cols-2 gap-4 p-12  ">
-              <div className="bg-white p-4 shadow-md rounded-md">
-                <h3 className="text-1xl font-semibold mb-2 font-bold bg-#020916 font-poppins">
+              <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
+                <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
                   NETWORKS
                 </h3>
                 <ul className="list-disc ml-2">
-              
-                  <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px] mb-1">
-                  <img
-                    src="../../polygon-logo.png"
-                    alt="logo"
-                    className="w-[30px]"
-                 
-                  />
-                  <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
-                    Polygon
-                  </span>
-                </div>
-                <div className="!min-w-max flex items-center gap-x-[16px] mr-[60px]  mb-1">
-                  <img
-                    src="../../arbitrum-logo.webp"
-                    alt="logo"
-                    className="w-[30px]"
-                  
-                  />
-                  <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
-                    Arbitrum
-                  </span>
-                </div>
-                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
-                  <img
-                    src="../../polygonzkevm-logo.webp"
-                    alt="logo"
-                    className="w-[30px]"
-                    loading="lazy"
-                  />
-                  <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
-                    Polygon zKEVM
-                  </span>
-                </div>
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px] mb-1">
+                    <img
+                      src="../../polygon-logo.png"
+                      alt="logo"
+                      className="w-[30px]"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                      Polygon
+                    </span>
+                  </div>
+                  <div className="!min-w-max flex items-center gap-x-4 mr-[60px]  mb-1">
+                    <img
+                      src="../../arbitrum-logo.webp"
+                      alt="logo"
+                      className="w-[30px]"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                      Arbitrum
+                    </span>
+                  </div>
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../polygonzkevm-logo.webp"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                      Polygon zKEVM
+                    </span>
+                  </div>
                 </ul>
               </div>
-              <div className="bg-white p-4 shadow-md rounded-md">
-                <h3 className="text-1xl font-semibold mb-2 font-bold bg-#020916  font-poppins ">
+              <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
+                <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
                   PROTOCOLS
                 </h3>
-                <ul className="list-disc ml-6">
+                <ul className="list-disc ml-6 text-darktext dark:text-white ">
                   <li>Uniswap</li>
                   <li>Compound</li>
                   <li>Aave</li>
                   <li>lido</li>
                 </ul>
               </div>
-              <div className="bg-white p-4 shadow-md rounded-md">
-                <h3 className="text-1xl font-semibold mb-2 font-bold bg-#020916 font-poppins">
+              <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
+                <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
                   DEXES
                 </h3>
-                <ul className="list-disc ml-6">
+                <ul className="list-disc ml-6 text-darktext dark:text-white">
                   <li>Uniswap</li>
                   <li>Uniswap</li>
 
@@ -85,11 +82,11 @@ function Ecosystem() {
                   <li>Uniswap</li>
                 </ul>
               </div>
-              <div className="bg-white p-4 shadow-md rounded-md">
-                <h3 className="text-1xl bg-#020916 font-semibold mb-2 font-bold  font-poppins">
+              <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
+                <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
                   LENDING AND BORROWING
                 </h3>
-                <ul className="list-disc ml-6">
+                <ul className="list-disc ml-6 text-darktext dark:text-white">
                   <li>Uniswap</li>
                   <li>Uniswap</li>
 
