@@ -2,9 +2,23 @@ function Features() {
   return (
     <section className="pt-16 bg-offwhite dark:bg-secondary">
       <div className="flex flex-col mx-auto max-w-6xl p-4">
-        <h5 className="text-center text-lg font-normal text-darktext dark:text-white">
-          FEATURES
-        </h5>
+      {/* <h2 className="text-center font-semibold text-4xl text-darktext dark:text-white break-normal">
+          Features
+        </h2> */}
+   <div className="flex items-center justify-center w-[610px] mb-2">
+  <h2 className="text-center mx-auto font-semibold text-4xl text-darktext dark:text-white break-normal items-center">
+    <span className="relative">
+      Features
+      <img
+        src="../../underline.png"
+        alt="underline image"
+        className="absolute w-[400px] h-[5px] object-cover"
+      />
+    </span>{" "}
+  </h2>
+</div>
+
+
         <div className="flex flex-col items-center justify-center self-center w-[558px]">
           <h2 className="text-center flex-wrap font-semibold text-2xl text-darktext dark:text-white">
             What makes Layedapp the preferred choice for customers?.

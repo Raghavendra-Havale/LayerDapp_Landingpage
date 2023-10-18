@@ -1,6 +1,6 @@
 // import React from "react";
 import { BiLogoDiscordAlt } from "react-icons/bi";
-
+import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 function Community() {
   return (
     <section className="pt-10 md:pt-20 lg:pt-28 bg-offwhite dark:bg-secondary">
@@ -90,7 +90,13 @@ function Community() {
                     Lorem ipsum dolor sit amet consectetur. Sed enim egestas
                     pellentesque vel. Ut suspendisse vestibulum ipsum.
                   </p>
+       
                 </div>
+                <button
+      className="bg-gray-200 border-b-2 border-blue-700 text-blue-700 py-1 px-2 rounded font-semibold flex items-center  mx-auto w-[fit-content]"
+    >
+      <MdKeyboardDoubleArrowDown className="mr-1" />
+    </button>
               </div>
               <div className="flex flex-col md:flex-row items-center gap-3 mb-8 mt-6">
                 <a href="https://v1-frontend-staging.vercel.app/" className="">
