@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+} */
+body {
+  width: 100vw;
 }
 
 body,
@@ -38,7 +41,7 @@ html {
 }
 
 .background-img {
-  background: url(../public/Group.png);
+  background: url(../Group.png);
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: scroll;

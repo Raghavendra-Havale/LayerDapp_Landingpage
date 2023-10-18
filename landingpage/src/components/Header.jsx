@@ -4,16 +4,24 @@ import { useState } from "react";
 
 function Header() {
   const [colorTheme, setColorTheme] = useDarkSide();
-  const [darkSide, setDarkSide] = useState();
+  const [
+    // darkSide,
+    setDarkSide,
+  ] = useState();
   colorTheme === "light" ? true : false;
+  const [open, setOpen] = useState(false);
 
   const toggleDarkMode = (checked) => {
     setColorTheme(colorTheme);
     setDarkSide(checked);
   };
 
+  const handleOpen = () => {
+    setOpen((open) => !open);
+  };
+
   return (
-    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between dark:bg-darktext bg-white text-graytext px-4 mx-auto  rounded-lg">
+    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-start md:justify-between dark:bg-darktext bg-white text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
       <a href="" className="flex items-end justify-center gap-2">
         <img src="../../logo.png" alt="logo" className="w-full h-auto" />
         <img
@@ -22,11 +30,7 @@ function Header() {
           className="w-full h-5 -pb-2"
         />
       </a>
-      <nav className="h-full items-center justify-center flex relative">
-        <span className="mr-6 h-[17px] w-px bg-[#393939] xl:mr-8 lg:hidden"></span>
-        <div className="cursor-pointer text-2xl relative outline-none transform-none text-white flex lg:hidden">
-          <AiOutlineMenu />
-        </div>
+      <nav className="h-full items-center justify-center hidden md:flex relative">
         <div className="flex-row m-0 flex h-full list-none items-center gap-4 p-0 top-0 left-0">
           <div>
             <a
@@ -54,8 +58,56 @@ function Header() {
           </div>
         </div>
       </nav>
-      <div className="flex items-center gap-4">
-        <a href="https://v1-frontend-staging.vercel.app" className="">
+      <div className="flex items-center justify-center md:hidden">
+        <span className="mx-6 h-[30px] w-px bg-[#393939] xl:mr-8 lg:hidden"></span>
+        <div className="cursor-pointer text-2xl relative outline-none transform-none text-white flex lg:hidden">
+          <AiOutlineMenu
+            className="text-darktext dark:text-white"
+            onClick={handleOpen}
+          />
+          {open && (
+            <nav className="absolute top-9 w-[1500px] h-[500px] -left-[1000%] p-10 dark:bg-darktext bg-white">
+              <ul className="text-darktext dark:text-white flex flex-col gap-6">
+                <li>
+                  <a href="https://docs.layerdapp.xyz" className="">
+                    Docs
+                  </a>
+                </li>
+                <li>
+                  <a href="https://discord.gg/qSs6U7VF" className="">
+                    Community
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://docs.layerdapp.xyz/information/faqs"
+                    className=""
+                    onClick={() => setOpen(false)}
+                  >
+                    FAQs
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://v1-frontend-staging.vercel.app"
+                    className=""
+                    onClick={() => setOpen(false)}
+                  >
+                    <button className="flex items-center gap-1.5 px-16 py-4 text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
+                      Launch App
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          )}
+        </div>
+      </div>
+      <div className="flex items-center gap-4 ml-auto md:ml-0">
+        <a
+          href="https://v1-frontend-staging.vercel.app"
+          className="hidden md:block"
+        >
           <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
             Launch App
           </button>

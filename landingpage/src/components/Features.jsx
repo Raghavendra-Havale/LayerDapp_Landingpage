@@ -2,25 +2,16 @@ function Features() {
   return (
     <section className="pt-16 bg-offwhite dark:bg-secondary">
       <div className="flex flex-col mx-auto max-w-6xl p-4">
-      {/* <h2 className="text-center font-semibold text-4xl text-darktext dark:text-white break-normal">
-          Features
-        </h2> */}
-   <div className="flex items-center justify-center w-[610px] mb-2">
-  <h2 className="text-center mx-auto font-semibold text-4xl text-darktext dark:text-white break-normal items-center">
-    <span className="relative">
-      Features
-      <img
-        src="../../underline.png"
-        alt="underline image"
-        className="absolute w-[400px] h-[5px] object-cover"
-      />
-    </span>{" "}
-  </h2>
-</div>
-
-
-        <div className="flex flex-col items-center justify-center self-center w-[558px]">
-          <h2 className="text-center flex-wrap font-semibold text-2xl text-darktext dark:text-white">
+        <div className="self-center font-bold text-4xl relative text-darktext dark:text-white">
+          LayerDapp Features
+          <img
+            src="../../underline.png"
+            alt="underline image"
+            className="absolute w-[300px] h-auto"
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center self-center w-full md:w-1/2 mt-4">
+          <h2 className="text-center flex-wrap font-semibold text-xl text-darktext dark:text-white">
             What makes Layedapp the preferred choice for customers?.
           </h2>
           <p className="text-center text-graytext text-lg">
@@ -28,7 +19,7 @@ function Features() {
             sagittis fames convallis.
           </p>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-[5rem] gap-y-20 items-center mt-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-[5rem] gap-y-10 md:gap-y-20 items-center mt-8">
           <div className="flex items-center justify-center">
             <span className="w-[250px] h-[250px] rounded-full bg-graytext/30"></span>
           </div>
@@ -36,7 +27,7 @@ function Features() {
             <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               Create DSA
             </h1>
-            <ol className="list-decimal">
+            <ol className="list-disc ml-2 md:ml-0">
               <li className="font-normal text-base text-darktext dark:text-white">
                 Create multiple accounts
               </li>
@@ -54,11 +45,11 @@ function Features() {
           <div className="flex md:hidden items-center justify-center">
             <span className="w-[250px] h-[250px] rounded-full bg-graytext/30"></span>
           </div>
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-center gap-5 self-center">
             <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-center md:text-right">
               Interact with multiple protocols
             </h1>
-            <ol className="text-left md:text-right">
+            <ol className="list-disc md:list-none text-left md:text-right ml-3 md:ml-0">
               <li className="font-normal text-base text-darktext dark:text-white">
                 Enable multiple accounts on protocols.
               </li>
@@ -81,7 +72,7 @@ function Features() {
             <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               Creating Vault
             </h1>
-            <ol className="list-decimal ml-2 md:ml-0">
+            <ol className="list-disc md:list-decimal ml-2 md:ml-0">
               <li className="font-normal text-base text-darktext dark:text-white">
                 Combine multiple protocols
               </li>

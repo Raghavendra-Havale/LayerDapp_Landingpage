@@ -15,11 +15,8 @@ function Community() {
         <div className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-Poppins text-3xl md:text-5xl font-semibold text-gradient text-center">
           The Community
         </div>
-        <div className="font-Poppins text-xl md:text-xl font-normal text-graytext pt-4 md:pt-8 text-center">
+        <div className="font-Poppins text-lg md:text-xl font-normal text-graytext mt-4 md:mt-8 text-center">
           Discover top-notch strategies handpicked for you by the community
-        </div>
-        <div className="font-Poppins text-lg md:text-xl font-normal text-graytext text-center">
-          you by the community
         </div>
 
         <div className="mt-8 p-4 bg-white dark:bg-darktext rounded-lg ">
@@ -27,8 +24,13 @@ function Community() {
             <div className="w-full md:w-1/3 min-w-[200px]  order-2 md:order-1">
               <img
                 src="../../Frame 251.png"
-                alt="underline image"
-                className="relative w-full max-w-full max-h-64 md:max-h-full object-cover"
+                alt="uniswap logo"
+                className="relative block dark:hidden w-full max-w-full max-h-64 md:max-h-full object-cover"
+              />
+              <img
+                src="../../Frame-252.png"
+                alt="uniswap logo"
+                className="relative hidden dark:block w-full max-w-full max-h-64 md:max-h-full object-cover"
               />
             </div>
 

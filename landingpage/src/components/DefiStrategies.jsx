@@ -1,9 +1,9 @@
 function DefiStrategies() {
   return (
-    <section className="pt-28 pb-10 bg-offwhite dark:bg-secondary">
+    <section className="pt-9 md:pt-28 pb-10 bg-offwhite dark:bg-secondary">
       <div className="mx-auto max-w-6xl p-4 flex flex-col items-center">
-        <div className="flex items-center justify-center w-[610px]">
-          <h2 className="text-center font-semibold text-4xl text-darktext dark:text-white break-normal">
+        <div className="flex items-center justify-center max-w-[610px]">
+          <h2 className="text-center font-semibold text-xl md:text-4xl text-darktext dark:text-white break-normal">
             <span className="relative">
               Create Countless DeFi strategies
               <img
@@ -15,7 +15,7 @@ function DefiStrategies() {
             all in one transaction
           </h2>
         </div>
-        <div className="w-full mt-20 relative">
+        <div className="w-full mt-9 md:mt-20 relative">
           <img
             src="../../Frame.png"
             alt="frame"

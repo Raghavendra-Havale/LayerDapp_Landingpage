@@ -2,7 +2,7 @@ function Ecosystem() {
   return (
     <section className="pt-10 pb-20 bg-offwhite dark:bg-secondary">
       <div className="mx-auto max-w-6xl p-4 flex flex-col">
-        <div className="flex flex-row items-center gap-6">
+        <div className="flex flex-row items-center justify-between gap-6  my-12">
           <div className="flex flex-col w-full md:w-1/2">
             <h5 className="mb-3 font-bold text-1xl text-darktext dark:text-white">
               ECOSYSTEM AND PARTNERS
@@ -20,7 +20,7 @@ function Ecosystem() {
           </div>
 
           <div className="w-1/2">
-            <div className="grid grid-cols-2 gap-4 p-12  ">
+            <div className="grid grid-cols-2 gap-4  ">
               <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
                 <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
                   NETWORKS

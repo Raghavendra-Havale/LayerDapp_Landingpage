@@ -1,25 +1,20 @@
-const Card = ({ children }) => (
-  <div className="bg-[#fafafa] dark:bg-white/10 flex flex-col items-center p-4 rounded-lg  text-darktext dark:text-white">
-    {children}
-  </div>
-);
+import PropTypes from "prop-types";
 
 function TopVaults() {
   return (
     <section className="pt-10 bg-white dark:bg-darktext">
       <div className="flex flex-col mx-auto max-w-6xl p-4">
-      <div className="text-center font-bold text-4xl relative text-darktext dark:text-white items-center mx-auto">
-  Top Performing Vaults
-  <img
-    src="../../underline.png"
-    alt="underline image"
-    className="absolute w-[400px] h-auto"
-  />
-</div>
-
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-center mt-12">
+        <div className="self-center  font-bold text-4xl relative text-darktext dark:text-white">
+          Top Performing Vaults
+          <img
+            src="../../underline.png"
+            alt="underline image"
+            className="absolute w-[400px] h-auto"
+          />
+        </div>
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center mt-12">
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -60,7 +55,7 @@ function TopVaults() {
           </Card>
 
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -98,7 +93,7 @@ function TopVaults() {
             </div>
           </Card>
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -137,7 +132,7 @@ function TopVaults() {
           </Card>
 
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -175,7 +170,7 @@ function TopVaults() {
             </div>
           </Card>
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -213,7 +208,7 @@ function TopVaults() {
             </div>
           </Card>
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -251,7 +246,7 @@ function TopVaults() {
             </div>
           </Card>
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around ">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -289,7 +284,7 @@ function TopVaults() {
             </div>
           </Card>
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around ">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -327,7 +322,7 @@ function TopVaults() {
             </div>
           </Card>
           <Card>
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around ">
               <div className="flex items-center">
                 <p className="ml-1  text-gray-500">01</p>
                 <div className="flex">
@@ -378,3 +373,13 @@ function TopVaults() {
 }
 
 export default TopVaults;
+
+const Card = ({ children }) => (
+  <div className="bg-[#fafafa] dark:bg-white/10 flex flex-col items-center p-7 rounded-lg  text-darktext dark:text-white">
+    {children}
+  </div>
+);
+
+Card.propTypes = {
+  children: PropTypes.string,
+};
