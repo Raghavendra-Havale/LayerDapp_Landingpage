@@ -32,7 +32,7 @@ function Ecosystem() {
                       alt="logo"
                       className="w-[30px]"
                     />
-                    <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                    <span className="text-sm leading-[30px] tracking-wide   font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
                       Polygon
                     </span>
                   </div>
@@ -42,7 +42,7 @@ function Ecosystem() {
                       alt="logo"
                       className="w-[30px]"
                     />
-                    <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
                       Arbitrum
                     </span>
                   </div>
@@ -53,45 +53,146 @@ function Ecosystem() {
                       className="w-[30px]"
                       loading="lazy"
                     />
-                    <span className="text-sm leading-[30px] tracking-wide text-darktext dark:text-white ">
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
                       Polygon zKEVM
                     </span>
                   </div>
                 </ul>
               </div>
               <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
-                <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
+                <h3 className="text-1xl font-semibold mb-2    dark:text-white font-poppins">
                   PROTOCOLS
                 </h3>
-                <ul className="list-disc ml-6 text-darktext dark:text-white ">
-                  <li>Uniswap</li>
-                  <li>Compound</li>
-                  <li>Aave</li>
-                  <li>lido</li>
+                <ul className="list-disc ml-2 text-darktext dark:text-white ">
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px] mb-1">
+                    <img
+                      src="../../Compound.png"
+                      alt="logo"
+                      className="w-[30px]"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Compound
+                    </span>
+                  </div>
+                  <div className="!min-w-max flex items-center gap-x-4 mr-[60px]  mb-1">
+                    <img src="../../aave.png" alt="logo" className="w-[30px]" />
+                    <span className="text-sm leading-[30px] tracking-wide font-bold font-400 text-popins text-020916 dark:text-white">
+                      AAVE
+                    </span>
+                  </div>
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide   font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>
                 </ul>
               </div>
               <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
                 <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
                   DEXES
                 </h3>
-                <ul className="list-disc ml-6 text-darktext dark:text-white">
-                  <li>Uniswap</li>
-                  <li>Uniswap</li>
-
-                  <li>Uniswap</li>
-                  <li>Uniswap</li>
+                <ul className="list-disc ml-2 text-darktext dark:text-white">
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>{" "}
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>{" "}
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>{" "}
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916  text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>
                 </ul>
               </div>
               <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
                 <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
                   LENDING AND BORROWING
                 </h3>
-                <ul className="list-disc ml-6 text-darktext dark:text-white">
-                  <li>Uniswap</li>
-                  <li>Uniswap</li>
-
-                  <li>Uniswap</li>
-                  <li>Uniswap</li>
+                <ul className="list-disc ml-2 text-darktext dark:text-white">
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>{" "}
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>{" "}
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide   font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>{" "}
+                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
+                    <img
+                      src="../../Uniswap.png"
+                      alt="logo"
+                      className="w-[30px]"
+                      loading="lazy"
+                    />
+                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
+                      Uniswap
+                    </span>
+                  </div>
                 </ul>
               </div>
             </div>

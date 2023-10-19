@@ -95,10 +95,11 @@ function Community() {
        
                 </div>
                 <button
-      className="bg-gray-200 border-b-2 border-blue-700 text-blue-700 py-1 px-2 rounded font-semibold flex items-center  mx-auto w-[fit-content]"
-    >
-      <MdKeyboardDoubleArrowDown className="mr-1" />
-    </button>
+  className="bg-gray-200 border-2 border-blue-500 hover:border-blue-700 text-blue-800 py-2 px-3 rounded font-semibold flex items-center mx-auto w-[fit-content] transition duration-300 ease-in-out"
+>
+  <MdKeyboardDoubleArrowDown className="mr-1" />
+</button>
+
               </div>
               <div className="flex flex-col md:flex-row items-center gap-3 mb-8 mt-6">
                 <a href="https://v1-frontend-staging.vercel.app/" className="">

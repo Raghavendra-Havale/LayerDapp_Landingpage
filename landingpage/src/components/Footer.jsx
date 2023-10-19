@@ -1,11 +1,12 @@
-import { AiFillPhone, AiFillHome } from "react-icons/ai";
-import { AiTwotoneMail } from "react-icons/ai";
+import { AiFillPhone, AiFillHome } from 'react-icons/ai';
+import { AiTwotoneMail } from 'react-icons/ai';
+
 function Footer() {
   return (
     <footer className="bg-white text-graytext dark:bg-secondary">
-      <div className="container mx-auto py-8 flex flex-wrap items-center justify-center lg:justify-between">
+      <div className="container mx-auto px-[6.5rem] lg:px-8 py-[2.5rem] lg:flex lg:items-center lg:justify-between">
         {/* Logo Section */}
-        <div className="mb-8 lg:mb-0 ml-16 flex flex-col items-center lg:items-start">
+        <div className="mb-8 lg:mb-0 ml-2 lg:ml-4 flex flex-col items-center lg:items-start">
           <a href="" className="flex items-end justify-center space-x-2">
             <img
               src="../../logo.png"
@@ -25,7 +26,7 @@ function Footer() {
         </div>
 
         {/* Sections Container */}
-        <div className="w-full lg:w-2/3 flex flex-wrap items-center justify-center lg:justify-between space-y-4 lg:space-y-0">
+        <div className="w-full lg:w-2/3 mx-auto flex flex-wrap items-center justify-center lg:justify-between space-y-4 lg:space-y-0">
           {/* Resources Section */}
           <div className="w-full lg:w-1/3">
             <h3 className="text-lg font-bold mb-3">Resources</h3>
@@ -80,11 +81,11 @@ function Footer() {
               </li>
               <li className="flex items-center">
                 <AiFillPhone className="mr-2" />
-                 <a href="tel:+123456789">+123456789</a>
+                <a href="tel:+123456789">+123456789</a>
               </li>
               <li className="flex items-center">
                 <AiFillHome className="mr-2" />
-                 123 Main St, New Delhi
+                123 Main St, New Delhi
               </li>
             </ul>
           </div>
