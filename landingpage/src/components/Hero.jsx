@@ -60,7 +60,7 @@ function Hero() {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h3 className="text-darktext dark:text-white font-bold md:text-2xl lg:text-5x">
+              <h3 className="text-darktext dark:text-white font-bold md:text-2xl lg:text-5xl">
                 2.25B
               </h3>
               <p className="text-graytext font-semibold text-xs lg:text-base">
@@ -68,7 +68,7 @@ function Hero() {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h3 className="text-darktext dark:text-white font-bold md:text-2xl lg:text-5x">
+              <h3 className="text-darktext dark:text-white font-bold md:text-2xl lg:text-5xl">
                 2.25B
               </h3>
               <p className="text-graytext font-semibold text-xs lg:text-base">
@@ -76,7 +76,7 @@ function Hero() {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h3 className="text-darktext dark:text-white font-bold md:text-2xl lg:text-5x">
+              <h3 className="text-darktext dark:text-white font-bold md:text-2xl lg:text-5xl">
                 $130.04M
               </h3>
               <p className="text-graytext font-semibold text-xs lg:text-base">
