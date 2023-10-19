@@ -4,8 +4,7 @@ import { AiTwotoneMail } from "react-icons/ai";
 function Footer() {
   return (
     <footer className="bg-white text-graytext dark:bg-secondary">
-      <div className="bg-graytext/50 h-[.8px] w-[100%]" />
-      <div className="max-w-6xl mx-auto py-8 px-2">
+      <div className="max-w-6xl mx-auto py-8 px-2 border-t border-t-graytext/20">
         <div className=" flex flex-col lg:flex-row lg:gap-5 gap-10">
           {/* Logo Section */}
           <div className="flex flex-col items-start lg:w-1/2 px-[5%] lg:px-[1%]">

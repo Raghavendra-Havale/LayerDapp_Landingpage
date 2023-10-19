@@ -107,7 +107,7 @@ html {
   animation-name: sliding-x;
   animation-timing-function: linear;
   display: flex;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-direction: normal;
   animation-play-state: running;
   height: auto;

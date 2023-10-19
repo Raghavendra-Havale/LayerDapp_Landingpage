@@ -4,7 +4,7 @@ function TopVaults() {
   return (
     <section className="pt-10 bg-white dark:bg-darktext">
       <div className="flex flex-col mx-auto max-w-6xl p-4">
-        <div className="self-center  font-bold text-4xl relative text-darktext dark:text-white">
+        <div className="self-center  font-bold text-3xl md:text-4xl relative text-darktext dark:text-white">
           Top Performing Vaults
           <img
             src="../../underline.png"
@@ -16,7 +16,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5 text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"
@@ -57,7 +57,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5  text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"
@@ -95,7 +95,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5  text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"
@@ -134,7 +134,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5  text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"
@@ -172,7 +172,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5  text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"
@@ -210,7 +210,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5  text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"
@@ -248,7 +248,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around ">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5  text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"
@@ -286,7 +286,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around ">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5  text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"
@@ -324,7 +324,7 @@ function TopVaults() {
           <Card>
             <div className="flex justify-around ">
               <div className="flex items-center">
-                <p className="ml-1  text-gray-500">01</p>
+                <p className="mr-5  text-gray-500">01</p>
                 <div className="flex">
                   <img
                     src="https://cdn.instadapp.io/icons/tokens/eth.svg"

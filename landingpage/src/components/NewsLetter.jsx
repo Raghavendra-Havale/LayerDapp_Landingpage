@@ -13,20 +13,23 @@ function NewsLetter() {
           <div className="mt-2 text-gray-500 font-poppins text-center text-base font-normal leading-6">
             We will send you a nice letter once per week. No spam.
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-center text-center mt-4">
+          <form className="flex flex-col md:flex-row items-center justify-center text-center mt-4">
             <label htmlFor="email" className="block md:mr-2 mb-2 md:mb-0">
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="py-3 px-9  text-base w-full md:w-[25rem] max-w-screen-lg rounded-lg"
+                className="py-3 px-9  text-base w-full md:w-[25rem] max-w-screen-lg rounded-lg focus:outline-btn"
                 placeholder="Enter your email"
               />
             </label>
-            <button className="bg-blue-500 text-white p-3 text-sm cursor-pointer border-none rounded-lg md:ml-2 mt-2 md:mt-0">
+            <button
+              className="bg-blue-500 text-white p-3 text-sm cursor-pointer border-none rounded-lg md:ml-2 mt-2 md:mt-0"
+              type="submit"
+            >
               Subscribe
             </button>
-          </div>
+          </form>
           <div className="flex flex-row items-center justify-center mt-4">
             <a href="https://twitter.com/LayerDapp" className="">
               <RiTwitterXFill className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />

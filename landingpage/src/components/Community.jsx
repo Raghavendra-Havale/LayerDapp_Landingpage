@@ -47,7 +47,7 @@ function Community() {
                       <div className="text-gray-500 font-bold text-xs md:text-sm lg:text-base xl:text-lg">
                         Full Name
                       </div>
-                      <div className="flex items-center text-btn font-bold text-xs md:text-sm lg:text-base xl:text-lg">
+                      <div className="flex items-center text-btn font-medium text-xs md:text-sm lg:text-base xl:text-lg">
                         <BiLogoDiscordAlt className="mr-1" /> Username
                       </div>
                     </div>
@@ -65,7 +65,7 @@ function Community() {
                       <div className="text-gray-500 font-bold text-xs md:text-sm lg:text-base xl:text-lg">
                         Full Name
                       </div>
-                      <div className="flex items-center text-btn font-bold text-xs md:text-sm lg:text-base xl:text-lg">
+                      <div className="flex items-center text-btn font-medium text-xs md:text-sm lg:text-base xl:text-lg">
                         <BiLogoDiscordAlt className="mr-1" /> Username
                       </div>
                     </div>
@@ -83,7 +83,7 @@ function Community() {
                       <div className="text-gray-500 font-bold text-xs md:text-sm lg:text-base xl:text-lg">
                         Full Name
                       </div>
-                      <div className="flex items-center text-btn font-bold text-xs md:text-sm lg:text-base xl:text-lg">
+                      <div className="flex items-center text-btn font-medium text-xs md:text-sm lg:text-base xl:text-lg">
                         <BiLogoDiscordAlt className="mr-1" /> Username
                       </div>
                     </div>
@@ -97,7 +97,7 @@ function Community() {
                   <MdKeyboardDoubleArrowDown className="mr-1" />
                 </button>
               </div>
-              <div className="flex flex-col md:flex-row items-center gap-3 mb-8 mt-6">
+              <div className="flex flex-col md:flex-row items-center md:justify-center gap-3 mb-8 mt-6">
                 <a href="https://v1-frontend-staging.vercel.app/" className="">
                   <button className="bg-btn text-white px-6 py-2 rounded-lg mb-2 md:mb-0 ">
                     Create Strategy

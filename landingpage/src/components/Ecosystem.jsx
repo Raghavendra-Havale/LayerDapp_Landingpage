@@ -4,13 +4,13 @@ function Ecosystem() {
       <div className="mx-auto max-w-6xl p-4 flex flex-col">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6  my-12">
           <div className="flex flex-col items-center md:items-start w-full md:w-1/2">
-            <h5 className="mb-3 font-bold text-center md:text-left text-1xl text-darktext dark:text-white">
+            <h5 className="mb-3 font-bold text-center md:text-left text-2xl text-darktext dark:text-white">
               ECOSYSTEM AND PARTNERS
             </h5>
             <h1 className="font-bold text-3xl md:text-4xl text-center md:text-left bg-gradient-to-r from-btn/80 to-purple-800 bg-clip-text text-transparent">
               An Ecosystem of DeFi Apps
             </h1>
-            <h5 className="text-lg md:text-3xl font-bold text-center md:text-left mt-4 text-darktext dark:text-white">
+            <h5 className="text-lg md:text-3xl font-medium text-center md:text-left mt-4 text-darktext dark:text-white">
               Unlocking Financial Freedom
             </h5>
             <p className="text-sm md:text-lg text-gray-500 text-center md:text-left mt-4">
@@ -19,7 +19,7 @@ function Ecosystem() {
             </p>
           </div>
 
-          <div className="w-full md:w-1/2">
+          <div className="w-[80%] md:w-1/2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4  ">
               <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
                 <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
@@ -200,10 +200,10 @@ function Ecosystem() {
         </div>
         {/* slidding logos */}
         <div className="h-[70px] flex items-center justify-center">
-          <div className="w-full absolute left-0 right-0 max-w-[1690px] mx-auto">
+          <div className="w-full absolute left-0 right-0 max-w-[500px] md:max-w-[1024px] lg:max-w-[1690px] mx-auto">
             <div className="overflow-hidden">
               <div className="slides-wrapper_settings">
-                <div className="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
+                <div className="!min-w-max flex items-center gap-x- md:gap-x-[16px] object-contain mr-[60px]">
                   <img
                     src="../../polygon-logo.png"
                     alt="logo"

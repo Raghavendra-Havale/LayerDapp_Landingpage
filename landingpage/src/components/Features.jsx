@@ -21,72 +21,76 @@ function Features() {
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-[5rem] gap-y-10 md:gap-y-20 items-center mt-8">
           <div className="flex items-center justify-center">
-            <span className="w-[250px] h-[250px] rounded-full bg-graytext/30"></span>
+            <img
+              src="../../script.png"
+              alt="script"
+              className="brightness-50 sepia -hue-rotate-60"
+            />
           </div>
           <div className="flex flex-col items-center md:items-start gap-5">
-            <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               Create DSA
             </h1>
-            <ol className="list-disc ml-2 md:ml-0">
-              <li className="font-normal text-base text-darktext dark:text-white">
+            <ol className="flex flex-col w-[80%] md:w-full ml-2 md:ml-0">
+              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Create multiple accounts
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Add multiple authorities
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Easy account interaction
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Interact with multiple accounts
               </li>
             </ol>
           </div>
           <div className="flex md:hidden items-center justify-center">
-            <span className="w-[250px] h-[250px] rounded-full bg-graytext/30"></span>
+            <img src="../../connect.png" alt="script" className="" />
           </div>
           <div className="flex flex-col items-center gap-5 self-center">
-            <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-center md:text-right">
+            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-center md:text-right">
               Interact with multiple protocols
             </h1>
-            <ol className="list-disc md:list-none text-left md:text-right ml-3 md:ml-0">
-              <li className="font-normal text-base text-darktext dark:text-white">
+            <ol className="text-left md:text-right ml-3 md:ml-0">
+              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Enable multiple accounts on protocols.
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Create strategies on protocols.
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Increase capital efficiency with enhanced strategies and
                 automation.
               </li>
             </ol>
           </div>
           <div className="md:flex hidden items-center justify-center">
-            <span className="w-[250px] h-[250px] rounded-full bg-graytext/30"></span>
+            <img src="../../connect.png" alt="script" className="" />
           </div>
           <div className="flex items-center justify-center">
-            <span className="w-[250px] h-[250px] rounded-full bg-graytext/30"></span>
+            <img src="../../vault.png" alt="script" className="" />
           </div>
           <div className="flex flex-col items-center md:items-start gap-5">
-            <h1 className="font-semibold text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               Creating Vault
             </h1>
-            <ol className="list-disc md:list-decimal ml-2 md:ml-0">
-              <li className="font-normal text-base text-darktext dark:text-white">
+            <ol className="">
+              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Combine multiple protocols
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Create complex and capital efficient strategies using multiple
                 protocols
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Leverage, hedge and more
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Multiple positions using DSA
               </li>
-              <li className="font-normal text-base text-darktext dark:text-white">
+              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Track position performance efficiently
               </li>
             </ol>
