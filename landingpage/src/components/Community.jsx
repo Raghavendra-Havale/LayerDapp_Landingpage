@@ -1,6 +1,6 @@
 // import React from "react";
 import { BiLogoDiscordAlt } from "react-icons/bi";
-import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 function Community() {
   return (
     <section className="pt-10 md:pt-20 lg:pt-28 bg-offwhite dark:bg-secondary">
@@ -20,21 +20,21 @@ function Community() {
         </div>
 
         <div className="mt-8 p-4 bg-white dark:bg-darktext rounded-lg ">
-          <div className="flex flex-col-reverse md:flex-row justify-between">
-            <div className="w-full md:w-1/3 min-w-[200px]  order-2 md:order-1">
+          <div className="flex flex-col lg:flex-row justify-between">
+            <div className="w-full lg:w-1/3 min-w-[200px]">
               <img
                 src="../../Frame 251.png"
                 alt="uniswap logo"
-                className="relative block dark:hidden w-full max-w-full max-h-64 md:max-h-full object-cover"
+                className="relative block dark:hidden w-full h-auto md:max-h-full"
               />
               <img
                 src="../../Frame-252.png"
                 alt="uniswap logo"
-                className="relative hidden dark:block w-full max-w-full max-h-64 md:max-h-full object-cover"
+                className="relative hidden dark:block w-full h-auto md:max-h-full "
               />
             </div>
 
-            <div className="w-1/2 text-left pr-8 order-1 md:order-2">
+            <div className="w-full lg:w-1/2 text-left pr-0  order-1 md:order-2">
               {/* <div className="font-Poppins text-xl text-darktext dark:text-white font-semibold leading-tight pb-[3rem]">
                 What the community says
               </div> */}
@@ -92,14 +92,10 @@ function Community() {
                     Lorem ipsum dolor sit amet consectetur. Sed enim egestas
                     pellentesque vel. Ut suspendisse vestibulum ipsum.
                   </p>
-       
                 </div>
-                <button
-  className="bg-gray-200 border-2 border-blue-500 hover:border-blue-700 text-blue-800 py-2 px-3 rounded font-semibold flex items-center mx-auto w-[fit-content] transition duration-300 ease-in-out"
->
-  <MdKeyboardDoubleArrowDown className="mr-1" />
-</button>
-
+                <button className="bg-gray-200 border-2 border-blue-500 hover:border-blue-700 text-blue-800 py-2 px-3 rounded font-semibold flex items-center mx-auto w-[fit-content] transition duration-300 ease-in-out">
+                  <MdKeyboardDoubleArrowDown className="mr-1" />
+                </button>
               </div>
               <div className="flex flex-col md:flex-row items-center gap-3 mb-8 mt-6">
                 <a href="https://v1-frontend-staging.vercel.app/" className="">

@@ -1,4 +1,6 @@
 import { AiOutlineMenu } from "react-icons/ai";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaDiscord, FaGithub } from "react-icons/fa";
 import useDarkSide from "../assets/Themes";
 import { useState } from "react";
 
@@ -66,8 +68,8 @@ function Header() {
             onClick={handleOpen}
           />
           {open && (
-            <nav className="absolute top-9 w-[1500px] h-[500px] -left-[1000%] p-10 dark:bg-darktext bg-white">
-              <ul className="text-darktext dark:text-white flex flex-col gap-6">
+            <nav className="absolute top-9 w-[1500px] h-[700px] -left-[1000%] p-10 dark:bg-darktext bg-white">
+              <ul className="text-darktext dark:text-white flex flex-col gap-7">
                 <li>
                   <a href="https://docs.layerdapp.xyz" className="">
                     Docs
@@ -96,6 +98,27 @@ function Header() {
                     <button className="flex items-center gap-1.5 px-16 py-4 text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
                       Launch App
                     </button>
+                  </a>
+                </li>
+                <li className="flex items-center justify-start gap-3">
+                  <a
+                    href="https://twitter.com/LayerDapp"
+                    className="text-darktext dark:text-white"
+                  >
+                    <RiTwitterXFill className="text-3xl" />
+                  </a>
+                  <a
+                    href="https://discord.gg/eDwnvCc8nB"
+                    className="text-darktext dark:text-white"
+                  >
+                    <FaDiscord className="text-3xl" />
+                  </a>
+                  <a
+                    href="https://github.com/LayerDapp"
+                    className="text-darktext dark:text-white"
+                  >
+                    {" "}
+                    <FaGithub className="text-3xl" />
                   </a>
                 </li>
               </ul>

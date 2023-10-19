@@ -374,12 +374,14 @@ function TopVaults() {
 
 export default TopVaults;
 
-const Card = ({ children }) => (
-  <div className="bg-[#fafafa] dark:bg-white/10 flex flex-col items-center p-7 rounded-lg  text-darktext dark:text-white">
-    {children}
-  </div>
-);
+function Card({ children }) {
+  return (
+    <div className="bg-[#fafafa] dark:bg-white/10 flex flex-col items-center p-7 rounded-lg  text-darktext dark:text-white">
+      {children}
+    </div>
+  );
+}
 
 Card.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.func,
 };

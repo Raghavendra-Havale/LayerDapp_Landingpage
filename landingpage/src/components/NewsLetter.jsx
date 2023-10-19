@@ -19,7 +19,7 @@ function NewsLetter() {
                 type="email"
                 id="email"
                 name="email"
-                className="p-3 text-base w-full md:w-[25rem] max-w-screen-lg rounded-lg"
+                className="py-3 px-9  text-base w-full md:w-[25rem] max-w-screen-lg rounded-lg"
                 placeholder="Enter your email"
               />
             </label>
