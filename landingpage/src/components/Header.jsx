@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-start md:justify-between dark:bg-darktext bg-white text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
+    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between dark:bg-darktext bg-white text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
       <a href="" className="flex items-end justify-center gap-2">
         <img src="../../logo.png" alt="logo" className="w-full h-auto" />
         <img
@@ -62,13 +62,17 @@ function Header() {
       </nav>
       <div className="flex items-center justify-center md:hidden">
         <span className="mx-6 h-[30px] w-px bg-[#393939] xl:mr-8 lg:hidden"></span>
-        <div className="cursor-pointer text-2xl relative outline-none transform-none text-white flex lg:hidden">
+        <div className="cursor-pointer text-3xl relative outline-none transform-none text-white flex lg:hidden">
           <AiOutlineMenu
             className="text-darktext dark:text-white"
             onClick={handleOpen}
           />
           {open && (
-            <nav className="absolute top-9 w-[1500px] h-[700px] -left-[1000%] p-10 dark:bg-darktext bg-white">
+            <nav
+              className={`absolute top-9 w-[1500px] h-[1000px] -left-[900%] min-[540px]:-left-[1500%] p-10 dark:bg-darktext bg-white hide ${
+                open ? "reveal-bar" : ""
+              }`}
+            >
               <ul className="text-darktext dark:text-white flex flex-col gap-7">
                 <li>
                   <a href="https://docs.layerdapp.xyz" className="">
@@ -121,16 +125,52 @@ function Header() {
                     <FaGithub className="text-3xl" />
                   </a>
                 </li>
+                <li className="flex items-center gap-2">
+                  <label className="toggle dark:bg-btn bg-black">
+                    <input
+                      id="switch"
+                      className="input"
+                      type="checkbox"
+                      checked={colorTheme === "light" ? true : false}
+                      onClick={toggleDarkMode}
+                    />
+                    <div className="icon icon--moon">
+                      <svg
+                        height="20"
+                        width="20"
+                        fill="white"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clipRule="evenodd"
+                          d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                          fillRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div className="icon icon--sun">
+                      <svg
+                        height="20"
+                        width="20"
+                        fill="white"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+                      </svg>
+                    </div>
+                  </label>
+                  <p className="text-lg font-semibold">Switch Modes</p>
+                </li>
               </ul>
             </nav>
           )}
         </div>
       </div>
-      <div className="flex items-center gap-4 ml-auto md:ml-0">
-        <a
-          href="https://v1-frontend-staging.vercel.app"
-          className="hidden md:block"
-        >
+      <div className="hidden md:flex items-center gap-4 ml-auto md:ml-0">
+        <a href="https://v1-frontend-staging.vercel.app" className="">
           <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
             Launch App
           </button>

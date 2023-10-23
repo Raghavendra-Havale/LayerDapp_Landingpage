@@ -1,13 +1,37 @@
+import { useRef, useEffect } from "react";
+
 function Ecosystem() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 } // Adjust the threshold as needed
+    );
+
+    if (sectionRef.current) {
+      sectionObserver.observe(sectionRef.current);
+    }
+  }, []);
   return (
     <section className="pt-10 pb-20 bg-offwhite dark:bg-secondary">
-      <div className="mx-auto max-w-6xl p-4 flex flex-col">
+      <div
+        className="mx-auto max-w-6xl p-4 flex flex-col section"
+        ref={sectionRef}
+      >
         <div className="flex flex-col md:flex-row items-center justify-between gap-6  my-12">
           <div className="flex flex-col items-center md:items-start w-full md:w-1/2">
             <h5 className="mb-3 font-bold text-center md:text-left text-2xl text-darktext dark:text-white">
               ECOSYSTEM AND PARTNERS
             </h5>
-            <h1 className="font-bold text-3xl md:text-4xl text-center md:text-left bg-gradient-to-r from-btn/80 to-purple-800 bg-clip-text text-transparent">
+            <h1 className="font-bold text-3xl md:text-4xl text-center md:text-left bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
               An Ecosystem of DeFi Apps
             </h1>
             <h5 className="text-lg md:text-3xl font-medium text-center md:text-left mt-4 text-darktext dark:text-white">

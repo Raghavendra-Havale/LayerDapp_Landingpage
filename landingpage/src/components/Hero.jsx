@@ -1,14 +1,34 @@
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaDiscord, FaGithub } from "react-icons/fa";
+import { useRef, useEffect } from "react";
 
 function Hero() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust the threshold as needed
+    );
+
+    if (sectionRef.current) {
+      sectionObserver.observe(sectionRef.current);
+    }
+  }, []);
   return (
-    <section className="background-img pt-28 bg-white dark:bg-secondary">
-      <div className="mx-auto max-w-6xl px-4 flex">
+    <section className={`background-img pt-28 bg-white dark:bg-secondary`}>
+      <div className="mx-auto max-w-6xl px-4 flex section" ref={sectionRef}>
         <div className="flex flex-col mx-auto">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-7 justify-center items-center">
             <div className="w-full lg:max-w-[55%] flex flex-col items-center lg:items-start">
-              <h1 className="text-2xl md:text-5xl font-semibold bg-gradient-to-r from-blue-700 to-purple-900 bg-clip-text text-transparent leading-none lg:leading-[96px] text-center lg:text-left">
+              <h1 className="text-2xl md:text-5xl font-semibold bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent leading-none lg:leading-[96px] text-center lg:text-left">
                 {`DeFi's Command Center for Seamless Strategy Execution`}
               </h1>
               <p className="mt-4 font-medium text-sm md:text-base text-darktext dark:text-white leading-tight md:leading-[24px] text-center lg:text-left">

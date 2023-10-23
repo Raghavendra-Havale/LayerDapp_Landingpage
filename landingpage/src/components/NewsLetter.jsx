@@ -1,13 +1,36 @@
 import { BiLogoGithub } from "react-icons/bi";
 import { BiLogoDiscordAlt } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
+import { useRef, useEffect } from "react";
 
 function NewsLetter() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust the threshold as needed
+    );
+
+    if (sectionRef.current) {
+      sectionObserver.observe(sectionRef.current);
+    }
+  }, []);
   return (
     <section className=" bg-offwhite dark:bg-secondary">
-      <div className="mx-auto max-w-6xl p-4 flex flex-col">
+      <div
+        className="mx-auto max-w-6xl p-4 flex flex-col section"
+        ref={sectionRef}
+      >
         <div className="text-center">
-          <div className="font-poppins text-center leading-6 text-2xl font-bold bg-gradient-to-r from-btn/30 via-btn to-purple-600 bg-clip-text text-transparent pb-5px">
+          <div className="font-poppins text-center leading-6 text-2xl font-bold bg-gradient-to-r from-blue-100 via-blue-500 to-blue-900 bg-clip-text text-transparent pb-5px">
             Join Our Newsletter
           </div>
           <div className="mt-2 text-gray-500 font-poppins text-center text-base font-normal leading-6">
@@ -19,7 +42,7 @@ function NewsLetter() {
                 type="email"
                 id="email"
                 name="email"
-                className="py-3 px-9  text-base w-full md:w-[25rem] max-w-screen-lg rounded-lg focus:outline-btn"
+                className="py-3 px-9  text-base w-full md:w-[40rem] max-w-screen-lg rounded-lg focus:outline-btn shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] dark:shadow-none text-graytext"
                 placeholder="Enter your email"
               />
             </label>

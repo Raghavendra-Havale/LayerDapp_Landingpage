@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +17,30 @@ body,
 html {
   width: 100%;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.section {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* for the mobile navbar */
+.hide {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 1s, transform 1s;
+}
+
+.reveal-bar {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 *::-webkit-scrollbar {

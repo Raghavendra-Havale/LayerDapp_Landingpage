@@ -1,10 +1,33 @@
 import { AiFillPhone, AiFillHome } from "react-icons/ai";
 import { AiTwotoneMail } from "react-icons/ai";
+import { useRef, useEffect } from "react";
 
 function Footer() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust the threshold as needed
+    );
+
+    if (sectionRef.current) {
+      sectionObserver.observe(sectionRef.current);
+    }
+  }, []);
   return (
     <footer className="bg-white text-graytext dark:bg-secondary">
-      <div className="max-w-6xl mx-auto py-8 px-2 border-t border-t-graytext/20">
+      <div
+        className="max-w-6xl mx-auto py-8 px-2 border-t border-t-graytext/20 section"
+        ref={sectionRef}
+      >
         <div className=" flex flex-col lg:flex-row lg:gap-5 gap-10">
           {/* Logo Section */}
           <div className="flex flex-col items-start lg:w-1/2 px-[5%] lg:px-[1%]">

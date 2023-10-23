@@ -1,7 +1,31 @@
+import { useRef, useEffect } from "react";
+
 function Features() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust the threshold as needed
+    );
+
+    if (sectionRef.current) {
+      sectionObserver.observe(sectionRef.current);
+    }
+  }, []);
   return (
     <section className="pt-16 bg-offwhite dark:bg-secondary">
-      <div className="flex flex-col mx-auto max-w-6xl p-4">
+      <div
+        className="flex flex-col mx-auto max-w-6xl p-4 section"
+        ref={sectionRef}
+      >
         <div className="self-center font-bold text-4xl relative text-darktext dark:text-white">
           LayerDapp Features
           <img
@@ -28,7 +52,7 @@ function Features() {
             />
           </div>
           <div className="flex flex-col items-center md:items-start gap-5">
-            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
               Create DSA
             </h1>
             <ol className="flex flex-col w-[80%] md:w-full ml-2 md:ml-0">
@@ -50,7 +74,7 @@ function Features() {
             <img src="../../connect.png" alt="script" className="" />
           </div>
           <div className="flex flex-col items-center gap-5 self-center">
-            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-center md:text-right">
+            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent text-center md:text-right">
               Interact with multiple protocols
             </h1>
             <ol className="text-left md:text-right ml-3 md:ml-0">
@@ -73,7 +97,7 @@ function Features() {
             <img src="../../vault.png" alt="script" className="" />
           </div>
           <div className="flex flex-col items-center md:items-start gap-5">
-            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
               Creating Vault
             </h1>
             <ol className="">

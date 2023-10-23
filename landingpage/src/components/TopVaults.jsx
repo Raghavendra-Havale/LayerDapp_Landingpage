@@ -1,9 +1,32 @@
 import PropTypes from "prop-types";
+import { useRef, useEffect } from "react";
 
 function TopVaults() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust the threshold as needed
+    );
+
+    if (sectionRef.current) {
+      sectionObserver.observe(sectionRef.current);
+    }
+  }, []);
   return (
     <section className="pt-10 bg-white dark:bg-darktext">
-      <div className="flex flex-col mx-auto max-w-6xl p-4">
+      <div
+        className="flex flex-col mx-auto max-w-6xl p-4 section"
+        ref={sectionRef}
+      >
         <div className="self-center  font-bold text-3xl md:text-4xl relative text-darktext dark:text-white">
           Top Performing Vaults
           <img

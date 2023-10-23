@@ -1,18 +1,42 @@
 // import React from "react";
 import { BiLogoDiscordAlt } from "react-icons/bi";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { useRef, useEffect } from "react";
+
 function Community() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust the threshold as needed
+    );
+
+    if (sectionRef.current) {
+      sectionObserver.observe(sectionRef.current);
+    }
+  }, []);
   return (
     <section className="pt-10 md:pt-20 lg:pt-28 bg-offwhite dark:bg-secondary">
-      <div className="mx-auto max-w-6xl p-4 flex flex-col">
+      <div
+        className="flex flex-col mx-auto max-w-6xl p-4 section"
+        ref={sectionRef}
+      >
         <div className="font-Poppins text-3xl md:text-5xl font-semibold text-center text-darktext dark:text-white">
           For{" "}
-          <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
             The Community
           </span>{" "}
           by
         </div>
-        <div className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-Poppins text-3xl md:text-5xl font-semibold text-gradient text-center">
+        <div className="bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent font-Poppins text-3xl md:text-5xl font-semibold text-gradient text-center">
           The Community
         </div>
         <div className="font-Poppins text-lg md:text-xl font-normal text-graytext mt-4 md:mt-8 text-center">
