@@ -384,7 +384,7 @@ function TopVaults() {
           </Card>
         </div>
         <div className="flex justify-center pt-5 pb-6">
-          <a href="https://v1-frontend-staging.vercel.app" className="">
+          <a href="https://v1-frontend-staging.vercel.app" className="" target ="_blank">
             <button className="font-medium py-2 px-4 rounded-md bg-btn text-white hover:bg-btn/90">
               Create your own vault
             </button>

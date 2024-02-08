@@ -41,25 +41,28 @@ function Hero() {
               <div className="flex items-center justify-center lg:justify-start gap-3 mt-11">
                 <a
                   href="https://twitter.com/LayerDapp"
+                  target ="_blank"
                   className="text-darktext dark:text-white"
                 >
                   <RiTwitterXFill className="text-3xl" />
                 </a>
                 <a
                   href="https://discord.gg/eDwnvCc8nB"
+                  target ="_blank"
                   className="text-darktext dark:text-white"
                 >
                   <FaDiscord className="text-3xl" />
                 </a>
                 <a
                   href="https://github.com/LayerDapp"
+                  target ="_blank"
                   className="text-darktext dark:text-white"
                 >
                   {" "}
                   <FaGithub className="text-3xl" />
                 </a>
               </div>
-              <a href="https://v1-frontend-staging.vercel.app" className="">
+              <a href="https://v1-frontend-staging.vercel.app" target ="_blank" className="">
                 <button className="bg-btn px-20 md:px-[100px] lg:px-[150px] py-4 text-white rounded-xl mt-9">
                   Launch App
                 </button>
