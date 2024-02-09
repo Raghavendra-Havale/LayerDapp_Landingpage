@@ -54,13 +54,13 @@ function NewsLetter() {
             </button>
           </form>
           <div className="flex flex-row items-center justify-center mt-4">
-            <a href="https://twitter.com/LayerDapp" className="">
+            <a href="https://twitter.com/LayerDapp" target ="_blank" className="">
               <RiTwitterXFill className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
             </a>
-            <a href="https://github.com/LayerDapp" className="">
+            <a href="https://github.com/LayerDapp"  target ="_blank"className="">
               <BiLogoGithub className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
             </a>
-            <a href="https://discord.gg/eDwnvCc8nB" className="">
+            <a href="https://discord.gg/eDwnvCc8nB" target ="_blank" className="">
               <BiLogoDiscordAlt className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
             </a>
           </div>

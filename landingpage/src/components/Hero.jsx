@@ -28,7 +28,7 @@ function Hero() {
         <div className="flex flex-col mx-auto">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-7 justify-center items-center">
             <div className="w-full lg:max-w-[55%] flex flex-col items-center lg:items-start">
-              <h1 className="text-2xl md:text-5xl font-semibold bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent leading-none lg:leading-[96px] text-center lg:text-left">
+              <h1 className="text-2xl md:text-5xl font-semibold bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent leading-none lg:leading-[59px] text-center lg:text-left">
                 {`DeFi's Command Center for Seamless Strategy Execution`}
               </h1>
               <p className="mt-4 font-medium text-sm md:text-base text-darktext dark:text-white leading-tight md:leading-[24px] text-center lg:text-left">
@@ -41,25 +41,28 @@ function Hero() {
               <div className="flex items-center justify-center lg:justify-start gap-3 mt-11">
                 <a
                   href="https://twitter.com/LayerDapp"
+                  target ="_blank"
                   className="text-darktext dark:text-white"
                 >
                   <RiTwitterXFill className="text-3xl" />
                 </a>
                 <a
                   href="https://discord.gg/eDwnvCc8nB"
+                  target ="_blank"
                   className="text-darktext dark:text-white"
                 >
                   <FaDiscord className="text-3xl" />
                 </a>
                 <a
                   href="https://github.com/LayerDapp"
+                  target ="_blank"
                   className="text-darktext dark:text-white"
                 >
                   {" "}
                   <FaGithub className="text-3xl" />
                 </a>
               </div>
-              <a href="https://v1-frontend-staging.vercel.app" className="">
+              <a href="https://v1-frontend-staging.vercel.app" target ="_blank" className="">
                 <button className="bg-btn px-20 md:px-[100px] lg:px-[150px] py-4 text-white rounded-xl mt-9">
                   Launch App
                 </button>

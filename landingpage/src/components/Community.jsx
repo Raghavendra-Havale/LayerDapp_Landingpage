@@ -122,7 +122,7 @@ function Community() {
                 </button>
               </div>
               <div className="flex flex-col md:flex-row items-center md:justify-center gap-3 mb-8 mt-6">
-                <a href="https://v1-frontend-staging.vercel.app/" className="">
+                <a href="https://v1-frontend-staging.vercel.app/" className="" target ="_blank">
                   <button className="bg-btn text-white px-6 py-2 rounded-lg mb-2 md:mb-0 ">
                     Create Strategy
                   </button>

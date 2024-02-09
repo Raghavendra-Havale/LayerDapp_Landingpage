@@ -37,6 +37,7 @@ function Header() {
           <div>
             <a
               href="https://docs.layerdapp.xyz"
+              target="_black"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium text-lg lg:text-sm whitespace-nowrap rounded text-light `}
             >
               Docs
@@ -45,6 +46,7 @@ function Header() {
           <div>
             <a
               href="https://discord.gg/qSs6U7VF"
+              target="_black"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
             >
               Community
@@ -53,6 +55,7 @@ function Header() {
           <div>
             <a
               href="https://docs.layerdapp.xyz/information/faqs"
+              target="_black"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
             >
               FAQs
@@ -75,18 +78,20 @@ function Header() {
             >
               <ul className="text-darktext dark:text-white flex flex-col gap-7">
                 <li>
-                  <a href="https://docs.layerdapp.xyz" className="">
+                  <a href="https://docs.layerdapp.xyz" target="_black" className="">
+                    
                     Docs
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/qSs6U7VF" className="">
+                  <a href="https://discord.gg/qSs6U7VF" target="_black" className="">
                     Community
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://docs.layerdapp.xyz/information/faqs"
+                    target="_black"
                     className=""
                     onClick={() => setOpen(false)}
                   >
@@ -96,10 +101,11 @@ function Header() {
                 <li>
                   <a
                     href="https://v1-frontend-staging.vercel.app"
+                    
                     className=""
                     onClick={() => setOpen(false)}
                   >
-                    <button className="flex items-center gap-1.5 px-16 py-4 text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
+                    <button  className="flex items-center gap-1.5 px-16 py-4 text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
                       Launch App
                     </button>
                   </a>
@@ -107,18 +113,21 @@ function Header() {
                 <li className="flex items-center justify-start gap-3">
                   <a
                     href="https://twitter.com/LayerDapp"
+                    target="_blank"
                     className="text-darktext dark:text-white"
                   >
                     <RiTwitterXFill className="text-3xl" />
                   </a>
                   <a
                     href="https://discord.gg/eDwnvCc8nB"
+                    target="_blank" 
                     className="text-darktext dark:text-white"
                   >
                     <FaDiscord className="text-3xl" />
                   </a>
                   <a
                     href="https://github.com/LayerDapp"
+                    target ="_blank"
                     className="text-darktext dark:text-white"
                   >
                     {" "}
@@ -170,7 +179,7 @@ function Header() {
         </div>
       </div>
       <div className="hidden md:flex items-center gap-4 ml-auto md:ml-0">
-        <a href="https://v1-frontend-staging.vercel.app" className="">
+        <a href="https://v1-frontend-staging.vercel.app"  className="">
           <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
             Launch App
           </button>

@@ -16,7 +16,7 @@ function Footer() {
         });
       },
       { threshold: 0.1 } // Adjust the threshold as needed
-    );
+    ) ;
 
     if (sectionRef.current) {
       sectionObserver.observe(sectionRef.current);
@@ -99,15 +99,15 @@ function Footer() {
             <div className="w-full">
               <h3 className="text-lg font-bold mb-3">Contact Us</h3>
               <ul className="flex flex-col space-y-2">
-                <li className="flex items-center">
+                <li className="flex items-center hover:text-gray-300">
                   <AiTwotoneMail className="mr-2" />
                   <a href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center hover:text-gray-300">
                   <AiFillPhone className="mr-2" />
                   <a href="tel:+123456789">+123456789</a>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start hover:text-gray-300">
                   <AiFillHome className="mr-2" />
                   123 Main St, New Delhi
                 </li>
