@@ -54,7 +54,7 @@ function Footer() {
             {/* Resources Section */}
             <div className="w-full">
               <h3 className="text-lg font-bold mb-3">Resources</h3>
-              <ul>
+              <ul className="space-y-2">
                 <li>
                   <a href="#" className="hover:text-gray-300">
                     Documentation
@@ -76,7 +76,7 @@ function Footer() {
             {/* Company Section */}
             <div className="w-full">
               <h3 className="text-lg font-bold mb-3">Company</h3>
-              <ul>
+              <ul className="space-y-2">
                 <li>
                   <a href="#" className="hover:text-gray-300">
                     About Us
