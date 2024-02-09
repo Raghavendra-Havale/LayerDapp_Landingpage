@@ -16,7 +16,7 @@ function Footer() {
         });
       },
       { threshold: 0.1 } // Adjust the threshold as needed
-    );
+    ) ;
 
     if (sectionRef.current) {
       sectionObserver.observe(sectionRef.current);
