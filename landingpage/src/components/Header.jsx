@@ -37,7 +37,7 @@ function Header() {
           <div>
             <a
               href="https://docs.layerdapp.xyz"
-              target="_black"
+              target="_blank"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium text-lg lg:text-sm whitespace-nowrap rounded text-light `}
             >
               Docs
@@ -46,7 +46,7 @@ function Header() {
           <div>
             <a
               href="https://discord.gg/qSs6U7VF"
-              target="_black"
+              target="_blank"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
             >
               Community
@@ -55,7 +55,7 @@ function Header() {
           <div>
             <a
               href="https://docs.layerdapp.xyz/information/faqs"
-              target="_black"
+              target="_blank"
               className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
             >
               FAQs
@@ -78,13 +78,13 @@ function Header() {
             >
               <ul className="text-darktext dark:text-white flex flex-col gap-7">
                 <li>
-                  <a href="https://docs.layerdapp.xyz" target="_black" className="">
+                  <a href="https://docs.layerdapp.xyz" target="_blank" className="">
                     
                     Docs
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/qSs6U7VF" target="_black" className="">
+                  <a href="https://discord.gg/qSs6U7VF" target="_blank" className="">
                     Community
                   </a>
                 </li>
@@ -101,7 +101,7 @@ function Header() {
                 <li>
                   <a
                     href="https://v1-frontend-staging.vercel.app"
-                    
+                    target="_blank"
                     className=""
                     onClick={() => setOpen(false)}
                   >
@@ -179,7 +179,7 @@ function Header() {
         </div>
       </div>
       <div className="hidden md:flex items-center gap-4 ml-auto md:ml-0">
-        <a href="https://v1-frontend-staging.vercel.app"  className="">
+        <a href="https://v1-frontend-staging.vercel.app"  className="" target="_blank">
           <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
             Launch App
           </button>
