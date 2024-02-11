@@ -35,6 +35,14 @@ function TopVaults() {
             className="absolute w-[400px] h-auto"
           />
         </div>
+        <div className="flex flex-col items-center justify-center self-center w-full md:w-1/2 mt-4">
+          <h2 className="text-center flex-wrap font-semibold text-xl text-darktext dark:text-white">
+          Diffusion Vaults Coming Soon
+          </h2>
+          <p className="text-center text-graytext text-lg">
+          Diffusion Vaults Coming Soon, This is where the top strategies by our experienced partners, partner protocols and Defi strategy managers will show
+          </p>
+        </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center mt-12">
           <Card>
             <div className="flex justify-around">
