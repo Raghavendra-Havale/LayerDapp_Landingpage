@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between dark:bg-darktext bg-white text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
+    <header className="fixed inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between dark:bg-darktext bg-white text-graytext px-16 mx-auto rounded-t-none rounded-b-lg">
       <a href="" className="flex items-end justify-center gap-2">
         <img src="../../logo.png" alt="logo" className="w-full h-auto" />
         <img
@@ -38,7 +38,7 @@ function Header() {
             <a
               href="https://docs.layerdapp.xyz"
               target="_black"
-              className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium text-lg lg:text-sm whitespace-nowrap rounded text-light `}
+              className={`flex p-4 px-5 hover:text-btn hover:scale-105 transition-all duration-300 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium text-lg lg:text-sm whitespace-nowrap rounded text-light `}
             >
               Docs
             </a>
@@ -47,7 +47,7 @@ function Header() {
             <a
               href="https://discord.gg/qSs6U7VF"
               target="_black"
-              className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
+              className={`flex hover:text-btn hover:scale-105 transition-all duration-300 p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
             >
               Community
             </a>
@@ -56,7 +56,7 @@ function Header() {
             <a
               href="https://docs.layerdapp.xyz/information/faqs"
               target="_black"
-              className={`flex p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
+              className={`flex hover:text-btn hover:scale-105 transition-all duration-300 p-4 px-5 -ml-4 lg:-ml-0 lg:px-[10px] lg:h-[37px] select-none items-center  font-medium  text-lg lg:text-sm  whitespace-nowrap rounded text-light`}
             >
               FAQs
             </a>
@@ -78,13 +78,20 @@ function Header() {
             >
               <ul className="text-darktext dark:text-white flex flex-col gap-7">
                 <li>
-                  <a href="https://docs.layerdapp.xyz" target="_black" className="">
-                    
+                  <a
+                    href="https://docs.layerdapp.xyz"
+                    target="_black"
+                    className=""
+                  >
                     Docs
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/qSs6U7VF" target="_black" className="">
+                  <a
+                    href="https://discord.gg/qSs6U7VF"
+                    target="_black"
+                    className=""
+                  >
                     Community
                   </a>
                 </li>
@@ -101,11 +108,10 @@ function Header() {
                 <li>
                   <a
                     href="https://v1-frontend-staging.vercel.app"
-                    
                     className=""
                     onClick={() => setOpen(false)}
                   >
-                    <button  className="flex items-center gap-1.5 px-16 py-4 text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
+                    <button className="flex items-center gap-1.5 px-16 py-4 text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
                       Launch App
                     </button>
                   </a>
@@ -120,14 +126,14 @@ function Header() {
                   </a>
                   <a
                     href="https://discord.gg/eDwnvCc8nB"
-                    target="_blank" 
+                    target="_blank"
                     className="text-darktext dark:text-white"
                   >
                     <FaDiscord className="text-3xl" />
                   </a>
                   <a
                     href="https://github.com/LayerDapp"
-                    target ="_blank"
+                    target="_blank"
                     className="text-darktext dark:text-white"
                   >
                     {" "}
@@ -179,13 +185,13 @@ function Header() {
         </div>
       </div>
       <div className="hidden md:flex items-center gap-4 ml-auto md:ml-0">
-        <a href="https://v1-frontend-staging.vercel.app"  className="">
-          <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
+        <a href="https://v1-frontend-staging.vercel.app" className="">
+          <button className="flex hover:bg-btn/70 items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
             Launch App
           </button>
         </a>
         <div className="">
-          <label className="toggle dark:bg-btn bg-black">
+          <label className="toggle hover:scale-105 duration-150 transition-all dark:bg-btn bg-black">
             <input
               id="switch"
               className="input"

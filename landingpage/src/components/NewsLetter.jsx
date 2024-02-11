@@ -47,7 +47,7 @@ function NewsLetter() {
               />
             </label>
             <button
-              className="bg-blue-500 text-white p-3 text-sm cursor-pointer border-none rounded-lg md:ml-2 mt-2 md:mt-0"
+              className="bg-blue-500 hover:bg-btn/70 text-white p-3 text-sm cursor-pointer border-none rounded-lg md:ml-2 mt-2 md:mt-0"
               type="submit"
             >
               Subscribe
@@ -55,13 +55,13 @@ function NewsLetter() {
           </form>
           <div className="flex flex-row items-center justify-center mt-4">
             <a href="https://twitter.com/LayerDapp" target ="_blank" className="">
-              <RiTwitterXFill className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+              <RiTwitterXFill className="text-darktext dark:text-white cursor-pointer hover:scale-105 duration-150 transition-all text-3xl mr-2 mt-8 mb-8" />
             </a>
             <a href="https://github.com/LayerDapp"  target ="_blank"className="">
-              <BiLogoGithub className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+              <BiLogoGithub className="text-darktext dark:text-white hover:scale-105 duration-150 transition-all cursor-pointer text-3xl mr-2 mt-8 mb-8" />
             </a>
             <a href="https://discord.gg/eDwnvCc8nB" target ="_blank" className="">
-              <BiLogoDiscordAlt className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+              <BiLogoDiscordAlt className="text-darktext dark:text-white hover:scale-105 duration-150 transition-all cursor-pointer text-3xl mr-2 mt-8 mb-8" />
             </a>
           </div>
         </div>

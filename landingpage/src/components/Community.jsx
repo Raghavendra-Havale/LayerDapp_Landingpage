@@ -117,18 +117,12 @@ function Community() {
                     pellentesque vel. Ut suspendisse vestibulum ipsum.
                   </p>
                 </div>
-                <button className="bg-gray-200 border-2 border-blue-500 hover:border-blue-700 text-blue-800 py-2 px-3 rounded font-semibold flex items-center mx-auto w-[fit-content] transition duration-300 ease-in-out">
-                  <MdKeyboardDoubleArrowDown className="mr-1" />
-                </button>
+                
               </div>
               <div className="flex flex-col md:flex-row items-center md:justify-center gap-3 mb-8 mt-6">
-                <a href="https://v1-frontend-staging.vercel.app/" className="" target ="_blank">
-                  <button className="bg-btn text-white px-6 py-2 rounded-lg mb-2 md:mb-0 ">
-                    Create Strategy
-                  </button>
-                </a>
+                
                 <a href="https://discord.gg/eDwnvCc8nB" className="">
-                  <button className="bg-btn/20 text-btn px-6 py-2 rounded-lg flex items-center">
+                  <button className="bg-btn/20 hover:bg-btn/10 text-btn px-6 py-2 rounded-lg flex items-center">
                     <BiLogoDiscordAlt className="" />
                     Join Community
                   </button>

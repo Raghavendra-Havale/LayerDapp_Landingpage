@@ -1,5 +1,7 @@
 import { useRef, useEffect } from "react";
-
+import vault from "../assets/vault.webp"
+import network from "../assets/people2.webp"
+import script from "../assets/script.webp"
 function Features() {
   const sectionRef = useRef(null);
 
@@ -46,16 +48,16 @@ function Features() {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-[5rem] gap-y-10 md:gap-y-20 items-center mt-8">
           <div className="flex items-center justify-center">
             <img
-              src="../../script.png"
+              src={script}
               alt="script"
-              className="brightness-50 sepia -hue-rotate-60"
+              className="w-[500px] h-[500px]"
             />
           </div>
           <div className="flex flex-col items-center md:items-start gap-5">
             <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
               Create DSA
             </h1>
-            <ol className="flex flex-col w-[80%] md:w-full ml-2 md:ml-0">
+            <ol className="flex flex-col gap-5 w-[80%] md:w-full ml-2 md:ml-0">
               <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Create multiple accounts
               </li>
@@ -73,48 +75,48 @@ function Features() {
           <div className="flex md:hidden items-center justify-center">
             <img src="../../connect.png" alt="script" className="" />
           </div>
-          <div className="flex flex-col items-center gap-5 self-center">
+          <div className="flex flex-col 	gap-y-5 items-center  self-center">
             <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent text-center md:text-right">
               Interact with multiple protocols
             </h1>
             <ol className="text-left md:text-right ml-3 md:ml-0">
-              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
+              <li className="font-normal mb-5 border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Enable multiple accounts on protocols.
               </li>
-              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
+              <li className="font-normal mb-5 border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
                 Create strategies on protocols.
               </li>
-              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
+              <li className="font-normal mb-5 border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Increase capital efficiency with enhanced strategies and
                 automation.
               </li>
             </ol>
           </div>
           <div className="md:flex hidden items-center justify-center">
-            <img src="../../connect.png" alt="script" className="" />
+            <img src={network} alt="script" className="" />
           </div>
           <div className="flex items-center justify-center">
-            <img src="../../vault.png" alt="script" className="" />
+            <img src={vault} alt="script" className="" />
           </div>
           <div className="flex flex-col items-center md:items-start gap-5">
             <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
               Creating Vault
             </h1>
             <ol className="">
-              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
+              <li className="font-normal mb-5 border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Combine multiple protocols
               </li>
-              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
+              <li className="font-normal mb-5 border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Create complex and capital efficient strategies using multiple
                 protocols
               </li>
-              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
+              <li className="font-normal mb-5 border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Leverage, hedge and more
               </li>
-              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
+              <li className="font-normal mb-5 border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Multiple positions using DSA
               </li>
-              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
+              <li className="font-normal mb-5 border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
                 Track position performance efficiently
               </li>
             </ol>

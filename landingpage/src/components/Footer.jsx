@@ -56,17 +56,17 @@ function Footer() {
               <h3 className="text-lg font-bold mb-3">Resources</h3>
               <ul>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="#" className="hover:text-gray-400">
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="#" className="hover:text-gray-400">
                     Tutorials
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="#" className="hover:text-gray-400">
                     Newsletter
                   </a>
                 </li>
@@ -78,17 +78,17 @@ function Footer() {
               <h3 className="text-lg font-bold mb-3">Company</h3>
               <ul>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="#" className="hover:text-gray-400">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="#" className="hover:text-gray-400">
                     Our Socials
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <a href="#" className="hover:text-gray-400">
                     Privacy Policy
                   </a>
                 </li>
@@ -99,15 +99,15 @@ function Footer() {
             <div className="w-full">
               <h3 className="text-lg font-bold mb-3">Contact Us</h3>
               <ul className="flex flex-col space-y-2">
-                <li className="flex items-center hover:text-gray-300">
+                <li className="flex items-center">
                   <AiTwotoneMail className="mr-2" />
                   <a href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li className="flex items-center hover:text-gray-300">
+                <li className="flex items-center ">
                   <AiFillPhone className="mr-2" />
                   <a href="tel:+123456789">+123456789</a>
                 </li>
-                <li className="flex items-start hover:text-gray-300">
+                <li className="flex items-start ">
                   <AiFillHome className="mr-2" />
                   123 Main St, New Delhi
                 </li>

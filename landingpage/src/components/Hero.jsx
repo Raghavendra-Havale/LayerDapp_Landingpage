@@ -44,14 +44,14 @@ function Hero() {
                   target ="_blank"
                   className="text-darktext dark:text-white"
                 >
-                  <RiTwitterXFill className="text-3xl" />
+                  <RiTwitterXFill className="text-3xl hover:scale-105 duration-150 transition-all" />
                 </a>
                 <a
                   href="https://discord.gg/eDwnvCc8nB"
                   target ="_blank"
                   className="text-darktext dark:text-white"
                 >
-                  <FaDiscord className="text-3xl" />
+                  <FaDiscord className="text-3xl hover:scale-105 duration-150 transition-all" />
                 </a>
                 <a
                   href="https://github.com/LayerDapp"
@@ -59,11 +59,11 @@ function Hero() {
                   className="text-darktext dark:text-white"
                 >
                   {" "}
-                  <FaGithub className="text-3xl" />
+                  <FaGithub className="text-3xl hover:scale-105 duration-150 transition-all" />
                 </a>
               </div>
               <a href="https://v1-frontend-staging.vercel.app" target ="_blank" className="">
-                <button className="bg-btn px-20 md:px-[100px] lg:px-[150px] py-4 text-white rounded-xl mt-9">
+                <button className="bg-btn hover:bg-btn/70 px-20 md:px-[100px] lg:px-[150px] py-4 text-white rounded-xl mt-9">
                   Launch App
                 </button>
               </a>
