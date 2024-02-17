@@ -26,6 +26,7 @@ function Ecosystem() {
         className="mx-auto max-w-6xl p-4 flex flex-col section"
         ref={sectionRef}
       >
+        <div className="flex flex-col md:flex-row items-center justify-between gap-2  my-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6  my-12">
           <div className="flex flex-col items-center md:items-start w-full md:w-1/2">
             <h5 className="mb-3 font-bold text-center md:text-left text-2xl text-darktext dark:text-white">
@@ -44,7 +45,7 @@ function Ecosystem() {
           </div>
 
           <div className="w-[80%] md:w-1/2">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 ">
               <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
                 <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
                   NETWORKS
@@ -117,110 +118,15 @@ function Ecosystem() {
                   </div>
                 </ul>
               </div>
-              <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
-                <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
-                  DEXES
-                </h3>
-                <ul className="list-disc ml-2 text-darktext dark:text-white">
-                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
-                    <img
-                      src="../../Uniswap.png"
-                      alt="logo"
-                      className="w-[30px]"
-                      loading="lazy"
-                    />
-                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
-                      Uniswap
-                    </span>
-                  </div>{" "}
-                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
-                    <img
-                      src="../../Uniswap.png"
-                      alt="logo"
-                      className="w-[30px]"
-                      loading="lazy"
-                    />
-                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
-                      Uniswap
-                    </span>
-                  </div>{" "}
-                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
-                    <img
-                      src="../../Uniswap.png"
-                      alt="logo"
-                      className="w-[30px]"
-                      loading="lazy"
-                    />
-                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
-                      Uniswap
-                    </span>
-                  </div>{" "}
-                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
-                    <img
-                      src="../../Uniswap.png"
-                      alt="logo"
-                      className="w-[30px]"
-                      loading="lazy"
-                    />
-                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916  text-darktext dark:text-white ">
-                      Uniswap
-                    </span>
-                  </div>
-                </ul>
-              </div>
-              <div className="bg-white dark:bg-darktext p-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] rounded-md">
-                <h3 className="text-1xl font-semibold mb-2 text-darktext dark:text-white font-poppins">
-                  LENDING AND BORROWING
-                </h3>
-                <ul className="list-disc ml-2 text-darktext dark:text-white">
-                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
-                    <img
-                      src="../../Uniswap.png"
-                      alt="logo"
-                      className="w-[30px]"
-                      loading="lazy"
-                    />
-                    <span className="text-sm leading-[30px] tracking-wide font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
-                      Uniswap
-                    </span>
-                  </div>{" "}
-                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
-                    <img
-                      src="../../Uniswap.png"
-                      alt="logo"
-                      className="w-[30px]"
-                      loading="lazy"
-                    />
-                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
-                      Uniswap
-                    </span>
-                  </div>{" "}
-                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
-                    <img
-                      src="../../Uniswap.png"
-                      alt="logo"
-                      className="w-[30px]"
-                      loading="lazy"
-                    />
-                    <span className="text-sm leading-[30px] tracking-wide   font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
-                      Uniswap
-                    </span>
-                  </div>{" "}
-                  <div className="!min-w-max flex items-center gap-x-4 object-contain mr-[60px]">
-                    <img
-                      src="../../Uniswap.png"
-                      alt="logo"
-                      className="w-[30px]"
-                      loading="lazy"
-                    />
-                    <span className="text-sm leading-[30px] tracking-wide  font-bold font-400 text-popins text-020916 text-darktext dark:text-white ">
-                      Uniswap
-                    </span>
-                  </div>
-                </ul>
-              </div>
+              
+              
             </div>
+            <a href="#" target="_blank">
+            <div className="flex justify-center items-center bg-btn py-4 mt-4 cursor-pointer rounded-md text-white font-medium hover:bg-btn/70">
+              View all networks and protocols
+              </div></a>
           </div>
+        </div>
         </div>
         {/* slidding logos */}
         <div className="h-[70px] flex items-center justify-center">
