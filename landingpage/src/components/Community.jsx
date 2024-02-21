@@ -23,7 +23,7 @@ function Community() {
       }
     },
     {
-      link: "../../frame-253.png",
+      link: "../../unilogo.png",
       user: {
         protocol: "Uniswap",
         tvl: "97.2",
@@ -89,12 +89,12 @@ function Community() {
         </div>
 
         <div className="mt-8 p-4 bg-white dark:bg-darktext rounded-lg ">
-          <div className="flex flex-col lg:flex-row justify-between">
-            <div className="w-full lg:w-1/3 min-w-[200px]">
+          <div className="flex flex-col lg:flex-row justify-between items-center">
+            <div className="w-full lg:w-1/3 min-w-[250px] ml-6">
             <Slider {...settings}>
                 {imgdetails.map((item, index) => (
                   <div key={index}>
-                    <img
+                    <img 
                       src={item.link}
                       alt={`Image ${index + 1}`}
                       className="w-full h-auto md:max-h-full"
