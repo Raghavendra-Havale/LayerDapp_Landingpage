@@ -90,7 +90,7 @@ function Community() {
 
         <div className="mt-8 p-4 bg-white dark:bg-darktext rounded-lg ">
           <div className="flex flex-col lg:flex-row justify-between items-center">
-            <div className="w-full lg:w-1/3 min-w-[250px] ml-6">
+            <div className="w-full lg:w-1/3 min-w-[250px] mx-12">
             <Slider {...settings}>
                 {imgdetails.map((item, index) => (
                   <div key={index}>
