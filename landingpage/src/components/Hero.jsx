@@ -41,28 +41,32 @@ function Hero() {
               <div className="flex items-center justify-center lg:justify-start gap-3 mt-11">
                 <a
                   href="https://twitter.com/LayerDapp"
-                  target ="_blank"
+                  target="_blank"
                   className="text-darktext dark:text-white"
                 >
                   <RiTwitterXFill className="text-3xl" />
                 </a>
                 <a
                   href="https://discord.gg/eDwnvCc8nB"
-                  target ="_blank"
+                  target="_blank"
                   className="text-darktext dark:text-white"
                 >
                   <FaDiscord className="text-3xl" />
                 </a>
                 <a
                   href="https://github.com/LayerDapp"
-                  target ="_blank"
+                  target="_blank"
                   className="text-darktext dark:text-white"
                 >
                   {" "}
                   <FaGithub className="text-3xl" />
                 </a>
               </div>
-              <a href="https://v1-frontend-staging.vercel.app" target ="_blank" className="">
+              <a
+                href="https://v1-frontend-staging.vercel.app"
+                target="_blank"
+                className=""
+              >
                 <button className="bg-btn px-20 md:px-[100px] lg:px-[150px] py-4 text-white rounded-xl mt-9">
                   Launch App
                 </button>
@@ -75,7 +79,7 @@ function Hero() {
 
           <div className="hidden md:flex items-center justify-between bg-white/10 w-full mx-auto max-w-6xl md:p-5 lg:p-10 rounded-lg border border-white/50 dark:border-darktext/50 bg-gradient-to-r from-btn/40 via-transparent to-transparent relative mt-20">
             <div className="flex flex-col items-center justify-center">
-              <h3 className="text-darktext dark:text-white font-bold md:text-2xl lg:text-5xl">
+              <h3 className="text-darktext dark:text-white font-bold md:text-2xl lg:text-5xl opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d">
                 $329.66M
               </h3>
               <p className="text-graytext font-semibold text-xs lg:text-base">

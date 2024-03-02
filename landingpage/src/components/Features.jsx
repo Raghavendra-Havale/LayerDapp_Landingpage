@@ -1,9 +1,65 @@
 import { useRef, useEffect, useState } from "react";
 import { BiLogoDiscordAlt } from "react-icons/bi";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Features() {
   const sectionRef = useRef(null);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 400,
 
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+
+    arrows: false,
+    // beforeChange: (oldIndex, newIndex) => setCurrentSlideIndex(newIndex),
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+  const settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 400,
+
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    rtl: true,
+    arrows: false,
+    // beforeChange: (oldIndex, newIndex) => setCurrentSlideIndex(newIndex),
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   const [image, setImage] = useState("vault.png"); // Set your default image here
 
   useEffect(() => {
@@ -47,56 +103,247 @@ function Features() {
             sagittis fames convallis.
           </p>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-[5rem] gap-y-10 md:gap-y-20 items-center mt-8">
-          <div className="flex items-center justify-center">
-            <img
-              src="../../script.png"
-              alt="script"
-              className="brightness-50 sepia -hue-rotate-60"
-            />
-          </div>
-          <div className="flex flex-col items-center md:items-start gap-5">
-            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
-              Create DSA
+
+        <div className="slider-container mt-100 p-20 ">
+          <div className="items-center justify-center mb-4">
+            <h1 className="font-semibold text-2xl text-center md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent md:text-right">
+              Create LSA
             </h1>
-            <ol className="flex flex-col w-[80%] md:w-full ml-2 md:ml-0">
-              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
-                Create multiple accounts
-              </li>
-              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
-                Add multiple authorities
-              </li>
-              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
-                Easy account interaction
-              </li>
-              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
-                Interact with multiple accounts
-              </li>
-            </ol>
           </div>
-          <div className="flex md:hidden items-center justify-center">
-            <img src="../../connect.png" alt="script" className="" />
-          </div>
-          <div className="flex flex-col items-center gap-5 self-center">
-            <h1 className="font-semibold text-2xl md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent text-center md:text-right">
+
+          <Slider {...settings}>
+            <div
+              class="px-3 p-10 sm:grid-cols-1 grid rounded-md shadow dark:shadow-gray-800 group text-center bg-white dark:bg-darktext hover:bg-indigo-600/5 dark:hover:bg-indigo-600/5 transition duration-500 m-2"
+              style={{ width: "50px", height: "40px" }}
+            >
+              <div class="w-[84px] h-[84px] bg-indigo-600/5 group-hover:bg-blue-600 text-blue-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition duration-500 mx-auto">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-7 h-7"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4.5 1L4 1.5V3.02746C4.16417 3.00932 4.331 3 4.5 3C4.669 3 4.83583 3.00932 5 3.02746V2H14V7H12.2929L11 8.29289V7H8.97254C8.99068 7.16417 9 7.331 9 7.5C9 7.669 8.99068 7.83583 8.97254 8H10V9.5L10.8536 9.85355L12.7071 8H14.5L15 7.5V1.5L14.5 1H4.5Z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.41705 10.4288C7.37039 9.80348 8 8.72527 8 7.5C8 5.567 6.433 4 4.5 4C2.567 4 1 5.567 1 7.5C1 8.72527 1.62961 9.80348 2.58295 10.4288C2.11364 10.6498 1.68557 10.9505 1.31802 11.318C0.900156 11.7359 0.568688 12.232 0.342542 12.7779C0.180451 13.1692 0.0747425 13.5807 0.0278638 14C0.00933826 14.1657 0 14.3326 0 14.5V15H1L0.999398 14.5C0.999398 14.4784 0.999599 14.4567 1 14.4351C1.00811 13.9975 1.09823 13.5651 1.26587 13.1604C1.44179 12.7357 1.69964 12.3498 2.0247 12.0247C2.34976 11.6996 2.73566 11.4418 3.16038 11.2659C3.57088 11.0958 4.00986 11.0056 4.45387 10.9997C4.46922 10.9999 4.4846 11 4.5 11C4.5154 11 4.53078 10.9999 4.54613 10.9997C4.99014 11.0056 5.42912 11.0958 5.83962 11.2659C6.26433 11.4418 6.65024 11.6996 6.9753 12.0247C7.30036 12.3498 7.55821 12.7357 7.73413 13.1604C7.90177 13.5651 7.99189 13.9975 8 14.4351C8.0004 14.4567 8.0006 14.4784 8.0006 14.5L8 15H9V14.5C9 14.3326 8.99066 14.1657 8.97214 14C8.92526 13.5807 8.81955 13.1692 8.65746 12.7779C8.43131 12.232 8.09984 11.7359 7.68198 11.318C7.31443 10.9505 6.88636 10.6498 6.41705 10.4288ZM4.5 10C3.11929 10 2 8.88071 2 7.5C2 6.11929 3.11929 5 4.5 5C5.88071 5 7 6.11929 7 7.5C7 8.88071 5.88071 10 4.5 10Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="content text-left mt-6 p-3">
+                <a
+                  class="title h5 text-lg font-medium hover:text-blue-600 dark:text-white"
+                  href="/index-course"
+                >
+                  Create multiple accounts
+                </a>
+                <p className="text-left mt-4 dark:text-slate-400">
+                  Create multiple accounts linked to one EOA, no need to
+                  transfer gas to multiple wallets
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="px-3 p-10 sm:grid-cols-1 grid rounded-md shadow dark:shadow-gray-800 group text-center bg-white dark:bg-darktext hover:bg-indigo-600/5 dark:hover:bg-indigo-600/5 transition duration-500 m-2"
+              style={{ width: "50px", height: "40px" }}
+            >
+              <div class="w-[84px] h-[84px] bg-indigo-600/5 group-hover:bg-blue-600 text-blue-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition duration-500 mx-auto">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-7 h-7"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4.5 1L4 1.5V3.02746C4.16417 3.00932 4.331 3 4.5 3C4.669 3 4.83583 3.00932 5 3.02746V2H14V7H12.2929L11 8.29289V7H8.97254C8.99068 7.16417 9 7.331 9 7.5C9 7.669 8.99068 7.83583 8.97254 8H10V9.5L10.8536 9.85355L12.7071 8H14.5L15 7.5V1.5L14.5 1H4.5Z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.41705 10.4288C7.37039 9.80348 8 8.72527 8 7.5C8 5.567 6.433 4 4.5 4C2.567 4 1 5.567 1 7.5C1 8.72527 1.62961 9.80348 2.58295 10.4288C2.11364 10.6498 1.68557 10.9505 1.31802 11.318C0.900156 11.7359 0.568688 12.232 0.342542 12.7779C0.180451 13.1692 0.0747425 13.5807 0.0278638 14C0.00933826 14.1657 0 14.3326 0 14.5V15H1L0.999398 14.5C0.999398 14.4784 0.999599 14.4567 1 14.4351C1.00811 13.9975 1.09823 13.5651 1.26587 13.1604C1.44179 12.7357 1.69964 12.3498 2.0247 12.0247C2.34976 11.6996 2.73566 11.4418 3.16038 11.2659C3.57088 11.0958 4.00986 11.0056 4.45387 10.9997C4.46922 10.9999 4.4846 11 4.5 11C4.5154 11 4.53078 10.9999 4.54613 10.9997C4.99014 11.0056 5.42912 11.0958 5.83962 11.2659C6.26433 11.4418 6.65024 11.6996 6.9753 12.0247C7.30036 12.3498 7.55821 12.7357 7.73413 13.1604C7.90177 13.5651 7.99189 13.9975 8 14.4351C8.0004 14.4567 8.0006 14.4784 8.0006 14.5L8 15H9V14.5C9 14.3326 8.99066 14.1657 8.97214 14C8.92526 13.5807 8.81955 13.1692 8.65746 12.7779C8.43131 12.232 8.09984 11.7359 7.68198 11.318C7.31443 10.9505 6.88636 10.6498 6.41705 10.4288ZM4.5 10C3.11929 10 2 8.88071 2 7.5C2 6.11929 3.11929 5 4.5 5C5.88071 5 7 6.11929 7 7.5C7 8.88071 5.88071 10 4.5 10Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="content text-left mt-6 p-3">
+                <a
+                  class="title h5 text-lg font-medium hover:text-blue-600 dark:text-white"
+                  href="/index-course"
+                >
+                  Multiple User Control
+                </a>
+                <p className="text-left mt-4 dark:text-slate-400">
+                  Add multiple authorities to the accounts and let your team
+                  manage efficiently
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="px-3 p-10 sm:grid-cols-1 grid rounded-md shadow dark:shadow-gray-800 group text-center bg-white dark:bg-darktext hover:bg-indigo-600/5 dark:hover:bg-indigo-600/5 transition duration-500 m-2"
+              style={{ width: "50px", height: "40px" }}
+            >
+              <div class="w-[84px] h-[84px] bg-indigo-600/5 group-hover:bg-indigo-600 text-indigo-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition duration-500 mx-auto">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-7 h-7"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4.5 1L4 1.5V3.02746C4.16417 3.00932 4.331 3 4.5 3C4.669 3 4.83583 3.00932 5 3.02746V2H14V7H12.2929L11 8.29289V7H8.97254C8.99068 7.16417 9 7.331 9 7.5C9 7.669 8.99068 7.83583 8.97254 8H10V9.5L10.8536 9.85355L12.7071 8H14.5L15 7.5V1.5L14.5 1H4.5Z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.41705 10.4288C7.37039 9.80348 8 8.72527 8 7.5C8 5.567 6.433 4 4.5 4C2.567 4 1 5.567 1 7.5C1 8.72527 1.62961 9.80348 2.58295 10.4288C2.11364 10.6498 1.68557 10.9505 1.31802 11.318C0.900156 11.7359 0.568688 12.232 0.342542 12.7779C0.180451 13.1692 0.0747425 13.5807 0.0278638 14C0.00933826 14.1657 0 14.3326 0 14.5V15H1L0.999398 14.5C0.999398 14.4784 0.999599 14.4567 1 14.4351C1.00811 13.9975 1.09823 13.5651 1.26587 13.1604C1.44179 12.7357 1.69964 12.3498 2.0247 12.0247C2.34976 11.6996 2.73566 11.4418 3.16038 11.2659C3.57088 11.0958 4.00986 11.0056 4.45387 10.9997C4.46922 10.9999 4.4846 11 4.5 11C4.5154 11 4.53078 10.9999 4.54613 10.9997C4.99014 11.0056 5.42912 11.0958 5.83962 11.2659C6.26433 11.4418 6.65024 11.6996 6.9753 12.0247C7.30036 12.3498 7.55821 12.7357 7.73413 13.1604C7.90177 13.5651 7.99189 13.9975 8 14.4351C8.0004 14.4567 8.0006 14.4784 8.0006 14.5L8 15H9V14.5C9 14.3326 8.99066 14.1657 8.97214 14C8.92526 13.5807 8.81955 13.1692 8.65746 12.7779C8.43131 12.232 8.09984 11.7359 7.68198 11.318C7.31443 10.9505 6.88636 10.6498 6.41705 10.4288ZM4.5 10C3.11929 10 2 8.88071 2 7.5C2 6.11929 3.11929 5 4.5 5C5.88071 5 7 6.11929 7 7.5C7 8.88071 5.88071 10 4.5 10Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="content text-left mt-6 p-3">
+                <a
+                  class="title h5 text-lg font-medium hover:text-blue-600 dark:text-white"
+                  href="/index-course"
+                >
+                  Multiple protocol interactions
+                </a>
+                <p className="text-left mt-2 dark:text-slate-400">
+                  Interact with multiple protocols easily and with our
+                  technology batch and interact with them together
+                </p>
+              </div>
+            </div>
+          </Slider>
+        </div>
+
+        <div className="slider-container mt-100 p-20 ">
+          <div className="items-center justify-center mb-4">
+            <h1 className="font-semibold text-2xl text-center md:text-4xl text-darktext bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent md:text-left">
               Interact with multiple protocols
             </h1>
-            <ol className="text-left md:text-right ml-3 md:ml-0">
-              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
-                Enable multiple accounts on protocols.
-              </li>
-              <li className="font-normal border border-graytext py-3 text-center rounded-3xl text-base text-graytext">
-                Create strategies on protocols.
-              </li>
-              <li className="font-normal border border-graytext py-3 px-1 text-center rounded-3xl text-base text-graytext">
-                Increase capital efficiency with enhanced strategies and
-                automation.
-              </li>
-            </ol>
           </div>
-          <div className="md:flex hidden items-center justify-center">
-            <img src="../../connect.png" alt="script" className="" />
-          </div>
+
+          <Slider {...settings2}>
+            <div
+              class="px-3 p-10 sm:grid-cols-1 grid rounded-md shadow dark:shadow-gray-800 group text-center bg-white dark:bg-darktext hover:bg-indigo-600/5 dark:hover:bg-indigo-600/5 transition duration-500 m-2"
+              style={{ width: "50px", height: "40px" }}
+            >
+              <div class="w-[84px] h-[84px] bg-indigo-600/5 group-hover:bg-blue-600 text-blue-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition duration-500 mx-auto">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-7 h-7"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4.5 1L4 1.5V3.02746C4.16417 3.00932 4.331 3 4.5 3C4.669 3 4.83583 3.00932 5 3.02746V2H14V7H12.2929L11 8.29289V7H8.97254C8.99068 7.16417 9 7.331 9 7.5C9 7.669 8.99068 7.83583 8.97254 8H10V9.5L10.8536 9.85355L12.7071 8H14.5L15 7.5V1.5L14.5 1H4.5Z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.41705 10.4288C7.37039 9.80348 8 8.72527 8 7.5C8 5.567 6.433 4 4.5 4C2.567 4 1 5.567 1 7.5C1 8.72527 1.62961 9.80348 2.58295 10.4288C2.11364 10.6498 1.68557 10.9505 1.31802 11.318C0.900156 11.7359 0.568688 12.232 0.342542 12.7779C0.180451 13.1692 0.0747425 13.5807 0.0278638 14C0.00933826 14.1657 0 14.3326 0 14.5V15H1L0.999398 14.5C0.999398 14.4784 0.999599 14.4567 1 14.4351C1.00811 13.9975 1.09823 13.5651 1.26587 13.1604C1.44179 12.7357 1.69964 12.3498 2.0247 12.0247C2.34976 11.6996 2.73566 11.4418 3.16038 11.2659C3.57088 11.0958 4.00986 11.0056 4.45387 10.9997C4.46922 10.9999 4.4846 11 4.5 11C4.5154 11 4.53078 10.9999 4.54613 10.9997C4.99014 11.0056 5.42912 11.0958 5.83962 11.2659C6.26433 11.4418 6.65024 11.6996 6.9753 12.0247C7.30036 12.3498 7.55821 12.7357 7.73413 13.1604C7.90177 13.5651 7.99189 13.9975 8 14.4351C8.0004 14.4567 8.0006 14.4784 8.0006 14.5L8 15H9V14.5C9 14.3326 8.99066 14.1657 8.97214 14C8.92526 13.5807 8.81955 13.1692 8.65746 12.7779C8.43131 12.232 8.09984 11.7359 7.68198 11.318C7.31443 10.9505 6.88636 10.6498 6.41705 10.4288ZM4.5 10C3.11929 10 2 8.88071 2 7.5C2 6.11929 3.11929 5 4.5 5C5.88071 5 7 6.11929 7 7.5C7 8.88071 5.88071 10 4.5 10Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="content text-left mt-6 p-3">
+                <a
+                  class="title h5 text-lg font-medium hover:text-blue-600 dark:text-white"
+                  href="/index-course"
+                >
+                  Multiple accounts, multiple possibilities
+                </a>
+                <p className="text-left mt-4 dark:text-slate-400">
+                  Using multiple accounts you can have multiple positions using
+                  the same EOA
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="px-3 p-10 sm:grid-cols-1 grid rounded-md shadow dark:shadow-gray-800 group text-center bg-white dark:bg-darktext hover:bg-indigo-600/5 dark:hover:bg-indigo-600/5 transition duration-500 m-2"
+              style={{ width: "50px", height: "40px" }}
+            >
+              <div class="w-[84px] h-[84px] bg-indigo-600/5 group-hover:bg-blue-600 text-blue-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition duration-500 mx-auto">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-7 h-7"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4.5 1L4 1.5V3.02746C4.16417 3.00932 4.331 3 4.5 3C4.669 3 4.83583 3.00932 5 3.02746V2H14V7H12.2929L11 8.29289V7H8.97254C8.99068 7.16417 9 7.331 9 7.5C9 7.669 8.99068 7.83583 8.97254 8H10V9.5L10.8536 9.85355L12.7071 8H14.5L15 7.5V1.5L14.5 1H4.5Z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.41705 10.4288C7.37039 9.80348 8 8.72527 8 7.5C8 5.567 6.433 4 4.5 4C2.567 4 1 5.567 1 7.5C1 8.72527 1.62961 9.80348 2.58295 10.4288C2.11364 10.6498 1.68557 10.9505 1.31802 11.318C0.900156 11.7359 0.568688 12.232 0.342542 12.7779C0.180451 13.1692 0.0747425 13.5807 0.0278638 14C0.00933826 14.1657 0 14.3326 0 14.5V15H1L0.999398 14.5C0.999398 14.4784 0.999599 14.4567 1 14.4351C1.00811 13.9975 1.09823 13.5651 1.26587 13.1604C1.44179 12.7357 1.69964 12.3498 2.0247 12.0247C2.34976 11.6996 2.73566 11.4418 3.16038 11.2659C3.57088 11.0958 4.00986 11.0056 4.45387 10.9997C4.46922 10.9999 4.4846 11 4.5 11C4.5154 11 4.53078 10.9999 4.54613 10.9997C4.99014 11.0056 5.42912 11.0958 5.83962 11.2659C6.26433 11.4418 6.65024 11.6996 6.9753 12.0247C7.30036 12.3498 7.55821 12.7357 7.73413 13.1604C7.90177 13.5651 7.99189 13.9975 8 14.4351C8.0004 14.4567 8.0006 14.4784 8.0006 14.5L8 15H9V14.5C9 14.3326 8.99066 14.1657 8.97214 14C8.92526 13.5807 8.81955 13.1692 8.65746 12.7779C8.43131 12.232 8.09984 11.7359 7.68198 11.318C7.31443 10.9505 6.88636 10.6498 6.41705 10.4288ZM4.5 10C3.11929 10 2 8.88071 2 7.5C2 6.11929 3.11929 5 4.5 5C5.88071 5 7 6.11929 7 7.5C7 8.88071 5.88071 10 4.5 10Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="content text-left mt-6 p-3">
+                <a
+                  class="title h5 text-lg font-medium hover:text-blue-600 dark:text-white"
+                  href="/index-course"
+                >
+                  Why alternate frontend?
+                </a>
+                <p className="text-left mt-4 dark:text-slate-400">
+                  Its not just a alternate frontend but also using proxy
+                  contracts we can enable unique strategies like LEVERAGE,
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="px-3 p-10 sm:grid-cols-1 grid rounded-md shadow dark:shadow-gray-800 group text-center bg-white dark:bg-darktext hover:bg-indigo-600/5 dark:hover:bg-indigo-600/5 transition duration-500 m-2"
+              style={{ width: "50px", height: "40px" }}
+            >
+              <div class="w-[84px] h-[84px] bg-indigo-600/5 group-hover:bg-blue-600 text-blue-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition duration-500 mx-auto">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="w-7 h-7"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4.5 1L4 1.5V3.02746C4.16417 3.00932 4.331 3 4.5 3C4.669 3 4.83583 3.00932 5 3.02746V2H14V7H12.2929L11 8.29289V7H8.97254C8.99068 7.16417 9 7.331 9 7.5C9 7.669 8.99068 7.83583 8.97254 8H10V9.5L10.8536 9.85355L12.7071 8H14.5L15 7.5V1.5L14.5 1H4.5Z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.41705 10.4288C7.37039 9.80348 8 8.72527 8 7.5C8 5.567 6.433 4 4.5 4C2.567 4 1 5.567 1 7.5C1 8.72527 1.62961 9.80348 2.58295 10.4288C2.11364 10.6498 1.68557 10.9505 1.31802 11.318C0.900156 11.7359 0.568688 12.232 0.342542 12.7779C0.180451 13.1692 0.0747425 13.5807 0.0278638 14C0.00933826 14.1657 0 14.3326 0 14.5V15H1L0.999398 14.5C0.999398 14.4784 0.999599 14.4567 1 14.4351C1.00811 13.9975 1.09823 13.5651 1.26587 13.1604C1.44179 12.7357 1.69964 12.3498 2.0247 12.0247C2.34976 11.6996 2.73566 11.4418 3.16038 11.2659C3.57088 11.0958 4.00986 11.0056 4.45387 10.9997C4.46922 10.9999 4.4846 11 4.5 11C4.5154 11 4.53078 10.9999 4.54613 10.9997C4.99014 11.0056 5.42912 11.0958 5.83962 11.2659C6.26433 11.4418 6.65024 11.6996 6.9753 12.0247C7.30036 12.3498 7.55821 12.7357 7.73413 13.1604C7.90177 13.5651 7.99189 13.9975 8 14.4351C8.0004 14.4567 8.0006 14.4784 8.0006 14.5L8 15H9V14.5C9 14.3326 8.99066 14.1657 8.97214 14C8.92526 13.5807 8.81955 13.1692 8.65746 12.7779C8.43131 12.232 8.09984 11.7359 7.68198 11.318C7.31443 10.9505 6.88636 10.6498 6.41705 10.4288ZM4.5 10C3.11929 10 2 8.88071 2 7.5C2 6.11929 3.11929 5 4.5 5C5.88071 5 7 6.11929 7 7.5C7 8.88071 5.88071 10 4.5 10Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="content text-left mt-6 p-3">
+                <a
+                  class="title h5 text-lg font-medium hover:text-blue-600 dark:text-white"
+                  href="/index-course"
+                >
+                  Less fragmentation and more interoperability
+                </a>
+                <p className="text-left mt-2 dark:text-slate-400 overflow-hidden">
+                  Improving discoverability and usage of protocols and also
+                  enabling strategies
+                </p>
+              </div>
+            </div>
+          </Slider>
         </div>
       </div>
       <div className="flex flex-col md:items-center mt-10 gap-5">
