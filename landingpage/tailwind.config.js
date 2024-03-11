@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         btn: "#1869F4",
+        lsaCard: "rgba(2, 9, 22, 0.32)",
         darktext: "#020916",
         secondary: "#151D29",
         graytext: "#768190 ",

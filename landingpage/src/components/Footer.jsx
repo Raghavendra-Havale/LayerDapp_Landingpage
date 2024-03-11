@@ -109,7 +109,7 @@ function Footer() {
                 </li>
                 <li className="flex items-start hover:text-gray-300">
                   <AiFillHome className="mr-2" />
-                  <a href="#">123 Main St, New Delhi</a> 
+                  <a href="#">123 Main St, New Delhi</a>
                 </li>
               </ul>
             </div>

@@ -191,9 +191,6 @@ html {
 }
 
 .group {
-  height: 21rem;
-  border-radius: 7px;
-}
-.slick-slide > div {
-  margin: 0 7px;
+  height: 364px;
+  width: 411px;
 }
