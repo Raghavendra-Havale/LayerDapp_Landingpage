@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[56px] items-center justify-between dark:bg-darktext bg-white text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
+    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[76px] items-center justify-between text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
       <a href="" className="flex items-end justify-center gap-2">
         <img src="../../logo.png" alt="logo" className="w-full h-auto" />
         <img
@@ -32,7 +32,7 @@ function Header() {
           className="w-full h-5 -pb-2"
         />
       </a>
-      <nav className="h-full items-center justify-center hidden md:flex relative">
+      <nav className="items-center justify-center hidden md:flex relative bg-[#020916] rounded-lg gap-9 h-[44px] px-10">
         <div className="flex-row m-0 flex h-full list-none items-center gap-4 p-0 top-0 left-0">
           <div>
             <a
@@ -105,7 +105,7 @@ function Header() {
                     className=""
                     onClick={() => setOpen(false)}
                   >
-                    <button  className="flex items-center gap-1.5 px-16 py-4 text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
+                    <button  className="flex items-center gap-1.5 px-16 h-[36px] text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
                       Launch App
                     </button>
                   </a>
