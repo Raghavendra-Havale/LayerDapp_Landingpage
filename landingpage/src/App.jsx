@@ -14,11 +14,12 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Features />
-        <DefiStrategies />
-        <TopVaults />
-        <Community />
         <Ecosystem />
+        <Features />
+        {/* <DefiStrategies />
+        <TopVaults /> */}
+        <Community />
+        
         <NewsLetter />
       </main>
       <Footer />

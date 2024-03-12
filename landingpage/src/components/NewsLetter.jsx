@@ -24,17 +24,17 @@ function NewsLetter() {
     }
   }, []);
   return (
-    <section className=" bg-offwhite dark:bg-secondary">
+    <section className=" bg-gradient-to-r from-gray-900 to-blue-900 pt-24 pb-24">
       <div
         className="mx-auto max-w-6xl p-4 flex flex-col section"
         ref={sectionRef}
       >
-        <div className="text-center">
+        <div className="text-center flex justify-center flex-col items-center">
           <div className="font-poppins text-center leading-6 text-2xl font-bold bg-gradient-to-r from-blue-100 via-blue-500 to-blue-900 bg-clip-text text-transparent pb-5px">
-            Join Our Newsletter
+          Subscribe to Our Waitlist
           </div>
-          <div className="mt-2 text-gray-500 font-poppins text-center text-base font-normal leading-6">
-            We will send you a nice letter once per week. No spam.
+          <div className="mt-2 w-[800px] text-white font-poppins text-center text-base font-normal leading-6">
+          Unlock the latest updates and exclusive sneak peeks into the diffusion Vault! Don't miss out –  subscribe to our waitlist and be the first to know!"
           </div>
           <form className="flex flex-col md:flex-row items-center justify-center text-center mt-4">
             <label htmlFor="email" className="block md:mr-2 mb-2 md:mb-0">
@@ -42,7 +42,7 @@ function NewsLetter() {
                 type="email"
                 id="email"
                 name="email"
-                className="py-3 px-9  text-base w-full md:w-[40rem] max-w-screen-lg rounded-lg focus:outline-btn shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] dark:shadow-none text-graytext"
+                className="py-3 px-9 bg-[#020916]/30 text-base w-full md:w-[40rem] max-w-screen-lg rounded-lg focus:outline-[#151D29] outline-none shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)] dark:shadow-none text-graytext"
                 placeholder="Enter your email"
               />
             </label>
@@ -55,13 +55,13 @@ function NewsLetter() {
           </form>
           <div className="flex flex-row items-center justify-center mt-4">
             <a href="https://twitter.com/LayerDapp" target ="_blank" className="">
-              <RiTwitterXFill className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+              <RiTwitterXFill className="text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
             </a>
             <a href="https://github.com/LayerDapp"  target ="_blank"className="">
-              <BiLogoGithub className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+              <BiLogoGithub className="text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
             </a>
             <a href="https://discord.gg/eDwnvCc8nB" target ="_blank" className="">
-              <BiLogoDiscordAlt className="text-darktext dark:text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
+              <BiLogoDiscordAlt className="text-white cursor-pointer text-3xl mr-2 mt-8 mb-8" />
             </a>
           </div>
         </div>
