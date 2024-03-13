@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <header className="fixed max-w-6xl inset-x-0 top-0 z-10 flex h-[76px] items-center justify-between text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
+    <header className="fixed max-w-full bg-[#020916] inset-x-0 top-0 z-10 flex h-[76px] items-center justify-between text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
       <a href="" className="flex items-end justify-center gap-2">
         <img src="../../logo.png" alt="logo" className="w-full h-auto" />
         <img
@@ -78,13 +78,20 @@ function Header() {
             >
               <ul className="text-darktext dark:text-white flex flex-col gap-7">
                 <li>
-                  <a href="https://docs.layerdapp.xyz" target="_blank" className="">
-                    
+                  <a
+                    href="https://docs.layerdapp.xyz"
+                    target="_blank"
+                    className=""
+                  >
                     Docs
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/qSs6U7VF" target="_blank" className="">
+                  <a
+                    href="https://discord.gg/qSs6U7VF"
+                    target="_blank"
+                    className=""
+                  >
                     Community
                   </a>
                 </li>
@@ -105,7 +112,7 @@ function Header() {
                     className=""
                     onClick={() => setOpen(false)}
                   >
-                    <button  className="flex items-center gap-1.5 px-16 h-[36px] text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
+                    <button className="flex items-center gap-1.5 px-16 h-[36px] text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
                       Launch App
                     </button>
                   </a>
@@ -120,14 +127,14 @@ function Header() {
                   </a>
                   <a
                     href="https://discord.gg/eDwnvCc8nB"
-                    target="_blank" 
+                    target="_blank"
                     className="text-darktext dark:text-white"
                   >
                     <FaDiscord className="text-3xl" />
                   </a>
                   <a
                     href="https://github.com/LayerDapp"
-                    target ="_blank"
+                    target="_blank"
                     className="text-darktext dark:text-white"
                   >
                     {" "}
@@ -179,7 +186,11 @@ function Header() {
         </div>
       </div>
       <div className="hidden md:flex items-center gap-4 ml-auto md:ml-0">
-        <a href="https://v1-frontend-staging.vercel.app"  className="" target="_blank">
+        <a
+          href="https://v1-frontend-staging.vercel.app"
+          className=""
+          target="_blank"
+        >
           <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
             Launch App
           </button>
