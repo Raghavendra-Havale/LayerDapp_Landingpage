@@ -7,6 +7,7 @@ import Ellipse24Img from "../assets/Ellipse24.png";
 import Ellipse25Img from "../assets/Ellipse25.png";
 import Ellipse20Img from "../assets/Ellipse20.png";
 import Ellipse21Img from "../assets/Ellipse21.png";
+import FeatureBlur from "../assets/FeatureBlur.png";
 
 function Features() {
   const sectionRef = useRef(null);
@@ -30,7 +31,9 @@ function Features() {
   }, []);
 
   return (
-    <section className="pt-16 bg-gradient-to-r from-gray-900 to-blue-900 ">
+    <section className="z-100 pt-16 bg-[#151D29] z-100">
+              <img src={FeatureBlur} className="absolute" />
+
       <div class="md:h-full flex items-center text-white mx-auto">
         <div class="container px-4 py-4 max-w-6xl mx-auto">
           <div className=" items-center justify-center mb-10 mt-10 ml-1">
@@ -251,7 +254,7 @@ function Features() {
       </div>
 
       {/* DIFFUSION VALUT SECTUON */}
-      <div class="md:h-full grid grid-rows-1   text-white mt-20">
+      <div class="md:h-full grid grid-rows-1 z-100  text-white mt-20">
         <div class="container px-4 py-4 mx-auto max-w-6xl">
           <div className=" grid grid-cols-2 h-[330px] mb-10 mt-10 ml-1 sm:grid-cols-2">
             <h1 className="font-poppins  text-8xl text-left font-semibold  md:text-7xl text-white md:text-left">
@@ -277,7 +280,7 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center text-2xl hover:text-white text-white">
+                <div className="mt-5 z-100 text-center text-2xl hover:text-white text-white">
                   Strategy management Layer
                 </div>
                 <div class="p-6 hover:text-white transition duration-300 ease-in">

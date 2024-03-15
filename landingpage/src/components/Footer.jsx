@@ -23,7 +23,7 @@ function Footer() {
     }
   }, []);
   return (
-    <footer className="  text-graytext bg-gradient-to-r from-gray-900 to-blue-900">
+    <footer className="  text-graytext bg-[#151D29]">
       <div
         className="max-w-6xl  h-20  mx-auto  border-t border-t-graytext/20 section"
         ref={sectionRef}

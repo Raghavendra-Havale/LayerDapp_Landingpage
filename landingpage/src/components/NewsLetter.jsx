@@ -24,13 +24,13 @@ function NewsLetter() {
     }
   }, []);
   return (
-    <section className=" bg-gradient-to-r from-gray-900 to-blue-900 pt-24 pb-24">
+    <section className="bg-[#151D29] pt-16 ">
       <div
-        className="mx-auto max-w-6xl p-4 flex flex-col section"
+        className="mx-auto max-w-6xl p-28 flex flex-col section"
         ref={sectionRef}
       >
         <div className="text-center flex justify-center flex-col items-center">
-          <div className="font-poppins text-center leading-6 text-2xl font-bold bg-gradient-to-r from-blue-100 via-blue-500 to-blue-900 bg-clip-text text-transparent pb-5px">
+          <div className="font-poppins text-center leading-6 text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-600  bg-clip-text text-transparent pb-5px">
           Subscribe to Our Waitlist
           </div>
           <div className="mt-2 w-[800px] text-white font-poppins text-center text-base font-normal leading-6">
