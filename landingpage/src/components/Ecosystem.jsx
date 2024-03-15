@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import ecosystemBlur from "../assets/ecosystemBlur.png";
 
 function Ecosystem() {
   const sectionRef = useRef(null);
@@ -21,9 +22,10 @@ function Ecosystem() {
     }
   }, []);
   return (
-    <section className="pt-10 pb-20 bg-gradient-to-r from-gray-900 to-blue-900">
+    <section className="pt-10 pb-20 bg-[#151D29] z-100">
+    <img src={ecosystemBlur} className="absolute "/>
       <div
-        className="mx-auto max-w-[1120px] h-[650px] w-full p-4 flex flex-col section bg-gray-900/40 rounded-[40px]"
+        className="mx-auto max-w-[1120px] h-[650px]  w-full p-4 flex flex-col section z-50 bg-[#020916]/30 rounded-[40px]"
         ref={sectionRef}
       >
         <div className="flex flex-col h-full md:flex-row items-center justify-between mx-5  ">
@@ -47,7 +49,7 @@ function Ecosystem() {
         
         </div>
 
-        <div className="w-[550px] flex flex-wrap gap-5 overflow-scroll h-[500px] ">
+        <div className="w-[550px] z-100 flex flex-wrap gap-5 overflow-scroll h-[500px] ">
            <div className="w-[160px] h-[200px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
               <div className="w-full h-full flex justify-center items-center mb-2 ">
               <img
@@ -110,7 +112,7 @@ function Ecosystem() {
               </div>
               <div className="w-full h-[56px] bg-[#161E2D] rounded-3xl text-white flex items-center justify-center font-semibold ">Ethereum</div>
            </div>
-           <div className="w-[160px] h-[200px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+           <div className="w-[160px]  z-50 h-[200px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
               <div className="w-full h-full flex justify-center items-center mb-2 ">
               <img
                     src="../../gnosis-logo.webp"
@@ -123,7 +125,7 @@ function Ecosystem() {
               <div className="w-full h-[56px] bg-[#161E2D] rounded-3xl text-white flex items-center justify-center font-semibold ">Gnosis</div>
            </div>
 
-           <div className="w-[160px] h-[200px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+           <div className="w-[160px] h-[200px] z-100 px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
               <div className="w-full h-full flex justify-center items-center mb-2 ">
               <img
                     src="../../gnosis-logo.webp"
@@ -133,7 +135,7 @@ function Ecosystem() {
                    
                   />
               </div>
-              <div className="w-full h-[56px] bg-[#161E2D] rounded-3xl text-white flex items-center justify-center font-semibold ">Gnosis</div>
+              <div className="w-full h-[56px] z-100 bg-[#161E2D] rounded-3xl text-white flex items-center justify-center font-semibold ">Gnosis</div>
            </div>
            <div className="w-[160px] h-[200px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
               <div className="w-full h-full flex justify-center items-center mb-2 ">
@@ -145,8 +147,8 @@ function Ecosystem() {
                    
                   />
               </div>
-              <div className="w-full h-[56px] bg-[#161E2D] rounded-3xl text-white flex items-center justify-center font-semibold "> Optimism</div>
-           </div>
+              <div className="w-full h-[56px] z-100 bg-[#161E2D] rounded-3xl text-white flex items-center justify-center font-semibold "> Optimism</div>
+           </div> 
            <div className="w-[160px] h-[200px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
               <div className="w-full h-full flex justify-center items-center mb-2 ">
               <img
@@ -201,6 +203,7 @@ function Ecosystem() {
         </div>
         
       </div>
+      
     </section>
   );
 }

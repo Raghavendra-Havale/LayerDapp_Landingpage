@@ -5,7 +5,7 @@ import { useRef, useEffect,useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import communityBlur from "../assets/CommunityBlur.png";
 
 function Community() {
   const sectionRef = useRef(null);
@@ -69,19 +69,20 @@ function Community() {
     }
   }, []);
   return (
-    <section className="pt-10 md:pt-20 lg:pt-28 bg-gradient-to-r from-gray-900 to-blue-900">
+    <section className="pt-10 md:pt-20 lg:pt-28 bg-[#151D29] z-100">
+    <img src={communityBlur} className="absolute h-[550px] w-full top-[3800px]"/>
       <div
         className="flex flex-col mx-auto max-w-6xl p-4 section"
         ref={sectionRef}
       >
         <div className="font-Poppins  text-3xl md:text-5xl font-semibold  text-white dark:text-white">
           For{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-blue-600  bg-clip-text text-transparent">
             The Community
           </span>{" "}
           by
         </div>
-        <div className="bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent font-Poppins text-3xl md:text-5xl font-semibold text-gradient ">
+        <div className="bg-gradient-to-r from-blue-500 to-blue-600  bg-clip-text text-transparent font-Poppins text-3xl md:text-5xl font-semibold text-gradient ">
           The Community
         </div>
         <div className="font-Poppins  w-[550px] text-lg md:text-xl font-normal text-graytext mt-4 md:mt-8 ">
@@ -119,7 +120,7 @@ function Community() {
               {/* <div className="font-Poppins text-xl text-darktext dark:text-white font-semibold leading-tight pb-[3rem]">
                 What the community says
               </div> */}
-              <div className="absolute inset-x-0  w-[650px] left-[500px] top-[200px] z-100 h-20 bg-gradient-to-r from-gray-900/20 to-blue-900 blur-lg"></div>
+              {/* <div className="absolute inset-x-0  w-[650px] left-[500px] top-[200px] z-100 h-20 bg-gradient-to-r from-gray-800 to-gray-800 blur-lg"></div> */}
 
               <div className=" min-w-60 ">
               
@@ -211,7 +212,7 @@ function Community() {
                   </p>
                 </div>
                 
-                <div className="absolute inset-x-0  w-[650px] left-[500px] top-[800px] z-100 h-20 bg-gradient-to-r from-gray-900/20 to-blue-900 blur-lg"></div>
+                <div className="absolute inset-x-0  w-[650px] left-[500px] top-[800px] z-100 h-20 bg-[#151D29] blur-lg"></div>
                 
                </div>
                
