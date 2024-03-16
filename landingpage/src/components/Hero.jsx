@@ -76,7 +76,7 @@ function Hero() {
                 target="_blank"
                 className=""
               >
-                <button className="bg-[#1869F4] text-base px-20 md:px-[100px] lg:px-[150px] font-semibold py-4 text-white rounded-[20px] mt-9">
+                <button className="bg-[#1869F4] text-base px-20 md:px-[100px] lg:px-[150px] font-semibold py-4 text-white rounded-[18px] mt-9">
                   Launch App
                 </button>
               </a>
