@@ -59,7 +59,7 @@ function Features() {
           <div class="flex flex-wrap -m-4 ">
             <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-blue-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5 group-hover:bg-white text-white group-hover:text-blue-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -86,7 +86,7 @@ function Features() {
             </div>
             <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5  group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -113,7 +113,7 @@ function Features() {
             </div>
             <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5 bg- group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -166,7 +166,7 @@ function Features() {
           <div class="flex flex-wrap -m-4">
             <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-700 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5  group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -193,7 +193,7 @@ function Features() {
             </div>
             <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-700 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5  group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -220,7 +220,7 @@ function Features() {
             </div>
             <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5  group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -263,7 +263,7 @@ function Features() {
             </h1>
             <div class="p-4  sm:w-full lg:w-full grid hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5  group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -294,7 +294,7 @@ function Features() {
           <div class="flex flex-wrap -m-4">
             <div class="p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5  group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -320,7 +320,7 @@ function Features() {
             </div>
             <div class="p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5  group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -347,7 +347,7 @@ function Features() {
             </div>
             <div class="p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5  group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
