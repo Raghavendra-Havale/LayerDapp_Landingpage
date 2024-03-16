@@ -34,7 +34,7 @@ function Ecosystem() {
             <h5 className="mb-3 font-bold text-center md:text-left text-[18px]     text-white dark:text-white">
               ECOSYSTEM AND PARTNERS
             </h5>
-            <h1 className="font-bold text-3xl md:text-4xl text-center md:text-left bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">
+            <h1 className="font-bold text-3xl md:text-4xl text-center md:text-left bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent">
               An Ecosystem of DeFi Apps
             </h1>
             <h5 className="text-lg md:text-3xl font-semibold text-center md:text-left mt-4 text-white dark:text-white">

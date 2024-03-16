@@ -37,7 +37,7 @@ function Features() {
       <div class="md:h-full flex items-center text-white mx-auto">
         <div class="container px-4 py-4 max-w-6xl mx-auto">
           <div className=" items-center justify-center mb-10 mt-10 ml-1">
-            <h1 className="font-poppins text-2xl dark:text-white mb-3 text-left font-semibold ">
+            <h1 className="font-poppins text-lg dark:text-white mb-3 text-left font-normal ">
               LAYERDAPP FEATURES
             </h1>
 
@@ -47,12 +47,12 @@ function Features() {
 
             <img
               src={Ellipse24Img}
-              className="absolute bg-fixed left-0 sm:right-[1200px] lg:right-[1200px] xl:right-[1200px]  top-[1700px] h-[567px] w-[200px] sm:w-[200px] lg:w-[200px] xl:w-[200px]"
+              className="absolute bg-fixed left-0 sm:right-[1200px] lg:right-[1200px] xl:right-[1200px]  top-[1900px] h-[567px] w-[200px] sm:w-[200px] lg:w-[200px] xl:w-[200px]"
             />
 
             <img
               src={Ellipse25Img}
-              className="absolute bg-fixed left-0 sm:right-[1060px] lg:right-[1060px] xl:right-[1060px]  top-[1700px] h-[567px] w-[350px] sm:w-[350px] lg:w-[350px] xl:w-[350px]"
+              className="absolute bg-fixed left-0 sm:right-[1060px] lg:right-[1060px] xl:right-[1060px]  top-[1900px] h-[567px] w-[350px] sm:w-[350px] lg:w-[350px] xl:w-[350px]"
             />
           </div>
 
@@ -73,11 +73,11 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center text-2xl text-white hover:text-white">
+                <div className="mt-5 text-center font-medium text-2xl text-white hover:text-white">
                   Create Multiple Account
                 </div>
                 <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed mb-3 text-center">
+                  <p class="leading-relaxed text-base font-normal mb-3 text-center">
                     Create multiple accounts linked to one EOA, no need to
                     transfer gas to multiple wallets
                   </p>
@@ -100,11 +100,11 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center text-2xl hover:text-white text-white">
+                <div className="mt-5 text-center font-medium text-2xl hover:text-white text-white">
                   Multiple User Control
                 </div>
                 <div class="p-6  hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     Add multiple authorities to the accounts and let your team
                     manage efficiently
                   </p>
@@ -127,11 +127,11 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center mx-1 text-2xl hover:text-white text-white">
+                <div className="mt-5 text-center font-medium mx-1 text-2xl hover:text-white text-white">
                   Multiple protocol interactions
                 </div>
                 <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     Interact with multiple protocols easily and with our
                     technology batch and interact with them together
                   </p>
@@ -142,10 +142,10 @@ function Features() {
         </div>
       </div>
 
-      <div class="md:h-full flex items-center text-white mt-20">
+      <div class="md:h-full flex items-center text-white mt-56">
         <div class="container px-4 py-4 mx-auto max-w-6xl">
           <div className="items-center justify-center mb-10 mt-10 ml-1">
-            <h1 className="font-poppins text-2xl dark:text-white mb-3 font-semibold text-right ">
+            <h1 className="font-poppins text-lg dark:text-white mb-3 font-normal text-right ">
               LAYERDAPP FEATURES
             </h1>
             <h1 className="font-poppins text-6xl font-semibold text-right md:text-6xl text-white md:text-right">
@@ -154,12 +154,12 @@ function Features() {
 
             <img
               src={Ellipse21Img}
-              className="absolute right-0 bg-fixed   top-[2300px] h-[567px] w-[200px] sm:w-[200px] lg:w-[200px] xl:w-[200px]"
+              className="absolute right-0 bg-fixed   top-[2600px] h-[567px] w-[200px] sm:w-[200px] lg:w-[200px] xl:w-[200px]"
             />
 
             <img
               src={Ellipse20Img}
-              className="absolute right-0 bg-fixed   top-[2300px] h-[567px] w-[350px] sm:w-[350px] lg:w-[350px] xl:w-[350px]"
+              className="absolute right-0 bg-fixed   top-[2600px] h-[567px] w-[350px] sm:w-[350px] lg:w-[350px] xl:w-[350px]"
             />
           </div>
 
@@ -180,11 +180,11 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center text-2xl hover:text-white text-white">
+                <div className="mt-5 text-center font-medium text-2xl hover:text-white text-white">
                   Multiple accounts & possibilities
                 </div>
                 <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     Using multiple accounts you can have multiple positions
                     using the same EOA
                   </p>
@@ -207,15 +207,13 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center hover:text-white text-2xl text-white">
+                <div className="mt-5 text-center font-medium hover:text-white text-2xl text-white">
                   Why alternate frontend?
                 </div>
                 <div class="p-6  hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     Its not just a alternate frontend but also using proxy
-                    contracts we can enable unique strategies like LEVERAGE,
-                    COLLATERAL SWAP, COMPOUNDING, AUTOMATION, REBALANCING that
-                    cannot be done natively on the protocols
+                    contracts we can enable unique strategies like leverage.
                   </p>
                 </div>
               </div>
@@ -236,15 +234,14 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center hover:text-white text-2xl text-white">
+                <div className="mt-5 text-center font-medium hover:text-white text-2xl text-white">
                   Less fragmentation and more interoperability
                 </div>
                 <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     We are improving discoverability and usage of protocols and
                     also enabling strategies that protocols are enabled for like
-                    FLASH LOANS, LEVERAGE and this boosts liquidity,
-                    discoverability and usage of protocols
+                    FLASH LOANS, LEVERAGE.
                   </p>
                 </div>
               </div>
@@ -280,11 +277,11 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 z-100 text-center text-2xl hover:text-white text-white">
+                <div className="mt-5 z-100 text-center font-medium text-2xl hover:text-white text-white">
                   Strategy management Layer
                 </div>
                 <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     We are building a strategy management layer that enables
                     strategy manager to create manual/automated strategies using
                     multiple protocols
@@ -311,11 +308,11 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 hover:text-white text-center text-2xl text-white">
+                <div className="mt-5 hover:text-white font-medium text-center text-2xl text-white">
                   Logic Layer
                 </div>
                 <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     In short, what you want to do on Defi in a single click
                   </p>
                 </div>
@@ -337,11 +334,11 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center hover:text-white text-2xl text-white">
+                <div className="mt-5 text-center font-medium hover:text-white text-2xl text-white">
                   Execution Layer
                 </div>
                 <div class="p-6  hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     Secret sauce, your strategy gets checked and executed here
                     and enables you to use multiple protocols in one transaction
                   </p>
@@ -364,11 +361,11 @@ function Features() {
                     <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
                   </svg>
                 </div>
-                <div className="mt-5 text-center hover:text-white text-2xl text-white">
+                <div className="mt-5 text-center font-medium hover:text-white text-2xl text-white">
                   Strategy management features
                 </div>
                 <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-center mb-3">
+                  <p class="leading-relaxed text-base font-normal text-center mb-3">
                     Custom share minting, Automated strategies support, Script
                     logic support, Accurate strategy insights, Multi asset
                     support and special deposit, withdraw and rebalance

@@ -29,8 +29,8 @@ function NewsLetter() {
         className="mx-auto max-w-6xl p-28 flex flex-col section"
         ref={sectionRef}
       >
-        <div className="text-center flex justify-center flex-col items-center">
-          <div className="font-poppins text-center leading-6 text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-600  bg-clip-text text-transparent pb-5px">
+        <div className="text-center flex gap-3 justify-center flex-col items-center">
+          <div className="font-poppins text-center leading-6 text-2xl font-medium  bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700  bg-clip-text text-transparent pb-5px">
           Subscribe to Our Waitlist
           </div>
           <div className="mt-2 w-[800px] text-white font-poppins text-center text-base font-normal leading-6">
@@ -47,7 +47,7 @@ function NewsLetter() {
               />
             </label>
             <button
-              className="bg-blue-500 text-white p-3 text-sm cursor-pointer border-none rounded-lg md:ml-2 mt-2 md:mt-0"
+              className="bg-[#1869F4] text-white p-4 text-base cursor-pointer border-none rounded-[10px] md:ml-2 mt-2 md:mt-0"
               type="submit"
             >
               Subscribe

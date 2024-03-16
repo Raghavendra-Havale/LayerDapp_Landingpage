@@ -105,7 +105,7 @@ function Header() {
                     className=""
                     onClick={() => setOpen(false)}
                   >
-                    <button  className="flex items-center gap-1.5 px-16 h-[36px] text-xl font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
+                    <button  className="flex items-center gap-1.5 px-16 h-[36px] text-xl font-medium text-white bg-[#1869F4] hover:bg-light/30 rounded-md cursor-pointer">
                       Launch App
                     </button>
                   </a>
@@ -142,7 +142,7 @@ function Header() {
       </div>
       <div className="hidden md:flex items-center gap-4 ml-auto md:ml-0">
         <a href="https://v1-frontend-staging.vercel.app"  className="" target="_blank">
-          <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-btn hover:bg-light/30 rounded-md cursor-pointer">
+          <button className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-[#1869F4] hover:bg-light/30 rounded-md cursor-pointer">
             Launch App
           </button>
         </a>
