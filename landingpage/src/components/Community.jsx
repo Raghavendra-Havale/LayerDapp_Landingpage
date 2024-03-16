@@ -70,7 +70,7 @@ function Community() {
   }, []);
   return (
     <section className="pt-10 md:pt-20 lg:pt-28 bg-[#151D29] z-100">
-    <img src={communityBlur} className="absolute border h-[550px] w-full top-[4100px]"/>
+    <img src={communityBlur} className="absolute h-[550px] w-full top-[4100px]"/>
       <div
         className="flex flex-col mx-auto max-w-6xl p-4 section"
         ref={sectionRef}
