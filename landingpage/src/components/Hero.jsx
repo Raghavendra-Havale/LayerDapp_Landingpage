@@ -26,7 +26,7 @@ function Hero() {
     }
   }, []);
   return (
-    <section className={`bg-[#151D29]`}>
+    <section className={`bg-[#151D29] pb-56`}>
     <img src={bgDesignImg}
     className="absolute opacity-20  h-[1000px] w-full" />
     <img  src={HeroBlurImg}  className="absolute w-full"/>
@@ -35,7 +35,7 @@ function Hero() {
         <div className="flex flex-col mx-auto">
           <div className="flex flex-col items-start ">
             <div className="w-full relative right-8  lg:w-[75%] flex flex-col items-center lg:items-start">
-              <h1 className=" text-2xl pt-24 md:text-[86px]  font-semibold bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent leading-none lg:leading-[100px] text-center lg:text-left">
+              <h1 className=" text-2xl pt-24 md:text-[86px]  font-semibold bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent leading-none lg:leading-[100px] text-center lg:text-left">
                 {`DeFi's Command  Center `}
               </h1>
               
@@ -76,7 +76,7 @@ function Hero() {
                 target="_blank"
                 className=""
               >
-                <button className="bg-btn px-20 md:px-[100px] lg:px-[150px] font-bold py-4 text-white rounded-[20px] mt-9">
+                <button className="bg-[#1869F4] text-base px-20 md:px-[100px] lg:px-[150px] font-semibold py-4 text-white rounded-[20px] mt-9">
                   Launch App
                 </button>
               </a>
