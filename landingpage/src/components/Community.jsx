@@ -5,7 +5,7 @@ import { useRef, useEffect,useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import communityBlur from "../assets/CommunityBlur.png";
+import communityBlur from "../assets/CommunityBlur1.png";
 
 function Community() {
   const sectionRef = useRef(null);
@@ -92,13 +92,13 @@ function Community() {
         <div className="mt-8 p-4 bg-transparent dark:bg-darktext rounded-lg ">
           <div className="flex flex-col lg:flex-row justify-between items-center transition-all duration-500">
             <div className="w-full lg:w-1/3 min-w-[250px] mx-12">
-            <Slider {...settings}>
+            <Slider className="mb-5" {...settings}>
                 {imgdetails.map((item, index) => (
                   <div key={index}>
                     <img 
                       src={item.link}
                       alt={`Image ${index + 1}`}
-                      className="w-full h-auto md:max-h-full"
+                      className="w-[80%] h-auto m-auto mb-1"
                       
                     />
                   </div>
@@ -219,14 +219,15 @@ function Community() {
             </div>
             
           </div>
-          <div className="flex flex-col md:flex-row items-center md:justify-center gap-3 ml-[40vw] mb-10 mt-2">
-                <a href="https://discord.gg/eDwnvCc8nB" className="" target="_blank">
+          <div className=" flex w-full mt-3">
+                <div className="w-[50%]"></div>
+                <a href="https://discord.gg/eDwnvCc8nB" className="w-[50%] flex items-center justify-center" target="_blank">
                   <button className="bg-[#1869F4] text-white text-base font-normal px-6 py-3 rounded-lg flex items-center justify-center">
                     <BiLogoDiscordAlt className="mr-2" />
                     Join Community
                   </button>
                 </a>
-              </div>
+          </div>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import layerdAppImg from "../assets/layerdApp.png";
 import Header from "./Header";
 import bgDesignImg from "../assets/bgDesign.png";
-import HeroBlurImg from "../assets/HeroBlur.png"
+import HeroBlurImg from "../assets/HeroBlur1.png"
 function Hero() {
   const sectionRef = useRef(null);
 

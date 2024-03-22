@@ -7,7 +7,7 @@ import Ellipse24Img from "../assets/Ellipse24.png";
 import Ellipse25Img from "../assets/Ellipse25.png";
 import Ellipse20Img from "../assets/Ellipse20.png";
 import Ellipse21Img from "../assets/Ellipse21.png";
-import FeatureBlur from "../assets/FeatureBlur.png";
+import FeatureBlur from "../assets/FeatureBlur1.png";
 
 function Features() {
   const sectionRef = useRef(null);
@@ -220,7 +220,7 @@ function Features() {
             </div>
             <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 text-white rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -347,7 +347,7 @@ function Features() {
             </div>
             <div class="p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
               <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 text-white rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500  rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"

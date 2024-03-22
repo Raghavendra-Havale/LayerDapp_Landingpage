@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import ecosystemBlur from "../assets/ecosystemBlur.png";
+import ecosystemBlur from "../assets/ecosystemBlur1.png";
 
 function Ecosystem() {
   const sectionRef = useRef(null);
