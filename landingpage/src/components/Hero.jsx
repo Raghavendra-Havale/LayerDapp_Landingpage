@@ -1,7 +1,7 @@
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import { useRef, useEffect } from "react";
-import layerdAppImg from "../assets/layerdApp.png";
+import layerdAppImg from "../assets/layerdApp1.png";
 import Header from "./Header";
 import bgDesignImg from "../assets/bgDesign.png";
 import HeroBlurImg from "../assets/HeroBlur1.png"
