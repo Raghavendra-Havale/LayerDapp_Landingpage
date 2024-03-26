@@ -7,7 +7,7 @@ import Ellipse24Img from "../assets/Ellipse24.png";
 import Ellipse25Img from "../assets/Ellipse25.png";
 import Ellipse20Img from "../assets/Ellipse20.png";
 import Ellipse21Img from "../assets/Ellipse21.png";
-import FeatureBlur from "../assets/FeatureBlur1.png";
+import FeatureBlur from "../assets/FeatureBlur1.webp";
 
 function Features() {
   const sectionRef = useRef(null);
@@ -32,7 +32,7 @@ function Features() {
 
   return (
     <section className="z-100 pt-16 bg-[#151D29] z-100">
-              <img src={FeatureBlur} className="absolute" />
+      <img src={FeatureBlur} className="absolute" />
 
       <div class="md:h-full flex items-center text-white mx-auto">
         <div class="container px-4 py-4 max-w-6xl mx-auto">
