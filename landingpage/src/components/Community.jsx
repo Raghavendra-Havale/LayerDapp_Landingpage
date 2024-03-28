@@ -225,7 +225,7 @@ function Community() {
                     </div>
                   </div>
                   <p className="flex-shrink-0 text-white dark:text-white text-sm md:text-sm lg:text-sm xl:text-lg">
-                    {currentUser.description}
+                    {currentUser.description3}
                   </p>
                 </div>
 
