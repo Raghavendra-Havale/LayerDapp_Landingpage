@@ -89,11 +89,16 @@ function Hero() {
 
             <img
               src={layerdAppImg}
-              className="absolute bottom-28 left-[500px] w-[743px] h-[760px]"
+              className="absolute left-[500px] w-[743px] h-[760px]"
             />
           </div>
 
-          <div className="hidden  mt-32 md:flex items-center justify-between bg-[#020916]/30 w-full mx-auto max-w-6xl md:p-5 lg:p-10 rounded-[36px]  dark:border-darktext/50  relative">
+          
+        </div>
+        
+      </div>
+      <div className=" px-[120px] px">
+      <div className="hidden   mt-32 md:flex items-center justify-between bg-[#020916]/30 w-full mx-auto max-w-6xl md:p-5 lg:p-10 rounded-[36px]  dark:border-darktext/50  relative">
             <div className="flex px-10 flex-col items-center justify-center">
               <h3 className="text-white dark:text-white  font-bold md:text-2xl lg:text-4xl opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d">
                 $329.66M
@@ -127,8 +132,7 @@ function Hero() {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+          </div>
     </section>
   );
 }
