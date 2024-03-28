@@ -26,12 +26,12 @@ function Hero() {
     }
   }, []);
   return (
-    <section className={`bg-[#151D29] pb-56`}>
+    <section className={`bg-[#151D29] pb-52`}>
       <img
         src={bgDesignImg}
-        className="absolute opacity-20  h-[1000px] w-full"
+        className="absolute opacity-40  h-[1000px] w-full "
       />
-      <img src={HeroBlurImg} className="absolute w-full" />
+      <img src={HeroBlurImg} className="absolute w-full " />
       <Header />
       <div className="mx-auto  max-w-6xl  flex section" ref={sectionRef}>
         <div className="flex flex-col mx-auto">
@@ -42,15 +42,16 @@ function Hero() {
               </h1>
 
               <p className="mt-8  text-sm  text-white dark:text-white leading-tight md:leading-[24px] text-center lg:text-left">
-                Layerdapp: Elevate Your DeFi Adventure. Dive deep into the{" "}
-                <br /> web3 realm, effortlessly bridging diverse protocols.
-                Transform <br />
-                intricate strategies into intuitive actions, and unlock a world{" "}
+              Unleash the full potential of decentralized finance with just a few clicks.{" "}
+                <br /> LayerDapp is your one-stop DeFi powerhouse, where simplicity <br />
+                meets innovation.{" "}
                 <br />
-                of decentralized opportunities with unparalleled precision and{" "}
+                <span className="font-normal text-base text bg-gradient-to-r from-[#a3dcf1] via-[#5fd0f9] to-[#30a5df] bg-clip-text text-transparent">Explore, Manage, Build</span>{" "}
                 <br />
-                security.
+                
               </p>
+
+              {/* LayerDapp is your one-stop DeFi powerhouse, where simplicity meets innovation. Explore, Manage, Build */}
 
               <div className="flex items-center justify-center lg:justify-start gap-3 mt-11">
                 <a
@@ -58,14 +59,14 @@ function Hero() {
                   target="_blank"
                   className="text-white dark:text-white"
                 >
-                  <RiTwitterXFill className="text-3xl" />
+                  <RiTwitterXFill className="text-[36px]" />
                 </a>
                 <a
                   href="https://discord.gg/eDwnvCc8nB"
                   target="_blank"
                   className="text-white dark:text-white"
                 >
-                  <FaDiscord className="text-3xl" />
+                  <FaDiscord className="text-[36px]" />
                 </a>
                 <a
                   href="https://github.com/LayerDapp"
@@ -73,10 +74,10 @@ function Hero() {
                   className="text-white dark:text-white"
                 >
                   {" "}
-                  <FaGithub className="text-3xl" />
+                  <FaGithub className="text-[36px]" />
                 </a>
               </div>
-              <a
+              {/* <a
                 href="https://v1-frontend-staging.vercel.app"
                 target="_blank"
                 className=""
@@ -84,46 +85,38 @@ function Hero() {
                 <button className="bg-[#1869F4] text-base px-20 md:px-[100px] lg:px-[150px] font-semibold py-4 text-white rounded-[18px] mt-9">
                   Launch App
                 </button>
-              </a>
+              </a> */}
             </div>
 
             <img
               src={layerdAppImg}
-              className="absolute bottom-28 left-[500px] w-[743px] h-[760px]"
+              className="absolute bottom-35 left-[500px] w-[743px] h-[760px]"
             />
           </div>
 
-          <div className="hidden  mt-32 md:flex items-center justify-between bg-[#020916]/30 w-full mx-auto max-w-6xl md:p-5 lg:p-10 rounded-[36px]  dark:border-darktext/50  relative">
-            <div className="flex px-10 flex-col items-center justify-center">
-              <h3 className="text-white dark:text-white  font-bold md:text-2xl lg:text-4xl opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d">
-                $329.66M
+          <div className="hidden  mt-32 md:flex items-center justify-between bg-[#020916]/30 w-[65%]  max-w-6xl md:px-5 lg:px-10 md:py-7 lg:py-12 rounded-[36px]  dark:border-darktext/50  relative  -ml-[30px]">
+            <div className="flex px-10 flex-col items-center justify-center ">
+              <h3 className="text-white dark:text-white  font-semibold md:text-3xl lg:text-5xl opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d">
+                $70B+
               </h3>
-              <p className="text-graytext font-semibold text-xs lg:text-base">
-                TVL of protocol
+              <p className="text-[#768190] font-semibold text-xs lg:text-base pt-2 tracking-tight">
+                TVL across DeFi
               </p>
             </div>
             <div className="flex flex-col items-center justify-center mr-6">
-              <h3 className="text-white dark:text-white font-bold md:text-2xl lg:text-4xl">
-                2.25B
+              <h3 className="text-white dark:text-white font-semibold md:text-3xl lg:text-5xl">
+                5+
               </h3>
-              <p className="text-graytext font-semibold text-xs lg:text-base">
-                Protocols Used
+              <p className="text-[#768190] font-semibold text-xs lg:text-base pt-2 tracking-tight">
+                Protocols Supported
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h3 className="text-white dark:text-white font-bold md:text-2xl lg:text-4xl">
-                2.25B
+              <h3 className="text-white dark:text-white font-semibold md:text-3xl lg:text-5xl">
+                100+
               </h3>
-              <p className="text-graytext font-semibold text-xs lg:text-base">
-                Users all over the world
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center mr-6">
-              <h3 className="text-white dark:text-white font-bold md:text-2xl lg:text-4xl">
-                $130.04M
-              </h3>
-              <p className="text-graytext font-semibold text-xs lg:text-base">
-                Volume pushed through app
+              <p className="text-[#768190] font-semibold text-xs lg:text-base pt-2 tracking-tight">
+                LSA Accounts Created
               </p>
             </div>
           </div>

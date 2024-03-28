@@ -25,7 +25,7 @@ function Footer() {
   return (
     <footer className="  text-graytext bg-[#151D29]">
       <div
-        className="max-w-6xl  h-20  mx-auto  border-t border-t-graytext/20 section"
+        className="max-w-6xl  h-20  mx-auto  border-t border-t-[#1869F4]/30 section"
         ref={sectionRef}
       >
         <div className="mt-2 px-5 text-[#98A2B3] flex justify-between text-left lg:mt-[2rem]">

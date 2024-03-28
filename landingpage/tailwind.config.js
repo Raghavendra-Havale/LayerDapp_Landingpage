@@ -17,9 +17,7 @@ export default {
         secondary: "#151D29",
         graytext: "#768190 ",
         offwhite: "#FAFAFA",
-        
       },
-      
     },
   },
   plugins: [],

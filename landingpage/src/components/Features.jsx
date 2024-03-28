@@ -34,15 +34,15 @@ function Features() {
     <section className="z-100 pt-16 bg-[#151D29] z-100">
       <img src={FeatureBlur} className="absolute" />
 
-      <div class="md:h-full flex items-center text-white mx-auto">
-        <div class="container px-4 py-4 max-w-6xl mx-auto">
+      <div className="md:h-full flex items-center text-white mx-auto">
+        <div className="container px-4 py-4 max-w-6xl mx-auto">
           <div className=" items-center justify-center mb-10 mt-10 ml-1">
             <h1 className="font-poppins text-lg dark:text-white mb-3 text-left font-normal ">
               LAYERDAPP FEATURES
             </h1>
 
-            <h1 className="font-poppins text-6xl text-left font-semibold  md:text-6xl text-white md:text-left">
-              Create LSA
+            <h1 className="font-poppins text-6xl text-left font-semibold  md:text-[68px] text-white md:text-left">
+              Layer Smart Accounts
             </h1>
 
             <img
@@ -56,99 +56,81 @@ function Features() {
             />
           </div>
 
-          <div class="flex flex-wrap -m-4 ">
-            <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
+          <div className="flex flex-wrap -m-4 mt-16 ">
+
+
+            <div className="group p-2 sm:w-1/2 lg:w-1/3">
+
+
+              <div className="h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                  <img src="../../Scales.png" />
                 </div>
-                <div className="mt-5 text-center font-medium text-2xl text-white hover:text-white">
-                  Create Multiple Account
+                <div className="mt-6 text-center font-medium text-[21px] text-white ">
+                  Multiple Accounts, one EOA
                 </div>
-                <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal mb-3 text-center">
-                    Create multiple accounts linked to one EOA, no need to
-                    transfer gas to multiple wallets
+                <div className="p-6 hover:text-white transition duration-300 ease-in">
+                  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-3  text-center ">
+                    Manage your assets, positions across multiple protocols
+                    effortlessly from a single intuitive interface. No need to
+                    manage gas on multiple wallets
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div className="group p-2 sm:w-1/2 lg:w-1/3 ">
+            <div className="h-full bg-[#020916] bg-opacity-[32%] rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                <img src="../../Interactive.png" />
+                </div>
+                <div className="mt-6 text-center font-medium text-[21px] hover:text-white text-white">
+                Interact with Multiple Protocols
+                </div>
+                <div className="p-6  hover:text-white transition duration-300 ease-in">
+                <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-3 text-center ">
+                  Interact with multiple protocols and Batch their transactions together.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
+
+
+            <div className="group p-2 sm:w-1/2 lg:w-1/3 ">
+
+              <div className="h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                <img src="../../Interchangeability.png" />
                 </div>
-                <div className="mt-5 text-center font-medium text-2xl hover:text-white text-white">
-                  Multiple User Control
+                <div className="mt-6 text-center font-medium text-[21px] text-white">
+                Multi User Control
                 </div>
-                <div class="p-6  hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    Add multiple authorities to the accounts and let your team
-                    manage efficiently
+                <div className="p-6 hover:text-white transition duration-300 ease-in">
+                  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-3 text-center ">
+                  Add multiple authorities to the accounts and let your team manage efficiently.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
-                </div>
-                <div className="mt-5 text-center font-medium mx-1 text-2xl hover:text-white text-white">
-                  Multiple protocol interactions
-                </div>
-                <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    Interact with multiple protocols easily and with our
-                    technology batch and interact with them together
-                  </p>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
 
-      <div class="md:h-full flex items-center text-white mt-56">
-        <div class="container px-4 py-4 mx-auto max-w-6xl">
+
+
+
+
+
+      <div className="md:h-full flex items-center text-white mt-40">
+        <div className="container px-4 py-4 mx-auto max-w-6xl">
           <div className="items-center justify-center mb-10 mt-10 ml-1">
-            <h1 className="font-poppins text-lg dark:text-white mb-3 font-normal text-right ">
+            <h1 className="font-poppins text-lg dark:text-white mb-3 font-normal text-right">
               LAYERDAPP FEATURES
             </h1>
-            <h1 className="font-poppins text-6xl font-semibold text-right md:text-6xl text-white md:text-right">
+            <h1 className="font-poppins text-6xl font-semibold text-right md:text-[65px] text-white md:text-right">
               Interact With Multiple Protocols
             </h1>
 
@@ -163,218 +145,143 @@ function Features() {
             />
           </div>
 
-          <div class="flex flex-wrap -m-4">
-            <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-700 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
+          <div className="flex flex-wrap -m-4">
+
+
+          <div className="group p-2 sm:w-1/2 lg:w-1/3 ">
+              <div className="h-full bg-[#020916] bg-opacity-[32%] rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                  <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                  <img src="../../Togetherness.png" />
+                  </div>
+                  <div className="mt-6 text-center font-medium text-[21px] hover:text-white text-white">
+                  DeFi Without Borders
+                  </div>
+                  <div className="p-6  hover:text-white transition duration-300 ease-in">
+                  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                  Seamlessly navigate and transact across the vast DeFi landscape, from lending on Compound to trading on Uniswap, all in one place.
+                    </p>
+                  </div>
                 </div>
-                <div className="mt-5 text-center font-medium text-2xl hover:text-white text-white">
-                  Multiple accounts & possibilities
+            </div>
+
+            <div className="group p-2 sm:w-1/2 lg:w-1/3 ">
+              <div className="h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                <img src="../../Arrows.png" />
                 </div>
-                <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    Using multiple accounts you can have multiple positions
-                    using the same EOA
+                <div className="mt-6 text-center font-medium text-[21px] text-white">
+                Your alternate frontend to Defi
+                </div>
+                <div className="p-6 hover:text-white transition duration-300 ease-in">
+                  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                  Bridge the gaps between protocols without ever leaving LayerDapp. Whether swapping, lending, or farming, do it all from one unified platform.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-700 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
-                </div>
-                <div className="mt-5 text-center font-medium hover:text-white text-2xl text-white">
-                  Why alternate frontend?
-                </div>
-                <div class="p-6  hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    Its not just a alternate frontend but also using proxy
-                    contracts we can enable unique strategies like leverage.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="group p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
-                </div>
-                <div className="mt-5 text-center font-medium hover:text-white text-2xl text-white">
+
+
+            <div className="group p-2 sm:w-1/2 lg:w-1/3 ">
+              <div className="h-full bg-[#020916] bg-opacity-[32%] rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                  <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                  <img src="../../Solution.png" />
+                  </div>
+                  <div className="mt-5 text-center font-medium text-[21px] hover:text-white text-white">
                   Less fragmentation and more interoperability
+                  </div>
+                  <div className="p-6  hover:text-white transition duration-300 ease-in">
+                  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-3 -mt-2 text-center ">
+                  Bringing the best of protocols, improving discoverability, interoperability and enabling complex strategies like Flash Loans, Leverage.
+                    </p>
+                  </div>
                 </div>
-                <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    We are improving discoverability and usage of protocols and
-                    also enabling strategies that protocols are enabled for like
-                    FLASH LOANS, LEVERAGE.
-                  </p>
-                </div>
-              </div>
             </div>
+
+
           </div>
         </div>
       </div>
 
       {/* DIFFUSION VALUT SECTUON */}
-      <div class="md:h-full grid grid-rows-1 z-100  text-white mt-20">
-        <div class="container px-4 py-4 mx-auto max-w-6xl">
+      <div className="md:h-full grid grid-rows-1 z-100  text-white mt-20">
+        <div className="container px-4 py-4 mx-auto max-w-6xl">
+
+
+
           <div className=" grid grid-cols-2 h-[330px] mb-10 mt-10 ml-1 sm:grid-cols-2">
-            <h1 className="font-poppins  text-8xl text-left font-semibold  md:text-7xl text-white md:text-left">
-              Diffusion{" "}
-              <button className="absolute  -ml-20 font-normal text-sm px-2 rounded-full py-2 bg-red-500 tex">
-                Comming soon
-              </button>{" "}
-              <br /> Vault
-            </h1>
-            <div class="p-4  sm:w-full lg:w-full grid hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
+          <h1 className="font-poppins text-8xl text-left font-semibold md:text-8xl text-white md:text-left pl-10 pt-12 leading-[120px]  ">
+            Diffusion{" "}
+            <button className="absolute -ml-20 font-normal text-sm px-3 rounded-full py-[10px]  bg-[#EA2315] ">
+              Comming soon
+            </button>
+            <div style={{ display: 'inline-block', marginTop: '40px' }}>
+              <span >Vault</span>
+            </div>
+          </h1>
+
+            <div className="sm:w-full lg:w-full grid ">
+              
+            <div className="h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                <img src="../../Playground.png" />
                 </div>
-                <div className="mt-5 z-100 text-center font-medium text-2xl hover:text-white text-white">
-                  Strategy management Layer
+                <div className="mt-6 text-center font-medium text-[21px] text-white">
+                Your playground
                 </div>
-                <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    We are building a strategy management layer that enables
-                    strategy manager to create manual/automated strategies using
-                    multiple protocols
+                <div className="p-6 hover:text-white transition duration-300 ease-in">
+                  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                  Create numerous strategies that can be built on top of multiple legacy protocols and create strategies like hedging, leverage and more.
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div className=" grid grid-cols-2 h-[330px] mb-10 mt-10 ml-1 sm:grid-cols-2">
+          <div className="p-4 sm:w-full lg:w-full grid ">
+              
+              <div className="h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                  <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                  <img src="../../Idea.png" />
+                  </div>
+                  <div className="mt-6 text-center font-medium text-[21px] text-white">
+                  Custom Logic
+                  </div>
+                  <div className="p-6 hover:text-white transition duration-300 ease-in">
+                    <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                    Our contracts can handle your custom logic that you can build using Typescript.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            <div className=" p-4 sm:w-full lg:w-full grid ">
+              
+            <div className="h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ">
+                <div className="w-16 h-16 mt-5  text-2xl flex align-middle justify-center items-center shadow-sm  mx-auto">
+                <img src="../../Finance.png" />
+                </div>
+                <div className="mt-6 text-center font-medium text-[21px] text-white">
+                Everything Defi
+                </div>
+                <div className="p-6 hover:text-white transition duration-300 ease-in">
+                  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                  Use multiple protocols or choose specific assets, manual or automated build anything you like.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
-                </div>
-                <div className="mt-5 hover:text-white font-medium text-center text-2xl text-white">
-                  Logic Layer
-                </div>
-                <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    In short, what you want to do on Defi in a single click
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
-                </div>
-                <div className="mt-5 text-center font-medium hover:text-white text-2xl text-white">
-                  Execution Layer
-                </div>
-                <div class="p-6  hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    Secret sauce, your strategy gets checked and executed here
-                    and enables you to use multiple protocols in one transaction
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 sm:w-1/2 lg:w-1/3 hover:text-white">
-              <div class="h-full bg-lsaCard  hover:bg-blue-600 rounded-3xl overflow-hidden relative cursor-pointer  transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="w-20 h-20 mt-5 bg-white group-hover:bg-white text-blue-500 group-hover:text-blue-500  rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 32 32"
-                    class="h-7 w-7"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M 16 3.875 L 15.5625 4.09375 L 5.5625 9 L 5 9.28125 L 5 11 L 27 11 L 27 9.28125 L 26.4375 9 L 16.4375 4.09375 Z M 16 6.125 L 21.875 9 L 10.125 9 Z M 7 12 L 7 22 L 6 22 L 6 24 L 26 24 L 26 22 L 25 22 L 25 12 L 23 12 L 23 22 L 21 22 L 21 12 L 19 12 L 19 22 L 17 22 L 17 12 L 15 12 L 15 22 L 13 22 L 13 12 L 11 12 L 11 22 L 9 22 L 9 12 Z M 4 25 L 4 27 L 28 27 L 28 25 Z"></path>
-                  </svg>
-                </div>
-                <div className="mt-5 text-center font-medium hover:text-white text-2xl text-white">
-                  Strategy management features
-                </div>
-                <div class="p-6 hover:text-white transition duration-300 ease-in">
-                  <p class="leading-relaxed text-base font-normal text-center mb-3">
-                    Custom share minting, Automated strategies support, Script
-                    logic support, Accurate strategy insights, Multi asset
-                    support and special deposit, withdraw and rebalance
-                    mechanism
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
