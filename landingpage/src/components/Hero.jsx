@@ -46,7 +46,7 @@ function Hero() {
                 <br /> LayerDapp is your one-stop DeFi powerhouse, where simplicity <br />
                 meets innovation.{" "}
                 <br />
-                <span className="font-normal text-base text bg-gradient-to-r from-[#a3dcf1] via-[#5fd0f9] to-[#30a5df] bg-clip-text text-transparent">Explore, Manage, Build</span>{" "}
+                <span className="font-normal text-base text bg-gradient-to-r from-[#a3dcf1] via-[#5fd0f9] to-[#a3dcf1] bg-clip-text text-transparent">Explore, Manage, Build</span>{" "}
                 <br />
                 
               </p>
