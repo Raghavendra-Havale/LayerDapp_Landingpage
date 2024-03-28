@@ -1,10 +1,10 @@
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import { useRef, useEffect } from "react";
-import layerdAppImg from "../assets/layerdApp.png";
+import layerdAppImg from "../assets/layerdApp1.png";
 import Header from "./Header";
-import bgDesignImg from "../assets/bgDesign.png";
-import HeroBlurImg from "../assets/HeroBlur.png"
+import bgDesignImg from "../assets/bgDesign.webp";
+import HeroBlurImg from "../assets/HeroBlur1.webp";
 function Hero() {
   const sectionRef = useRef(null);
 
@@ -27,10 +27,12 @@ function Hero() {
   }, []);
   return (
     <section className={`bg-[#151D29] pb-56`}>
-    <img src={bgDesignImg}
-    className="absolute opacity-20  h-[1000px] w-full" />
-    <img  src={HeroBlurImg}  className="absolute w-full"/>
-    <Header />
+      <img
+        src={bgDesignImg}
+        className="absolute opacity-20  h-[1000px] w-full"
+      />
+      <img src={HeroBlurImg} className="absolute w-full" />
+      <Header />
       <div className="mx-auto  max-w-6xl  flex section" ref={sectionRef}>
         <div className="flex flex-col mx-auto">
           <div className="flex flex-col items-start ">
@@ -38,15 +40,18 @@ function Hero() {
               <h1 className=" text-2xl pt-24 md:text-[86px]  font-semibold bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent leading-none lg:leading-[100px] text-center lg:text-left">
                 {`DeFi's Command  Center `}
               </h1>
-              
+
               <p className="mt-8  text-sm  text-white dark:text-white leading-tight md:leading-[24px] text-center lg:text-left">
-                Layerdapp: Elevate Your DeFi Adventure. Dive deep into the <br /> web3
-                realm, effortlessly bridging diverse protocols.  Transform <br />
-                intricate strategies into intuitive actions, and unlock a world <br />
-                of decentralized opportunities with unparalleled precision and <br />
+                Layerdapp: Elevate Your DeFi Adventure. Dive deep into the{" "}
+                <br /> web3 realm, effortlessly bridging diverse protocols.
+                Transform <br />
+                intricate strategies into intuitive actions, and unlock a world{" "}
+                <br />
+                of decentralized opportunities with unparalleled precision and{" "}
+                <br />
                 security.
               </p>
-              
+
               <div className="flex items-center justify-center lg:justify-start gap-3 mt-11">
                 <a
                   href="https://twitter.com/LayerDapp"
@@ -81,13 +86,19 @@ function Hero() {
                 </button>
               </a>
             </div>
-           
-              <img src={layerdAppImg} className="absolute bottom-28 left-[500px] w-[743px] h-[760px]"/>
-              
-            
+
+            <img
+              src={layerdAppImg}
+              className="absolute left-[500px] w-[743px] h-[760px]"
+            />
           </div>
 
-          <div className="hidden  mt-32 md:flex items-center justify-between bg-[#020916]/30 w-full mx-auto max-w-6xl md:p-5 lg:p-10 rounded-[36px]  dark:border-darktext/50  relative">
+          
+        </div>
+        
+      </div>
+      <div className=" px-[120px] px">
+      <div className="hidden   mt-32 md:flex items-center justify-between bg-[#020916]/30 w-full mx-auto max-w-6xl md:p-5 lg:p-10 rounded-[36px]  dark:border-darktext/50  relative">
             <div className="flex px-10 flex-col items-center justify-center">
               <h3 className="text-white dark:text-white  font-bold md:text-2xl lg:text-4xl opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d">
                 $329.66M
@@ -121,8 +132,7 @@ function Hero() {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+          </div>
     </section>
   );
 }
