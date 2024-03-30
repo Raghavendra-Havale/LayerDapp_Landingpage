@@ -23,13 +23,13 @@ function Header() {
   };
 
   return (
-    <header className="bg-transparent pt-10 max-w-6xl inset-x-0 top-0 z-10 flex h-[76px] items-center justify-between text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
+    <header className="bg-transparent pt-10 max-w-7xl inset-x-0 top-0 z-10 flex h-[76px] items-center justify-between text-graytext px-4 mx-auto rounded-t-none rounded-b-lg">
       <a href="" className="flex items-end justify-center gap-2">
-        <img src="../../logo.png" alt="logo" className="w-full h-auto" />
+        <img src="../../Group_1.png" alt="logo" className="w-full h-auto z-50" />
         <img
-          src="../../LayerDapp.png"
+          src="../../LayerDapp_1.png"
           alt="logo"
-          className="w-full h-5 -pb-2"
+          className="w-full h-7 -pb-2 z-50"
         />
       </a>
       <nav className="items-center justify-center hidden md:flex relative bg-[#020916] rounded-lg gap-9 h-[44px] px-10">
@@ -145,7 +145,7 @@ function Header() {
     href="https://v1-frontend-staging.vercel.app"
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center justify-center gap-1.5 px-3 py-2 text-sm font-medium text-white bg-[#1869F4] hover:bg-[#1658c0] rounded-md cursor-pointer z-[100]"
+    className="inline-flex items-center justify-center gap-1.5 px-5 py-2 text-md font-normal text-white bg-[#1869F4] hover:bg-[#1658c0] rounded-2xl cursor-pointer z-[100]"
     style={{ textDecoration: 'none' }}
   >
     Launch App

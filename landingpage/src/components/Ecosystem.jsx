@@ -23,9 +23,9 @@ function Ecosystem() {
   }, []);
   return (
     <section className="pb-20 bg-[#151D29] z-100">
-      <img src={ecosystemBlur} className="absolute " />
+      {/* <img src={ecosystemBlur} className="absolute " /> */}
       <div
-        className="mx-auto max-w-[1120px] h-[600px]  w-full p-4 flex flex-col section z-50 bg-[#020916]/30 rounded-[40px] "
+        className="mx-auto max-w-7xl h-[600px]  w-full p-4 flex flex-col section z-50 bg-[#020916]/30 rounded-[40px] "
         ref={sectionRef}
       >
         <div className="flex flex-col h-full md:flex-row items-center justify-between mx-5  ">
@@ -34,10 +34,10 @@ function Ecosystem() {
               <h5 className="mb-3 font-semibold text-center md:text-left text-[18px]     text-white dark:text-white">
                 ECOSYSTEM AND PARTNERS
               </h5>
-              <h1 className="font-semibold text-3xl md:text-4xl text-center md:text-left bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent tracking-tighter">
+              <h1 className="font-semibold text-3xl md:text-[40px] text-center md:text-left bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent tracking-tighter">
                 An Ecosystem of DeFi Apps
               </h1>
-              <h5 className="font-semibold text-3xl md:text-4xl text-center md:text-left mt-4 text-white dark:text-white tracking-tighter">
+              <h5 className="font-semibold text-3xl md:text-[40px] text-center md:text-left mt-4 text-white dark:text-white tracking-tighter">
                 Unlocking Financial Freedom
               </h5>
               <p className="text-sm md:text-[20px] leading-7 text-gray-500 text-center md:text-left mt-4">

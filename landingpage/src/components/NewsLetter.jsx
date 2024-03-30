@@ -28,7 +28,7 @@ function NewsLetter() {
     <section className="bg-[#151D29] pt-16 ">
       <img
         src={communityBlur}
-        className="absolute h-[700px] w-full top-[5000px]"
+        className="absolute h-[700px] w-full top-[4970px]"
       />
       <div
         className="mx-auto max-w-6xl p-28 pb-10 flex flex-col section"
