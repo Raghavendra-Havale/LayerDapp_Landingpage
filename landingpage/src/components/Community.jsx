@@ -103,7 +103,7 @@ function Community() {
     <section className="pt-10 md:pt-20 lg:pt-28 bg-[#151D29] z-100">
       <img
         src={communityBlur}
-        className="absolute h-[550px] w-full top-[4050px]"
+        className="absolute h-[550px] w-full top-[4120px]"
       />
       <div
         className="flex flex-col mx-auto max-w-7xl p-4 section"
@@ -123,7 +123,7 @@ function Community() {
         Don't just follow the market - lead it. Explore and employ top-performing strategies curated by our community of DeFi experts and trailblazers.
         </div>
 
-        <div className="mt-8 p-[52px] bg-darktext rounded-lg ">
+        <div className="mt-8 p-[52px] bg-darktext rounded-xl ">
           <div className="flex flex-col lg:flex-row justify-between items-center transition-all duration-500">
             <div className="w-full lg:w-1/3 min-w-[250px] mx-12">
               <Slider className="mb-5" {...settings}>

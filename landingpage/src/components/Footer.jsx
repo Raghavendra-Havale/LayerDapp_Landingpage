@@ -29,7 +29,7 @@ function Footer() {
         ref={sectionRef}
       >
         <div className="mt-2 px-5 text-[#98A2B3] flex justify-between text-left lg:mt-[2rem]">
-            <div>  &copy; 2023 Layerdapp. All rights reserved </div>
+            <div>  &copy; 2024 Layerdapp. All rights reserved </div>
 
             <div className="flex gap-x-5">
               <p>Terms</p>

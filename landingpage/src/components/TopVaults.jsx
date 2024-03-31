@@ -418,8 +418,8 @@ function TopVaults() {
 
         <div className="mt-[15%] w-[63%] h-[320px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective">
           <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-            <div className="absolute my-rotate-y-180 backface-hidden w-full h-full">
-              <img src={trail} className="w-full h-full rounded-3xl" />
+            <div className="absolute my-rotate-y-180 backface-hidden w-full h-full p-4 border border-gray-600 rounded-3xl">
+              <img src={trail} className="w-full h-full rounded-3xl opacity-80" />
             </div>
 
             <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
@@ -442,8 +442,8 @@ function TopVaults() {
       <div className="mx-auto max-w-7xl flex justify-between items-center  gap-6  mt-6">
         <div className=" w-[70%] h-[340px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective">
           <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-            <div className="absolute my-rotate-y-180 backface-hidden w-full h-full">
-              <img src={trail2} className="w-full h-full rounded-3xl" />
+          <div className="absolute my-rotate-y-180 backface-hidden w-full h-full p-4 border border-gray-600 rounded-3xl">
+              <img src={trail2} className="w-full h-full rounded-3xl opacity-80" />
             </div>
 
             <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
@@ -463,8 +463,8 @@ function TopVaults() {
 
         <div className="w-[70%] h-[340px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective">
           <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-            <div className="absolute my-rotate-y-180 backface-hidden w-full h-full">
-              <img src={trail3} className="w-full h-full rounded-3xl" />
+          <div className="absolute my-rotate-y-180 backface-hidden w-full h-full p-4 border border-gray-600 rounded-3xl">
+              <img src={trail3} className="w-full h-full rounded-3xl opacity-80" />
             </div>
 
             <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
