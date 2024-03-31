@@ -6,12 +6,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import communityBlur from "../assets/CommunityBlur1.webp";
-import { RiTwitterXFill } from "react-icons/ri";
-import { FaDiscord, FaGithub } from "react-icons/fa";
-
-import blurX from "../../public/x_blur.png"
-import blurDiscord from "../../public/dicord_blur.png"
-import blurGit from "../../public/github_blur.png"
 
 function Community() {
   const sectionRef = useRef(null);
@@ -27,22 +21,18 @@ function Community() {
         userName2: "DeFiAlex22",
         description2:
           "LayerDapp truly stands out as a DeFi Command Center. With support for multiple protocols and over $70B in TVL, it's the only tool I need for my DeFi activities. ",
-
         fullName3: "Mia Wang",
         userName3: "MiaOnTheBlock",
         description3:
           "The ease of navigating and transacting across different DeFi platforms without leaving LayerDapp has been phenomenal.",
-
         fullName4: "Ethan Clark",
         userName4: "EthanTheEther",
         description4:
           "From managing assets across protocols to batching transactions for efficiency, LayerDapp has revolutionized how I interact with DeFi.",
-
         fullName5: "Aditya Jaa",
         userName5: "AdityaJaaDeFi",
         description5:
           "LayerDapp revolutionized my DeFi strategy with seamless protocol integration. Multi-account management is a game-changer.",
-
         fullName1: "Priya Kumari",
         userName1: "PriyaSinghKumariCrypto",
         description1:
@@ -64,17 +54,14 @@ function Community() {
         userName2: "OliviaDefiQueen",
         description2:
           "Managing multiple accounts under one EOA and interacting with a multitude of protocols has streamlined my operations and my investment horizon.",
-
         fullName3: "Rohan Mehra",
         userName3: "RohanTheTrader",
         description3:
           "LayerDapp makes DeFi easy with support for multiple protocols and insightful community-driven strategies.",
-
         fullName4: "Ananya Patel",
         userName4: "AnanyaDeFiGuru",
         description4:
           "A DeFi command center that simplifies asset management across protocols with custom logic for endless possibilities.",
-
         fullName5: "Vikram Reddy",
         userName5: "VikramInCrypto",
         description5:
@@ -95,9 +82,7 @@ function Community() {
     arrows: false,
     beforeChange: (oldIndex, newIndex) => setCurrentSlideIndex(newIndex),
   };
-
   const currentUser = imgdetails[currentSlideIndex].user;
-
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
@@ -110,152 +95,190 @@ function Community() {
       },
       { threshold: 0.1 } // Adjust the threshold as needed
     );
-
     if (sectionRef.current) {
       sectionObserver.observe(sectionRef.current);
     }
   }, []);
-
-
-  
   return (
-    <section className="pt-10 md:pt-20 lg:pt-28 bg-[#151D29] z-100 ">
-
+    <section className="pt-10 md:pt-20 lg:pt-28 bg-[#151D29] z-100">
       <img
-        src={blurX}
-        className="absolute h-[320px] w-[320px] top-[4210px] left-[60px] object-cover z-0 "
+        src={communityBlur}
+        className="absolute h-[550px] w-full top-[4050px]"
       />
-
-      <img
-        src={blurDiscord}
-        className="absolute h-[250px] w-[320px] top-[4320px] left-[1220px] object-cover z-0 "
-      />   
-
-      <img
-      src={blurGit}
-      className="absolute h-[380px] w-[380px] top-[4900px] left-[1180px] object-cover z-0 filter blur-sm"
-    />
-
-    <div className="max-w-6xl  m-auto flex flex-col items-center">
-     
-      <div className="flex flex-col justify-between items-center">
-        <h className="text-[96px] text-white font-semibold">Our Community</h>
-        <p className="text-[#768190] pb-10 text-[20px] text-center w-[75%]">Don't just follow the market - lead it. Explore and employ top-performing strategies curated by our community of DeFi experts and trailblazers.</p>
-      </div>
-  
-    <div className="container p-[38px] py-[44px] max-w-6xl mx-auto rounded-[50px] bg-[#020916] bg-opacity-50  z-0
-    ">
-
-
-
-    <div className="flex flex-row justify-between items-stretch  gap-6">
-       <div className="w-[50%] rounded-[32px] bg-gradient-to-r from-[#009ACE] via-[#1372DD] to-[#1869F4] p-12 ">
-        <div className=" text-right  pt-10">
-          <div className="mb-5">
-          <p className="text-white font-medium text-[20px]">Community Members</p>
-          <h className= "text-5xl text-[#08F420] leading-[80px] font-bold">40M+</h>
-          </div>
-
-          <div className="mb-5">
-          <p className="text-white font-medium text-[20px]">Community Members</p>
-          <h className= "text-5xl text-[#08F420] leading-[80px] font-bold">40M+</h>
-          </div>          
-
-          <div className="mb-5">
-          <p className="text-white font-medium text-[20px]">Community Members</p>
-          <h className= "text-5xl text-[#08F420] leading-[80px] font-bold">40M+</h>
-          </div>
-
+      <div
+        className="flex flex-col mx-auto max-w-7xl p-4 section"
+        ref={sectionRef}
+      >
+        <div className="font-Poppins m-auto text-3xl md:text-[40px] font-semibold  text-white dark:text-white ">
+          For{" "}
+          <span className="bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent ">
+            The Community
+          </span>{" "}
+          by
         </div>
-       </div>
+        <div className="bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent m-auto font-Poppins text-3xl md:text-[40px] font-semibold text-gradient mt-3 ">
+          The Community
+        </div>
+        <div className="font-Poppins m-auto text-center w-[650px] text-lg md:text-xl font-normal text-[#768190] mt-2 md:mt-4 ">
+        Don't just follow the market - lead it. Explore and employ top-performing strategies curated by our community of DeFi experts and trailblazers.
+        </div>
 
-
-       <div className="w-[50%] rounded-[32px] bg-[#151D29] p-7">
-          <div className="flex flex-col justify-between items-center">
-            <h className="text-white text-[40px] font-semibold ">Discover Top Strategies</h>
-            <p className="text-[20px] text-[#768190]">Community voted Top Strategies</p>
-          </div>
-
-        <div className="w-full mt-8">
+        <div className="mt-8 p-[52px] bg-darktext rounded-lg ">
+          <div className="flex flex-col lg:flex-row justify-between items-center transition-all duration-500">
+            <div className="w-full lg:w-1/3 min-w-[250px] mx-12">
               <Slider className="mb-5" {...settings}>
                 {imgdetails.map((item, index) => (
                   <div key={index}>
                     <img
                       src={item.link}
                       alt={`Image ${index + 1}`}
-                      className="w-[35%] h-auto m-auto mb-1"
+                      className="w-[80%] h-auto m-auto mb-1"
                     />
                   </div>
                 ))}
               </Slider>
-              <div className="">
-                <div className="text-center font-semibold text-[32px] text-white  mb-2">
+              <div>
+                <div className="text-center font-bold text-4xl text-white dark:text-white">
                   {currentUser.protocol}
                 </div>
-                <div className="text-center font-medium text-[16px] mt-1 text-white ">
+                <div className="text-center font-bold text-1xl mt-1 text-white dark:text-white">
                   Strategy Name
                 </div>
-
-                <div className="flex flex-row justify-around mt-4  text-center mb-4 text-white w-[80%] m-auto ">
-
-                  <span className="border-r-4 w-[120px] border-[#D9D9D9]  text-gray-600 font-normal">
+                <div className="flex flex-row justify-around mt-12  text-center mb-14 text-white dark:text-white">
+                  <span className="border-r-4 w-[120px] border-gray-600  text-gray-600 font-bold">
                     TVL
-                    <p className="text-[24px] font-medium text-white">${currentUser.tvl} </p>{" "}
+                    <p className="text-[24px] font-medium text-white ">${currentUser.tvl} </p>{" "}
                   </span>
-                  <span className="border-r-4 w-[130px] border-[#D9D9D9]  text-gray-600 font-normal -ml-[60px]">
+                  <span className="border-r-4 w-[120px] border-gray-600  text-gray-600 font-bold -ml-5">
                     24hr{" "}
-                    <p className="text-[24px] ml-3 font-medium text-white">${currentUser.hr} </p>
+                    <p className="text-[24px] font-medium text-white">${currentUser.hr} </p>
                   </span>
-                  <span className="text-gray-600 -ml-5 font-normal">
+                  <span className="text-gray-600 font-bold">
                     Reward{" "}
-                    <p className="text-[24px] -ml-2 font-medium text-white">${currentUser.reward}</p>
+                    <p className="text-[24px] font-medium text-white">${currentUser.reward}</p>
                   </span>
                 </div>
               </div>
             </div>
 
+            <div className="w-full h-[580px] overflow-scroll lg:w-1/2 text-left pr-0  order-1 md:order-2">
+              {/* <div className="font-Poppins text-xl text-darktext dark:text-white font-semibold leading-tight pb-[3rem]">
+                What the community says
+              </div> */}
+              {/* <div className="absolute inset-x-0  w-[650px] left-[500px] top-[200px] z-100 h-20 bg-gradient-to-r from-gray-800 to-gray-800 blur-lg"></div> */}
 
+              <div className=" min-w-60 ">
+                <div className="bg-gray-900 dark:bg-secondary rounded-xl p-4 mb-4 flex flex-col gap-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)]">
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-[#D9D9D9] p-2 rounded-full"></div>
 
+                    <div className="flex flex-col">
+                      <div className="text-gray-500 font-bold text-xs md:text-sm lg:text-base xl:text-lg">
+                        {currentUser?.fullName1}
+                      </div>
+                      <div className="flex items-center text-[#1869F4] font-medium text-xs md:text-sm lg:text-sm xl:text-base">
+                        <BiLogoDiscordAlt className="mr-1" />{" "}
+                        {currentUser.userName1}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="flex-shrink-0 text-white  text-sm md:text-sm lg:text-sm xl:text-lg">
+                    {currentUser.description1}
+                  </p>
+                </div>
+                <div className="bg-gray-900 dark:bg-secondary rounded-xl p-4 mb-4 flex flex-col gap-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)]">
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-[#D9D9D9] p-2 rounded-full"></div>
 
+                    <div className="flex flex-col">
+                      <div className="text-gray-500 font-bold text-xs md:text-sm lg:text-base xl:text-lg">
+                        {currentUser?.fullName2}
+                      </div>
+                      <div className="flex items-center text-btn font-medium text-xs md:text-sm lg:text-sm xl:text-base">
+                        <BiLogoDiscordAlt className="mr-1" />
+                        {currentUser.userName2}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="flex-shrink-0 text-white dark:text-white text-sm md:text-sm lg:text-sm xl:text-lg">
+                    {currentUser.description2}
+                  </p>
+                </div>
+                <div className="bg-gray-900 dark:bg-secondary rounded-xl p-4 mb-4 flex flex-col gap-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)]">
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-[#D9D9D9] p-2 rounded-full"></div>
 
+                    <div className="flex flex-col">
+                      <div className="text-gray-500 font-bold text-xs md:text-sm lg:text-base xl:text-lg">
+                        {currentUser?.fullName3}
+                      </div>
+                      <div className="flex items-center text-btn font-medium text-xs md:text-sm lg:text-sm xl:text-base">
+                        <BiLogoDiscordAlt className="mr-1" />{" "}
+                        {currentUser?.userName3}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="flex-shrink-0 text-white dark:text-white text-sm md:text-sm lg:text-sm xl:text-lg">
+                    {currentUser.description3}
+                  </p>
+                </div>
 
-       </div>
-    </div>
+                <div className="bg-gray-900 dark:bg-secondary rounded-xl p-4 mb-4 flex flex-col gap-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)]">
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-[#D9D9D9] p-2 rounded-full"></div>
 
+                    <div className="flex flex-col">
+                      <div className="text-gray-500 font-bold text-xs md:text-sm lg:text-base xl:text-lg">
+                        {currentUser?.fullName4}
+                      </div>
+                      <div className="flex items-center text-btn font-medium text-xs md:text-sm lg:text-sm xl:text-base">
+                        <BiLogoDiscordAlt className="mr-1" />{" "}
+                        {currentUser?.userName4}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="flex-shrink-0 text-white dark:text-white text-sm md:text-sm lg:text-sm xl:text-lg">
+                    {currentUser.description4}
+                  </p>
+                </div>
 
+                <div className="bg-gray-900 dark:bg-secondary rounded-xl p-4 mb-4 flex flex-col gap-4 shadow-[0px_0px_8px_1px_rgba(0,0,0,0.1)]">
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-[#D9D9D9] p-2 rounded-full"></div>
 
-    <div className=" flex justify-around items-center m-auto w-[15%] mt-12 -pl-[20px] ml-[42%]">
-    <a
-      href="https://twitter.com/LayerDapp"
-      target="_blank"
-      className="">
-      <RiTwitterXFill className="text-3xl text-white" />
-    </a>
-    <a
-    href="https://discord.gg/eDwnvCc8nB"
-    target="_blank" 
-    className=""
-  >
-    <FaDiscord className="text-3xl text-white" />
-  </a>
-  <a
-    href="https://github.com/LayerDapp"
-    target ="_blank"
-    className=""
-  >
-    {" "}
-    <FaGithub className="text-3xl text-white" />
-  </a>
-
-    </div>
-
-    </div>
-
-    </div>
-
-      
+                    <div className="flex flex-col">
+                      <div className="text-gray-500 font-bold text-xs md:text-sm lg:text-base xl:text-lg">
+                        {currentUser?.fullName5}
+                      </div>
+                      <div className="flex items-center text-btn font-medium text-xs md:text-sm lg:text-sm xl:text-base">
+                        <BiLogoDiscordAlt className="mr-1" />{" "}
+                        {currentUser?.userName5}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="flex-shrink-0 text-white dark:text-white text-sm md:text-sm lg:text-sm xl:text-lg">
+                    {currentUser.description5}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" flex w-full mt-3">
+            <div className="w-[50%]"></div>
+            <a
+              href="https://discord.gg/eDwnvCc8nB"
+              className="w-[50%] flex items-center justify-center"
+              target="_blank"
+            >
+              <button className="bg-[#1869F4] text-white text-base font-normal px-6 py-4 rounded-xl flex items-center justify-center">
+                <BiLogoDiscordAlt className="mr-2" />
+                Join Community
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
-
 export default Community;

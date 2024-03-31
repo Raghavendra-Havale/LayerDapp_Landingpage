@@ -8,6 +8,9 @@ import Ellipse25Img from "../assets/Ellipse25.png";
 import Ellipse20Img from "../assets/Ellipse20.png";
 import Ellipse21Img from "../assets/Ellipse21.png";
 import FeatureBlur from "../assets/FeatureBlur1.webp";
+import trail from "../assets/bg3.webp";
+import trail2 from "../assets/bg2.webp";
+import trail3 from "../assets/bg4.webp";
 import gif from "../../public/Gif1.gif"
 import gif2 from "../../public/Gif2.gif"
 
@@ -228,7 +231,7 @@ function Features() {
 
 
       {/* DIFFUSION VALUT SECTUON */}
-      <div className="md:h-full grid grid-rows-1 z-100 text-white mt-36">
+      {/* <div className="md:h-full grid grid-rows-1 z-100 text-white mt-36">
         <div className="container py-4 mx-auto max-w-7xl ">
 
 
@@ -251,12 +254,14 @@ function Features() {
             <div className="mt-6 text-center font-medium text-[24px] text-white pt-10">
                 Your playground
             </div>
-                <div className="p-6 hover:text-white transition duration-300 ease-in">
-                  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
-                  Create numerous strategies that can be built on top of multiple legacy protocols and create strategies like hedging, leverage and more.
-                  </p>
-                </div>
-              </div>
+
+            <div className="p-6 hover:text-white transition duration-300 ease-in">
+                <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                Create numerous strategies that can be built on top of multiple legacy protocols and create strategies like hedging, leverage and more.
+                </p>
+            </div>
+
+          </div>
 
 
             </div>
@@ -302,7 +307,111 @@ function Features() {
 
 
         </div>
+      </div> */}
+
+
+
+
+      <section className=" mx-auto max-w-7xl min-h-[100vh]] flex justify-between items-center -my-[100px] mt-[100px]">
+
+          <h1 className="font-poppins text-8xl text-left font-semibold md:text-8xl text-white md:text-left pl-24 pt-24 leading-[120px]  ">
+            Diffusion{" "}
+            <button className="absolute -ml-20 font-normal text-sm px-3 rounded-full py-[10px]  bg-[#EA2315] ">
+              Comming soon
+            </button>
+            <div style={{ display: 'inline-block', marginTop: '40px' }}>
+              <span >Vault</span>
+            </div>
+          </h1>
+
+
+          <div className="mt-[15%] w-[63%] h-[320px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective"> 
+            <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+
+              <div className="absolute my-rotate-y-180 backface-hidden w-full h-full">
+                <img src={trail} className="w-full h-full rounded-3xl"/>
+              </div>
+
+              <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
+
+                  <div className=" mt-8 text-center font-medium text-[24px] text-white pt-10">
+                    Your playground
+                  </div>
+
+                <div className="p-6 ">
+                    <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                    Create numerous strategies that can be built on top of multiple legacy protocols and create strategies like hedging, leverage and more.
+                    </p>
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+
+      </section>
+
+
+
+
+      <section className="mx-auto max-w-7xl min-h-[100vh] flex justify-between items-center  gap-6 -mt-[280px]">
+
+      <div className="mt-[18%] w-[70%] h-[340px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective"> 
+            <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+
+              <div className="absolute my-rotate-y-180 backface-hidden w-full h-full">
+                <img src={trail2} className="w-full h-full rounded-3xl"/>
+              </div>
+
+              <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
+
+                  <div className=" mt-8 text-center font-medium text-[24px] text-white pt-10">
+                  Custom Logic
+                  </div>
+
+                <div className="p-6 ">
+                    <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                    Our contracts can handle your custom logic that you can build using Typescript.
+                    </p>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+    <div className="mt-[18%] w-[70%] h-[340px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective"> 
+      <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+
+        <div className="absolute my-rotate-y-180 backface-hidden w-full h-full">
+          <img src={trail3} className="w-full h-full rounded-3xl"/>
+        </div>
+
+          <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
+
+            <div className=" mt-8 text-center font-medium text-[24px] text-white  pt-10">
+            Everything Defi
+            </div>
+
+            <div className="p-6 ">
+                <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+                Use multiple protocols or choose specific assets, manual or automated build anything you like.
+                </p>
+            </div>
+
+
+          </div>
+
+
       </div>
+    </div>
+    </section>
+
+
+
 
 
     </section>
