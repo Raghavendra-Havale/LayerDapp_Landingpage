@@ -22,12 +22,14 @@ function Ecosystem() {
     }
   }, []);
   return (
-    <section className="pb-20 bg-[#151D29] z-100">
+    <section className="pb-20 bg-[#151D29] z-100 ">
       {/* <img src={ecosystemBlur} className="absolute " /> */}
+
       <div
         className="mx-auto max-w-7xl h-[600px]  w-full p-4 flex flex-col section z-50 bg-[#020916]/30 rounded-[40px] "
         ref={sectionRef}
       >
+
         <div className="flex flex-col h-full md:flex-row items-center justify-between gap-5 px-4">
           <div className="flex flex-col w-[550px] md:flex-row items-center justify-between gap-6     my-12">
             <div className="flex flex-col items-center md:items-start w-full    md:w-full">
@@ -48,10 +50,10 @@ function Ecosystem() {
           </div>
 
           <div className="sm:w-7/12 sm:mt-0 mt-[30px] w-full flex justify-center sm:gap-x-10 gap-x-4 overflow-hidden">
-            <div className="">
-              <div className="overflow-hidden h-[600px] flex flex-col">
+            <div className="mt-2">
+              <div className="overflow-hidden h-[590px] flex flex-col">
                 <div className="animation_settings flex flex-col gap-4">
-                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]  z-10">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
                       <img
                         src="../../uni_logo.png"
@@ -65,7 +67,7 @@ function Ecosystem() {
                       Uniswap
                     </div>
                   </div>
-                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px] z-10">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
                       <img
                         src="../../lido_logo.png"
@@ -79,7 +81,7 @@ function Ecosystem() {
                       Lido
                     </div>
                   </div>
-                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px] z-10">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
                       <img
                         src="../../compound_logo.png"
@@ -94,7 +96,7 @@ function Ecosystem() {
                     </div>
                   </div>
 
-                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px] z-10">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
                       <img
                         src="../../newAave.png"
@@ -109,7 +111,7 @@ function Ecosystem() {
                     </div>
                   </div>
 
-                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px] z-10" >
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
                       <img
                         src="../../arbitrum-logo.webp"
@@ -124,7 +126,7 @@ function Ecosystem() {
                     </div>
                   </div>
 
-                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px] z-10">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
                       <img
                         src="../../avalanche-logo.webp"
@@ -138,7 +140,7 @@ function Ecosystem() {
                       Avalanche
                     </div>
                   </div>
-                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px] z-10">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
                       <img
                         src="../../bnb-logo.png"
@@ -152,7 +154,7 @@ function Ecosystem() {
                       BNB
                     </div>
                   </div>
-                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
+                  <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px] z-10">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
                       <img
                         src="../../ethereum-logo.png"
@@ -224,8 +226,8 @@ function Ecosystem() {
               </div>
             </div>
 
-            <div className="">
-              <div className="overflow-hidden h-[600px] flex flex-col">
+            <div className="mt-2">
+              <div className="overflow-hidden h-[590px] flex flex-col">
                 <div className="animation_settings2 flex flex-col gap-4">
                   <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
@@ -400,8 +402,8 @@ function Ecosystem() {
               </div>
             </div>
 
-            <div className="hidden sm:block">
-              <div className="overflow-hidden h-[600px] flex flex-col">
+            <div className="hidden sm:block mt-2">
+              <div className="overflow-hidden h-[590px] flex flex-col">
                 <div className="animation_settings flex flex-col gap-4">
                   <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">

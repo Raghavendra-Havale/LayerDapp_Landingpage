@@ -5,6 +5,10 @@ import trail from "../assets/bg3.webp";
 import trail2 from "../assets/bg2.webp";
 import trail3 from "../assets/bg4.webp";
 
+import BGRing from "../assets/BGRing.png";
+import icon1 from "../assets/ico1.png";
+
+
 function TopVaults() {
   const sectionRef = useRef(null);
 
@@ -404,84 +408,67 @@ function TopVaults() {
     //     </div>
     //   </div>
     // </section>
-    <section className="py-10 bg-[#151D29]">
-      <div className=" mx-auto max-w-7xl flex justify-between items-center mt-[100px] bg-[#151D29]">
-        <h1 className="font-poppins text-8xl text-left font-semibold md:text-8xl text-white md:text-left pl-24 pt-24 leading-[120px]  ">
-          Diffusion{" "}
-          <button className="absolute -ml-20 font-normal text-sm px-3 rounded-full py-[10px]  bg-[#EA2315] ">
+
+    <section className="pt-20 bg-[#151D29]">
+
+
+
+      <img
+        src={BGRing}
+        className="absolute h-[full] w-[full] top-[3650px]"
+      />
+
+      <div className=" mx-auto max-w-[1340px] flex justify-between items-center mt-[100px] bg-[#020916]/40 gap-8  rounded-2xl z-[1000] p-10 backdrop-blur-sm">
+
+
+        <div className="font-poppins text-[66px] text-left font-semibold  text-white z-10 pl-4 w-[44%] tracking-tight">
+          Diffusion Vault
+          <button className="absolute -ml-20  font-normal text-sm px-3 rounded-full py-[10px]  bg-[#EA2315] ">
             Comming soon
           </button>
-          <div style={{ display: "inline-block", marginTop: "40px" }}>
-            <span>Vault</span>
-          </div>
-        </h1>
-
-        <div className="mt-[15%] w-[63%] h-[320px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective">
-          <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-            <div className="absolute my-rotate-y-180 backface-hidden w-full h-full p-4 border border-gray-600 rounded-3xl">
-              <img src={trail} className="w-full h-full rounded-3xl opacity-80" />
-            </div>
-
-            <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
-              <div className=" mt-8 text-center font-medium text-[24px] text-white pt-10">
-                Your playground
-              </div>
-
-              <div className="p-6 ">
-                <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
-                  Create numerous strategies that can be built on top of
-                  multiple legacy protocols and create strategies like hedging,
-                  leverage and more.
-                </p>
-              </div>
-            </div>
-          </div>
+          <p className="text-2xl font-extralight tracking-normal text-white z-10">Diffusion Vaults are playground to use multiple protocols together to create structured products </p>
         </div>
+
+
+        <div className="w-[60%] flex flex-col justify-between items-center">
+
+          <div className="p-5 w-full rounded-3xl flex justify-between items-center bg-[#020916]">
+
+            <div className="w-[48%] flex flex-col justify-between items-start p-1">
+              <img src={icon1} alt="err" className="w-[17%] mr-4 rounded-full"/>
+              <p className="font-light text-base text-white leading-6 mt-4">Integration with plugins and automation to enable easy creation and management of strategies</p>
+            </div>
+
+            <div className="h-[120px] border"></div>
+
+            <div className="w-[48%] flex flex-col justify-between items-start  ml-2">
+            <img src={icon1} alt="err" className="w-[17%] mr-4 rounded-full"/>
+              <p className="font-light text-base text-white leading-6 mt-4">Enable custom share minting and performance fee to extend your stratgies to public</p>
+            </div>
+          </div>
+
+
+
+          <div className="p-5 w-full rounded-3xl flex justify-between items-center bg-[#020916] mt-6">
+
+            <div className="w-[48%] flex flex-col justify-between items-start p-1 ">
+              <img src={icon1} alt="err" className="w-[17%] mr-4 rounded-full"/>
+              <p className="font-light text-base text-white leading-6 mt-4">If you always thought of using Uniswap and AAVE together at one place and putting idle assets in AAVE till your buying order gets triggered this is what you need</p>
+            </div>
+
+            <div className="h-[180px] border"></div>
+
+            <div className="w-[48%] flex flex-col h-[180px]  items-baseline  ml-2 ">
+            <img src={icon1} alt="err" className="w-[17%] mr-4 rounded-full"/>
+              <p className="font-light text-base text-white leading-6 mt-4">It gives you access to create custom logic and automated strategy</p>
+            </div>
+          </div>
+
+        </div>
+
+
       </div>
 
-      <div className="mx-auto max-w-7xl flex justify-between items-center  gap-6  mt-6">
-        <div className=" w-[70%] h-[340px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective">
-          <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-          <div className="absolute my-rotate-y-180 backface-hidden w-full h-full p-4 border border-gray-600 rounded-3xl">
-              <img src={trail2} className="w-full h-full rounded-3xl opacity-80" />
-            </div>
-
-            <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
-              <div className=" mt-8 text-center font-medium text-[24px] text-white pt-10">
-                Custom Logic
-              </div>
-
-              <div className="p-6 ">
-                <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
-                  Our contracts can handle your custom logic that you can build
-                  using Typescript.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-[70%] h-[340px] bg-[#FFFFFF] bg-opacity-5 rounded-3xl bg-transparent cursor-pointer group perspective">
-          <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-          <div className="absolute my-rotate-y-180 backface-hidden w-full h-full p-4 border border-gray-600 rounded-3xl">
-              <img src={trail3} className="w-full h-full rounded-3xl opacity-80" />
-            </div>
-
-            <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
-              <div className=" mt-8 text-center font-medium text-[24px] text-white  pt-10">
-                Everything Defi
-              </div>
-
-              <div className="p-6 ">
-                <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
-                  Use multiple protocols or choose specific assets, manual or
-                  automated build anything you like.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
@@ -499,3 +486,21 @@ function Card({ children }) {
 Card.propTypes = {
   children: PropTypes.func,
 };
+
+
+
+
+
+{/* <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
+<div className=" mt-8 text-center font-medium text-[24px] text-white  pt-10">
+  Everything Defi
+</div>
+
+<div className="mt-6 w-[96%] h-[1px] m-auto bg-gradient-to-r from-[#01536e] via-[#087fd4] to-[#01536e]"></div>
+
+<div className="p-6 ">
+  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
+  Use multiple protocols or choose specific assets, manual or automated build anything you like, enabling a vast landscape of opportunities for innovation and strategic design in your endeavors.
+  </p>
+</div>
+</div> */}

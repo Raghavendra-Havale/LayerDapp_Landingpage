@@ -5,6 +5,9 @@ import layerdAppImg from "../assets/layerdApp1.png";
 import Header from "./Header";
 import bgDesignImg from "../assets/bgDesign.webp";
 import HeroBlurImg from "../assets/HeroBlur1.webp";
+
+import newHeroBG1 from "../assets/newHeroBG1.png"
+
 function Hero() {
   const sectionRef = useRef(null);
 
@@ -27,8 +30,8 @@ function Hero() {
   return (
     <section className={`bg-[#151D29] pb-52`}>
       <img
-        src={bgDesignImg}
-        className="absolute opacity-40  h-[1000px] w-full "
+        src={newHeroBG1}
+        className="absolute top-[-30px]  h-[750px] w-[28%]"
       />
       <img src={HeroBlurImg} className="absolute w-full " />
       <Header />
