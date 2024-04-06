@@ -1,0 +1,51 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.6, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-30px);
+    animation-timing-function: cubic-bezier(0.6, 0, 1, 1);
+  }
+}
+
+
+@keyframes slideFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0.2;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+
+
+@keyframes zoomInFadeIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+
+.bouncing {
+  animation: bounce 4s infinite;
+}
+
+  
+.slide-up {
+    animation: slideFromBottom 1.5s ease-out forwards;
+  }
+  
+
+.zoom-in-fade-in {
+    animation: zoomInFadeIn 1.2s ease-out forwards;
+  }

@@ -3,9 +3,12 @@ import { BiLogoDiscordAlt } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { useRef, useEffect } from "react";
 import communityBlur from "../assets/CommunityBlur1.webp";
+import "./Newsletter.css"
 
 function NewsLetter() {
+
   const sectionRef = useRef(null);
+  const animatedDivRef = useRef(null); 
 
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
@@ -13,17 +16,35 @@ function NewsLetter() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("revealed");
+
+            // Check for the specific div and add animation class
+            if (entry.target === animatedDivRef.current) {
+              entry.target.classList.add("fade-in-on-scroll");
+            }
+
             sectionObserver.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 } // Adjust the threshold as needed
+      { threshold: 0.2 } // Adjust the threshold as needed
     );
 
     if (sectionRef.current) {
       sectionObserver.observe(sectionRef.current);
     }
+
+    // Observe the animated div
+    if (animatedDivRef.current) {
+      sectionObserver.observe(animatedDivRef.current);
+    }
+
+    // Cleanup the observer on component unmount
+    return () => {
+      sectionObserver.disconnect();
+    };
   }, []);
+
+
   return (
     <section className="bg-[#151D29] pt-16 ">
       <img
@@ -32,7 +53,7 @@ function NewsLetter() {
       />
       <div
         className="mx-auto max-w-6xl p-28 pb-10 flex flex-col section"
-        ref={sectionRef}
+        ref={animatedDivRef}
       >
         <div className="text-center flex gap-3 justify-center flex-col items-center">
           <div className="font-poppins text-center leading-6 text-[26px] font-medium  bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700  bg-clip-text text-transparent pb-5px">

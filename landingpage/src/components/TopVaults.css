@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0.2;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+  }
+  
+
+.fade-in-on-scroll {
+animation: fadeIn 1s ease-out forwards;
+}

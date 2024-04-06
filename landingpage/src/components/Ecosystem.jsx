@@ -1,8 +1,10 @@
 import { useRef, useEffect } from "react";
-import ecosystemBlur from "../assets/ecosystemBlur1.webp";
+import './Ecosystem.css';
+
 
 function Ecosystem() {
   const sectionRef = useRef(null);
+  const animatedDivRef = useRef(null); 
 
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
@@ -10,6 +12,12 @@ function Ecosystem() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("revealed");
+
+            // Check for the specific div and add animation class
+            if (entry.target === animatedDivRef.current) {
+              entry.target.classList.add("fade-in-on-scroll");
+            }
+
             sectionObserver.unobserve(entry.target);
           }
         });
@@ -20,7 +28,18 @@ function Ecosystem() {
     if (sectionRef.current) {
       sectionObserver.observe(sectionRef.current);
     }
+
+    // Observe the animated div
+    if (animatedDivRef.current) {
+      sectionObserver.observe(animatedDivRef.current);
+    }
+
+    // Cleanup the observer on component unmount
+    return () => {
+      sectionObserver.disconnect();
+    };
   }, []);
+
   return (
     <section className="pb-20 bg-[#151D29] z-100 ">
       {/* <img src={ecosystemBlur} className="absolute " /> */}
@@ -31,7 +50,8 @@ function Ecosystem() {
       >
 
         <div className="flex flex-col h-full md:flex-row items-center justify-between gap-5 px-4">
-          <div className="flex flex-col w-[550px] md:flex-row items-center justify-between gap-6     my-12">
+          <div className="flex flex-col w-[550px] md:flex-row items-center justify-between gap-6     my-12"
+          ref={animatedDivRef}>
             <div className="flex flex-col items-center md:items-start w-full    md:w-full">
               <h5 className="mb-3 font-semibold text-center md:text-left text-[18px]     text-white dark:text-white">
                 ECOSYSTEM AND PARTNERS

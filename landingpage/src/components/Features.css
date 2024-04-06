@@ -1,0 +1,95 @@
+@keyframes fadeIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0.2;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+  }
+  
+
+.fade-in-on-scroll {
+animation: fadeIn 1s ease-out forwards;
+}
+
+
+@keyframes fadeIn2 {
+    from {
+        transform: translateY(100%);
+        opacity: 0.2;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+  }
+  
+
+.fade-in-on-scroll2 {
+animation: fadeIn2 1s ease-out forwards;
+}
+
+
+@keyframes slideInFromTopLeft {
+    from {
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromTopRight {
+    from {
+      transform: translate(50%, -50%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottomLeft {
+    from {
+      transform: translate(-50%, 50%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottomRight {
+    from {
+      transform: translate(50%, 50%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+
+  .slide-in-top-left {
+    animation: slideInFromTopLeft 0.5s ease-out forwards;
+  }
+  
+  .slide-in-top-right {
+    animation: slideInFromTopRight 0.5s ease-out forwards;
+  }
+  
+  .slide-in-bottom-left {
+    animation: slideInFromBottomLeft 0.5s ease-out forwards;
+  }
+  
+  .slide-in-bottom-right {
+    animation: slideInFromBottomRight 0.5s ease-out forwards;
+  }
+  

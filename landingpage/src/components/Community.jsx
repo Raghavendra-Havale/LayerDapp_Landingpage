@@ -6,9 +6,61 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import communityBlur from "../assets/CommunityBlur1.webp";
+import "./Community.css"
 
 function Community() {
   const sectionRef = useRef(null);
+  const fadeInRef = useRef(null);
+  const fadeInRef2 = useRef(null);
+  const fadeInRef3 = useRef(null);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed"); 
+
+            if (entry.target === fadeInRef.current) {
+              entry.target.classList.add("fade-in-on-scroll");
+            }
+
+            if (entry.target === fadeInRef2.current) {
+              entry.target.classList.add("fade-in-on-scroll2");
+            }
+
+            if (entry.target === fadeInRef3.current) {
+              entry.target.classList.add("fade-in-on-scroll3");
+            }
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+  
+    // Observe the existing section
+    if (sectionRef.current) {
+      sectionObserver.observe(sectionRef.current);
+    }
+  
+    // Observe the new div for fadeIn animation
+    if (fadeInRef.current) {
+      sectionObserver.observe(fadeInRef.current);
+    }
+
+    if (fadeInRef2.current) {
+      sectionObserver.observe(fadeInRef2.current);
+    }
+
+    if (fadeInRef3.current) {
+      sectionObserver.observe(fadeInRef3.current);
+    }
+  
+    // Cleanup
+    return () => sectionObserver.disconnect();
+  }, []);
+
   const imgdetails = [
     {
       link: "../../aave5.png",
@@ -83,22 +135,10 @@ function Community() {
     beforeChange: (oldIndex, newIndex) => setCurrentSlideIndex(newIndex),
   };
   const currentUser = imgdetails[currentSlideIndex].user;
-  useEffect(() => {
-    const sectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
-            sectionObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 } // Adjust the threshold as needed
-    );
-    if (sectionRef.current) {
-      sectionObserver.observe(sectionRef.current);
-    }
-  }, []);
+
+
+
+
   return (
     <section className="pt-10 md:pt-20 lg:pt-36 bg-[#151D29] z-100">
       <img
@@ -107,19 +147,22 @@ function Community() {
       />
       <div
         className="flex flex-col mx-auto max-w-7xl p-4 section"
-        ref={sectionRef}
+        ref={fadeInRef}
       >
-        <div className="font-Poppins m-auto text-3xl md:text-[40px] font-semibold  text-white dark:text-white ">
+        <div className="font-Poppins m-auto text-3xl md:text-[40px] font-semibold  text-white dark:text-white"
+        >
           For{" "}
           <span className="bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent ">
             The Community
           </span>{" "}
           by
         </div>
-        <div className="bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent m-auto font-Poppins text-3xl md:text-[40px] font-semibold text-gradient mt-3 ">
+        <div className="bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent m-auto font-Poppins text-3xl md:text-[40px] font-semibold text-gradient mt-3 "
+       >
           The Community
         </div>
-        <div className="font-Poppins m-auto text-center w-[650px] text-lg md:text-xl font-normal text-[#768190] mt-2 md:mt-4 ">
+        <div className="font-Poppins m-auto text-center w-[650px] text-lg md:text-xl font-normal text-[#768190] mt-2 md:mt-4"
+        >
         Don't just follow the market - lead it. Explore and employ top-performing strategies curated by our community of DeFi experts and trailblazers.
         </div>
 

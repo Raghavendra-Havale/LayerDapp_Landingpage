@@ -1,9 +1,6 @@
 import PropTypes from "prop-types";
 import { useRef, useEffect } from "react";
-
-import trail from "../assets/bg3.webp";
-import trail2 from "../assets/bg2.webp";
-import trail3 from "../assets/bg4.webp";
+import "./TopVaults.css"
 
 import BGRing from "../assets/BGRing.png";
 import icon1 from "../assets/ico1.png";
@@ -11,6 +8,7 @@ import icon1 from "../assets/ico1.png";
 
 function TopVaults() {
   const sectionRef = useRef(null);
+  const animatedDivRef = useRef(null); 
 
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
@@ -18,17 +16,35 @@ function TopVaults() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("revealed");
+
+            // Check for the specific div and add animation class
+            if (entry.target === animatedDivRef.current) {
+              entry.target.classList.add("fade-in-on-scroll");
+            }
+
             sectionObserver.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 } // Adjust the threshold as needed
+      { threshold: 0.2 } // Adjust the threshold as needed
     );
 
     if (sectionRef.current) {
       sectionObserver.observe(sectionRef.current);
     }
+
+    // Observe the animated div
+    if (animatedDivRef.current) {
+      sectionObserver.observe(animatedDivRef.current);
+    }
+
+    // Cleanup the observer on component unmount
+    return () => {
+      sectionObserver.disconnect();
+    };
   }, []);
+
+
   return (
     // <section className="pt-10 bg-white dark:bg-darktext">
     //   <div
@@ -421,7 +437,8 @@ function TopVaults() {
       <div className=" mx-auto max-w-[1340px] flex justify-between items-center mt-[100px] bg-[#020916]/40 gap-8  rounded-2xl z-[1000] p-10 backdrop-blur-sm">
 
 
-        <div className="font-poppins text-[66px] text-left font-semibold  text-white z-10 pl-4 w-[44%] tracking-tight">
+        <div className="font-poppins text-[66px] text-left font-semibold  text-white z-10 pl-4 w-[44%] tracking-tight"
+        ref={animatedDivRef} >
           Diffusion Vault
           <button className="absolute -ml-20  font-normal text-sm px-3 rounded-full py-[10px]  bg-[#EA2315] ">
             Comming soon
