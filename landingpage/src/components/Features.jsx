@@ -18,6 +18,11 @@ import icon7 from "../assets/ico7.png";
 import icon8 from "../assets/ico8.png";
 import icon9 from "../assets/ico9.png";
 
+import line1 from "../assets/line1.png"
+import line2 from "../assets/line2.png"
+import line3 from "../assets/line3.png"
+import line4 from "../assets/line4.png"
+
 import Frame1 from "../assets/Frame1.png";
 import Frame2 from "../assets/Frame2.png";
 
@@ -106,13 +111,35 @@ function Features() {
 
       <img
         src={Frame1}
-        className="absolute h-[full] w-[160px] top-[3060px] left-[44%] z-10"
+        className="absolute h-[full] w-[160px] top-[3060px] left-[44%] z-[100]"
       />
 
       <img
         src={Frame2}
-        className="absolute h-[full] w-[160px] top-[3050px] left-[44%] z-1 opacity-60"
+        className="absolute h-[full] w-[160px] top-[3050px] left-[44%] z-[10] opacity-60"
       />
+
+      <img
+        src={line1}
+        className="absolute h-[full] w-[400px] top-[3050px] left-[23%]"
+      />
+
+      <img
+        src={line2}
+        className="absolute h-[full] w-[400px] top-[3160px] left-[23%]"
+      />
+
+    <img
+        src={line3}
+        className="absolute h-[full] w-[400px] top-[3060px] left-[52%]"
+      />
+
+
+    <img
+        src={line4}
+        className="absolute h-[full] w-[400px] top-[3160px] left-[52%]"
+      />
+
      
       <div className="md:h-full flex items-center text-white mx-auto z-[100]">
         <div className="container  max-w-7xl mx-auto  mt-[140px]">
