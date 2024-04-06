@@ -505,19 +505,3 @@ Card.propTypes = {
 };
 
 
-
-
-
-{/* <div className="absolute backface-hidden w-full h-full bg-[#FFFFFF] bg-opacity-5 rounded-3xl shadow-2xl">
-<div className=" mt-8 text-center font-medium text-[24px] text-white  pt-10">
-  Everything Defi
-</div>
-
-<div className="mt-6 w-[96%] h-[1px] m-auto bg-gradient-to-r from-[#01536e] via-[#087fd4] to-[#01536e]"></div>
-
-<div className="p-6 ">
-  <p className=" leading-[24px] text-[#FFFFFF] text-opacity-70 text-[15px] font-normal mb-4 mt-4 text-center ">
-  Use multiple protocols or choose specific assets, manual or automated build anything you like, enabling a vast landscape of opportunities for innovation and strategic design in your endeavors.
-  </p>
-</div>
-</div> */}

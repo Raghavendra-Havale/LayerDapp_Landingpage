@@ -3,7 +3,7 @@ import { BiLogoDiscordAlt } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { useRef, useEffect } from "react";
 import communityBlur from "../assets/CommunityBlur1.webp";
-import "./Newsletter.css"
+import "./NewsLetter.css"
 
 function NewsLetter() {
 
