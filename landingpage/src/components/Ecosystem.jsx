@@ -45,11 +45,15 @@ function Ecosystem() {
       {/* <img src={ecosystemBlur} className="absolute " /> */}
 
       <div
-        className="mx-auto max-w-7xl h-[600px]  w-full p-4 flex flex-col section z-50 bg-[#020916]/30 rounded-[40px] "
+        className="mx-auto max-w-7xl h-[600px] pl-[2px] pb-[2px] w-full  flex flex-col section z-50 bg-[#020916]/30 rounded-[40px] card-wrapper"
         ref={sectionRef}
       >
 
-        <div className="flex flex-col h-full md:flex-row items-center justify-between gap-5 px-4">
+        <div className="card-content bg-[#0c1524] p-4 rounded-[40px]">
+
+        
+
+        <div className="flex flex-col h-full md:flex-row items-center justify-between gap-5 px-4 ">
           <div className="flex flex-col w-[550px] md:flex-row items-center justify-between gap-6     my-12"
           ref={animatedDivRef}>
             <div className="flex flex-col items-center md:items-start w-full    md:w-full">
@@ -70,8 +74,8 @@ function Ecosystem() {
           </div>
 
           <div className="sm:w-7/12 sm:mt-0 mt-[30px] w-full flex justify-center sm:gap-x-10 gap-x-4 overflow-hidden">
-            <div className="mt-[1px]">
-              <div className="overflow-hidden h-[600px] flex flex-col">
+            <div className="mt-[4px]">
+              <div className="overflow-hidden h-[590px] flex flex-col">
                 <div className="animation_settings flex flex-col gap-4">
                   <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]  z-10">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
@@ -246,8 +250,8 @@ function Ecosystem() {
               </div>
             </div>
 
-            <div className="mt-[2px]">
-              <div className="overflow-hidden h-[600px] flex flex-col">
+            <div className="mt-[4px]">
+              <div className="overflow-hidden h-[590px] flex flex-col">
                 <div className="animation_settings2 flex flex-col gap-4">
                   <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
@@ -422,8 +426,8 @@ function Ecosystem() {
               </div>
             </div>
 
-            <div className="hidden sm:block mt-[2px]">
-              <div className="overflow-hidden h-[600px] flex flex-col">
+            <div className="hidden sm:block mt-[4px]">
+              <div className="overflow-hidden h-[590px] flex flex-col">
                 <div className="animation_settings flex flex-col gap-4">
                   <div className="w-[165px] h-[220px] px-4 bg-[#020916] flex flex-col justify-between py-4 rounded-[30px]">
                     <div className="w-full h-full flex justify-center items-center mb-2 ">
@@ -599,6 +603,11 @@ function Ecosystem() {
             </div>
           </div>
         </div>
+
+
+
+        </div>
+
       </div>
     </section>
   );

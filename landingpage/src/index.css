@@ -198,3 +198,27 @@ html {
   height: 364px;
   width: 411px;
 }
+
+
+@layer utilities {
+  /* Act as a border */
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-gradient-to-b ;
+  }
+
+  /* Gradient */
+  .card-wrapper::before {
+    background: conic-gradient(
+      rgba(29, 174, 237, 0.948) 5deg,
+      rgba(15, 86, 241, 0.851) 10deg,
+      transparent 120deg
+    );
+
+    @apply absolute left-[-0%] top-[-25%] h-[130%] w-[100%] animate-border-spin content-[''];
+  }
+
+  /* Body */
+  .card-content {
+    @apply relative  left-[2px] top-[4px] h-[calc(100%-4px)] w-[calc(100%-4px)] rounded-2xl;
+  }
+}

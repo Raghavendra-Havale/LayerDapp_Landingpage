@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import communityBlur from "../assets/CommunityBlur1.webp";
 import "./Community.css"
+import "./TopVaults.css"
+
 
 function Community() {
   const sectionRef = useRef(null);
@@ -166,7 +168,10 @@ function Community() {
         Don't just follow the market - lead it. Explore and employ top-performing strategies curated by our community of DeFi experts and trailblazers.
         </div>
 
-        <div className="mt-8 p-[52px] bg-darktext rounded-xl ">
+        <div className="mt-8  rounded-xl card-wrapper">
+
+        <div className="card-content p-[52px] mb-[6px] ml-[1px] -mt-[2px] rounded-xl bg-black ">
+
           <div className="flex flex-col lg:flex-row justify-between items-center transition-all duration-500">
             <div className="w-full lg:w-1/3 min-w-[250px] mx-12">
               <Slider className="mb-5" {...settings}>
@@ -319,6 +324,9 @@ function Community() {
               </button>
             </a>
           </div>
+
+          </div>
+
         </div>
       </div>
     </section>

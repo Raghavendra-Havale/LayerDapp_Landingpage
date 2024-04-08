@@ -121,23 +121,23 @@ function Features() {
 
       <img
         src={line1}
-        className="absolute h-[full] w-[400px] top-[3050px] left-[23%]"
+        className="absolute h-[full] w-[400px] top-[3040px] left-[23%]"
       />
 
       <img
         src={line2}
-        className="absolute h-[full] w-[400px] top-[3160px] left-[23%]"
+        className="absolute h-[full] w-[400px] top-[3170px] left-[23%]"
       />
 
     <img
         src={line3}
-        className="absolute h-[full] w-[400px] top-[3060px] left-[52%]"
+        className="absolute h-[full] w-[400px] top-[3040px] left-[52%]"
       />
 
 
     <img
         src={line4}
-        className="absolute h-[full] w-[400px] top-[3160px] left-[52%]"
+        className="absolute h-[full] w-[400px] top-[3180px] left-[52%]"
       />
 
      
@@ -151,7 +151,7 @@ function Features() {
                 <h1 className="font-poppins text-5xl text-left font-semibold  text-white leading-[64px]">LAYER SMART ACCOUNTS</h1>
               </div>
 
-              <div className="w-[33%] h-[228px] bg-[#020916]/50 py-12 px-10 rounded-3xl  flex flex-col justify-between items-center">
+              <div className="w-[32%] h-[228px] bg-[#020916]/50 py-12 px-10 rounded-3xl ml-[70px] flex flex-col justify-between items-center">
 
                   <div className="flex items-center justify-start w-full ">
                       <div className="mr-4 w-[22%]">
@@ -166,7 +166,7 @@ function Features() {
               </div>
 
 
-              <div className="w-[33%] h-[228px] bg-[#020916]/50 py-12 px-10 rounded-3xl flex flex-col justify-between items-center z-10 backdrop-blur">
+              <div className="w-[32%] h-[228px] bg-[#020916]/50 py-12 px-10 rounded-3xl flex flex-col justify-between items-center z-10 backdrop-blur">
               <div className="flex items-center justify-start w-full">
                 <div className="mr-4 w-[22%]">
                   <img src={icon2} className="w-full" alt="err" />
@@ -186,18 +186,17 @@ function Features() {
 
           <div className="flex flex-row justify-between items-center mt-8 w-full z-[10000]">
 
-            <div className="w-[32%] h-[240px] bg-[#020916]/50 py-12 px-10 rounded-3xl  flex flex-col justify-between items-center">
+            <div className="w-[32%] h-[240px] py-12 px-10 bg-[#020916]/50 rounded-3xl  flex flex-col justify-between items-center">
+                <div className="flex items-center justify-start w-full ">
+                    <div className="mr-4 w-[22%]">
+                      <img src={icon3} className="w-full " alt="err"/>
+                    </div>
+                    <p className="font-poppins w-[80%] text-2xl text-white">Batching and Complex Strategies</p>
+                </div>
 
-              <div className="flex items-center justify-start w-full ">
-                  <div className="mr-4 w-[22%]">
-                    <img src={icon3} className="w-full " alt="err"/>
-                  </div>
-                  <p className="font-poppins w-[80%] text-2xl text-white">Batching and Complex Strategies</p>
-              </div>
-
-              <div className=" text-base leading-6 font-light text-white/70  mt-3">
-                  <p>Batch transactions and enable complex strategies using multiple protocols</p>
-              </div>
+                <div className=" text-base leading-6 font-light text-white/70  mt-3">
+                    <p>Batch transactions and enable complex strategies using multiple protocols</p>
+                </div>
             </div>
 
             <div className="w-[32%] h-[240px] bg-[#020916]/50 py-12 px-10 rounded-3xl  flex flex-col justify-between items-center">
@@ -253,6 +252,7 @@ function Features() {
 
               <div className="w-[415px] h-[240px] p-6 bg-[#020916]/50 flex flex-col justify-between items-center rounded-xl z-10"
               ref={topLeftDivRef} >
+
                       <div className="w-full flex items-start justify-end">
                         <img src={icon6} alt="err"/>
                       </div>
@@ -261,6 +261,8 @@ function Features() {
                         <h1 className="font-poppins text-[20px] text-white w-[70%]">Protocols Interoperability</h1>
                         <p className="text-base leading-6 font-light text-white/70 mt-3">Experience interoperability between protocols, hedge, leverage etc</p>
                       </div>
+
+
               </div>
 
               <div className="w-[415px] h-[220px] mt-10 p-6 bg-[#020916]/50 flex flex-col justify-between items-center rounded-xl ml-[33%]  z-10"
