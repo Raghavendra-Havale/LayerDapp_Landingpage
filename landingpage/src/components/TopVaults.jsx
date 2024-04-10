@@ -66,7 +66,7 @@ function TopVaults() {
         ref={animatedDivRef} >
           Diffusion Vault
           <button className="absolute -ml-20  font-normal text-sm px-3 rounded-full py-[10px]  bg-[#EA2315] ">
-            Comming soon
+            Coming soon
           </button>
           <p className="text-2xl font-extralight tracking-normal text-white z-10">Diffusion Vaults are playground to use multiple protocols together to create structured products </p>
         </div>
