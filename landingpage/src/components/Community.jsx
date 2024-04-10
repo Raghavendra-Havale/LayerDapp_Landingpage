@@ -168,7 +168,7 @@ function Community() {
         Don't just follow the market - lead it. Explore and employ top-performing strategies curated by our community of DeFi experts and trailblazers.
         </div>
 
-        <div className="mt-8  rounded-xl card-wrapper">
+        <div className="mt-8  rounded-xl card-wrapper custom-shadow">
 
         <div className="card-content p-[52px] mb-[6px] ml-[1px] -mt-[2px] rounded-xl bg-black ">
 
