@@ -106,7 +106,7 @@ function Features() {
 
       <img
         src={Ellipse6}
-        className="absolute h-[full] w-[full] top-[2290px] z-1"
+        className="absolute h-[full] w-[full] top-[2490px] z-1"
       />
 
       <img

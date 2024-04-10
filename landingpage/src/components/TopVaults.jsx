@@ -56,7 +56,7 @@ function TopVaults() {
 
       <img
         src={BGRing}
-        className="absolute h-[full] w-[full] top-[3650px]"
+        className="absolute h-[full] w-[full] top-[3850px]"
       />
 
       <div className=" mx-auto max-w-[1340px] flex justify-between items-center mt-[100px] bg-[#020916]/40 gap-8  rounded-2xl z-[1000] p-10 backdrop-blur-sm">

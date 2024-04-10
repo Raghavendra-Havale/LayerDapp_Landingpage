@@ -145,7 +145,7 @@ function Community() {
     <section className="pt-10 md:pt-20 lg:pt-36 bg-[#151D29] z-100">
       <img
         src={communityBlur}
-        className="absolute h-[550px] w-full top-[4120px]"
+        className="absolute h-[550px] w-full top-[4280px]"
       />
       <div
         className="flex flex-col mx-auto max-w-7xl p-4 section"
