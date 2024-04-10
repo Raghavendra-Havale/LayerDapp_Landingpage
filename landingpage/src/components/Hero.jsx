@@ -56,7 +56,7 @@ function Hero() {
           <div className="flex flex-col items-start ">
             <div className="w-full relative right-8  lg:w-[75%] flex flex-col items-center lg:items-start">
               <h1 className=" text-2xl pt-24 md:text-[86px]  font-semibold bg-gradient-to-r from-[#0199D2] via-blue-600 to-blue-700 bg-clip-text text-transparent leading-none lg:leading-[100px] text-center lg:text-left slide-up tracking-[-0.07em]">
-                {`DeFi's Command  Center `}
+                {`Explore, Innovate, Pair tools and protocols together`}
               </h1>
 
               <p className="mt-8  text-sm  text-white dark:text-white leading-tight md:leading-[24px] text-center lg:text-left slide-up">
