@@ -100,7 +100,7 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    href="https://v1-frontend-staging.vercel.app"
+                    href="https://app.layerdapp.xyz/"
                     target="_blank"
                     className=""
                     onClick={() => setOpen(false)}
@@ -142,7 +142,7 @@ function Header() {
       </div>
       <div className="hidden md:flex items-center gap-4 ml-auto md:ml-0">
   <a
-    href="https://v1-frontend-staging.vercel.app"
+    href="https://app.layerdapp.xyz/"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center justify-center gap-1.5 px-5 py-2 text-md font-normal text-white bg-[#1869F4] hover:bg-[#1658c0] rounded-2xl cursor-pointer z-[100]"
