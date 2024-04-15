@@ -106,38 +106,43 @@ function Features() {
 
       <img
         src={Ellipse6}
-        className="absolute h-[full] w-[full] top-[2290px] z-1"
+        className="absolute h-[full] w-[full] top-[2490px] z-1"
       />
 
       <img
         src={Frame1}
-        className="absolute h-[full] w-[160px] top-[3060px] left-[44%] z-[100]"
+        className="absolute h-[full] w-[160px] top-[3300px] left-[44%] z-[100]"
       />
 
       <img
         src={Frame2}
-        className="absolute h-[full] w-[160px] top-[3050px] left-[44%] z-[10] opacity-60"
+        className="absolute h-[full] w-[160px] top-[3290px] left-[44%] z-[10] opacity-60"
       />
 
       <img
         src={line1}
-        className="absolute h-[full] w-[400px] top-[3040px] left-[23%]"
+        className="absolute h-[full] w-[400px] top-[3260px] left-[23%]"
       />
 
       <img
         src={line2}
-        className="absolute h-[full] w-[400px] top-[3170px] left-[23%]"
+        className="absolute h-[full] w-[400px] top-[3390px] left-[23%]"
+      />
+
+      <img
+        src={line2}
+        className="absolute h-[full] w-[400px] top-[3040px] left-[37%] rotate-[110deg] "
       />
 
     <img
         src={line3}
-        className="absolute h-[full] w-[400px] top-[3040px] left-[52%]"
+        className="absolute h-[full] w-[400px] top-[3170px] left-[50%] rotate-[328deg] "
       />
 
 
     <img
         src={line4}
-        className="absolute h-[full] w-[400px] top-[3180px] left-[52%]"
+        className="absolute h-[full] w-[400px] top-[3420px] left-[52%]"
       />
 
      
@@ -209,7 +214,7 @@ function Features() {
                 </div>
 
                 <div className=" text-base leading-6 font-light text-white/70  mt-3">
-                    <p>Explore Innovate, Pair tools and protocols together</p>
+                    <p>Transact on multiple protocols using multiple LSA accounts linked to one EOA</p>
                 </div>
             </div>
 
@@ -247,10 +252,10 @@ function Features() {
             </h1>
           </div>
 
-            <div className=" w-full flex">
+            <div className=" w-full flex  mt-[120px]">
 
 
-              <div className="w-[415px] h-[240px] p-6 bg-[#020916]/50 flex flex-col justify-between items-center rounded-xl z-10"
+              <div className="w-[370px] h-[240px] p-6 bg-[#020916]/50 flex flex-col justify-between items-center rounded-xl z-10 mt-40"
               ref={topLeftDivRef} >
 
                       <div className="w-full flex items-start justify-end">
@@ -261,11 +266,21 @@ function Features() {
                         <h1 className="font-poppins text-[20px] text-white w-[70%]">Protocols Interoperability</h1>
                         <p className="text-base leading-6 font-light text-white/70 mt-3">Experience interoperability between protocols, hedge, leverage etc</p>
                       </div>
-
-
               </div>
 
-              <div className="w-[415px] h-[220px] mt-10 p-6 bg-[#020916]/50 flex flex-col justify-between items-center rounded-xl ml-[33%]  z-10"
+              <div className="w-[380px] h-[220px] -mt-10 p-6 bg-[#020916]/50 flex flex-col justify-between items-center rounded-xl ml-[5%]  z-10 "
+              ref={fadeInRef2}>
+                      <div className="w-full flex items-start justify-end">
+                        <img src={icon7} alt="err"/>
+                      </div>
+
+                      <div className="w-full flex flex-col">
+                        <h1 className="font-poppins text-[20px] text-white w-[70%]">Create strategies</h1>
+                        <p className="text-base leading-6 font-light text-white/70 mt-3">Create strategies that are not possible using standalone protocols</p>
+                      </div>
+              </div>
+
+              <div className="w-[390px] h-[220px] mt-36 p-6 bg-[#020916]/50 flex flex-col justify-between items-center rounded-xl ml-[3%]  z-10"
               ref={topRightDivRef}>
                       <div className="w-full flex items-start justify-end">
                         <img src={icon7} alt="err"/>
@@ -273,9 +288,11 @@ function Features() {
 
                       <div className="w-full flex flex-col">
                         <h1 className="font-poppins text-[20px] text-white w-[70%]">Flash Loans</h1>
-                        <p className="text-base leading-6 font-light text-white/70 mt-3">Experience interoperability between protocols, hedge, leverage etc</p>
+                        <p className="text-base leading-6 font-light text-white/70 mt-3">Enable complex tasks like flash loans and leverage easily using multiple protocols</p>
                       </div>
               </div>
+
+
             </div>
 
 
@@ -303,7 +320,7 @@ function Features() {
 
                       <div className="w-full flex flex-col">
                         <h1 className="font-poppins text-[20px] text-white ">Manage Multiple Protocols</h1>
-                        <p className="text-base leading-6 font-light text-white/70 mt-3">Batch transactions and enable complex strategies using multiple protocols</p>
+                        <p className="text-base leading-6 font-light text-white/70 mt-3">Manage multiple positions at one place and see your strategy grow</p>
                       </div>
               </div>
             </div>

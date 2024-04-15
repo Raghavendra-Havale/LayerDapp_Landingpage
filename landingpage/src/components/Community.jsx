@@ -145,7 +145,7 @@ function Community() {
     <section className="pt-10 md:pt-20 lg:pt-36 bg-[#151D29] z-100">
       <img
         src={communityBlur}
-        className="absolute h-[550px] w-full top-[4120px]"
+        className="absolute h-[550px] w-full top-[4280px]"
       />
       <div
         className="flex flex-col mx-auto max-w-7xl p-4 section"
@@ -168,7 +168,7 @@ function Community() {
         Don't just follow the market - lead it. Explore and employ top-performing strategies curated by our community of DeFi experts and trailblazers.
         </div>
 
-        <div className="mt-8  rounded-xl card-wrapper">
+        <div className="mt-8  rounded-xl card-wrapper custom-shadow">
 
         <div className="card-content p-[52px] mb-[6px] ml-[1px] -mt-[2px] rounded-xl bg-black ">
 

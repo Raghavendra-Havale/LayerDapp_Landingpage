@@ -56,7 +56,7 @@ function TopVaults() {
 
       <img
         src={BGRing}
-        className="absolute h-[full] w-[full] top-[3650px]"
+        className="absolute h-[full] w-[full] top-[3850px]"
       />
 
       <div className=" mx-auto max-w-[1340px] flex justify-between items-center mt-[100px] bg-[#020916]/40 gap-8  rounded-2xl z-[1000] p-10 backdrop-blur-sm">
@@ -66,7 +66,7 @@ function TopVaults() {
         ref={animatedDivRef} >
           Diffusion Vault
           <button className="absolute -ml-20  font-normal text-sm px-3 rounded-full py-[10px]  bg-[#EA2315] ">
-            Comming soon
+            Coming soon
           </button>
           <p className="text-2xl font-extralight tracking-normal text-white z-10">Diffusion Vaults are playground to use multiple protocols together to create structured products </p>
         </div>
